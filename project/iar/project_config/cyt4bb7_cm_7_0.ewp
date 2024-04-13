@@ -1116,10 +1116,40 @@
     <group>
         <name>code</name>
         <file>
+            <name>$PROJ_DIR$\..\..\code\Algorithm.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\Algorithm.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\Common_Peripherals.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\Common_Peripherals.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\GL_CRC.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\GL_CRC.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\GPS.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\GPS.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\code\IMU.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\code\IMU.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\motor.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\motor.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\code\本文件夹作用.txt</name>

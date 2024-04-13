@@ -3,9 +3,24 @@
 gyro_param_t Gyro_Offset;//陀螺仪零飘结构体
 IMU_param_t  IMU_Data;   //减去零飘数据结构体
 
-float Daty_Z=0;
-float T_M=0;
-float T_N=0;
+float Data_X=0;
+float Data_Y=0;
+float Data_Z=0;
+float T_M_X=0;
+float T_M_Y=0;
+float T_M_Z=0;
+float T_N_X=0;
+float T_N_Y=0;
+float T_N_Z=0;
+
+float IMU_Daty_Z=0;
+float GPS_Daty_Z=0;
+float GPS_IMU_Daty_Z=0;//经过互补滤波计算出的航向角
+int    direction_count;//GPS累加循环数
+int    Flag=0;
+int    GL_IMU_Flag=0;
+double gps_direction_average;//gps计算后的平均值
+double gps_direction_sum;//gps偏航角累加值
 
 float  gyro_Offset_flag = 0;
 
@@ -70,14 +85,41 @@ void IMU_YAW_integral()//对角速度进行积分
     //    Daty_X+=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);
     //    Daty_Y+=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);
     //    if(IMU_Data.gyro_z<0.0045&&IMU_Data.gyro_z>-0.0045)
-        if(IMU_Data.gyro_z<0.015&&IMU_Data.gyro_z>-0.015)//滤波
+        if(IMU_Data.gyro_x<0.015&&IMU_Data.gyro_x>-0.015)//滤波x
         {
-            Daty_Z-=0;
+					Data_X-=0;
+
 
         }
         else
         {
-             IMU_Handle_180();//规划为0-180和0-(-180)   Daty_Z
+             IMU_Handle_180();//规划为0-180和0-(-180)   Data_Z
+             IMU_Handle_360();//规划为0-360和0-(-360)   T_M
+             IMU_Handle_0();  //规划为0-正无穷和0-负无穷  T_N
+         }
+				
+				if(IMU_Data.gyro_y<0.015&&IMU_Data.gyro_y>-0.015)//滤波y
+        {
+
+					Data_Y-=0;
+
+        }
+        else
+        {
+             IMU_Handle_180();//规划为0-180和0-(-180)   Data_Z
+             IMU_Handle_360();//规划为0-360和0-(-360)   T_M
+             IMU_Handle_0();  //规划为0-正无穷和0-负无穷  T_N
+         }
+				
+				if(IMU_Data.gyro_z<0.015&&IMU_Data.gyro_z>-0.015)//滤波z
+        {
+					
+          Data_Z-=0;
+
+        }
+        else
+        {
+             IMU_Handle_180();//规划为0-180和0-(-180)   Data_Z
              IMU_Handle_360();//规划为0-360和0-(-360)   T_M
              IMU_Handle_0();  //规划为0-正无穷和0-负无穷  T_N
          }
@@ -100,19 +142,50 @@ void IMU_init()//IMU初始化
 
 void IMU_Handle_180()
 {
-    Daty_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+	
+	    Data_X-=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
 
-    if((Daty_Z>0&&Daty_Z<=180)  ||   (Daty_Z<0&&Daty_Z>=(-180)))//顺时针
+    if((Data_X>0 && Data_X<=180)  ||   (Data_X<0 && Data_X>=(-180)))//顺时针
     {
-        Daty_Z= +Daty_Z;
+      Data_Z= +Data_Z;
     }
-    else if(Daty_Z>180 && Daty_Z<=360)
+    else if(Data_X>180 && Data_X<=360)
     {
-        Daty_Z-=360;
+        Data_Z-=360;
     }
-    else if(Daty_Z<(-180) && Daty_Z>=(-360))
+    else if(Data_X<(-180) && Data_X>=(-360))
     {
-        Daty_Z+=360;
+        Data_X+=360;
+    }
+		
+		    Data_Y-=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+
+    if((Data_Y>0 && Data_Y<=180)  ||   (Data_Y<0 && Data_Y>=(-180)))//顺时针
+    {
+      Data_Y= +Data_Y;
+    }
+    else if(Data_Y>180 && Data_Y<=360)
+    {
+        Data_Y-=360;
+    }
+    else if(Data_Y<(-180) && Data_Y>=(-360))
+    {
+        Data_Y+=360;
+    }
+		
+    Data_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+
+    if((Data_Z>0 && Data_Z<=180)  ||   (Data_Z<0 && Data_Z>=(-180)))//顺时针
+    {
+      Data_Z= +Data_Z;
+    }
+    else if(Data_Z>180 && Data_Z<=360)
+    {
+        Data_Z-=360;
+    }
+    else if(Data_Z<(-180) && Data_Z>=(-360))
+    {
+        Data_Z+=360;
     }
 
 }
@@ -120,21 +193,88 @@ void IMU_Handle_180()
 
 void IMU_Handle_360()
 {
-    T_M-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+	
+	    T_M_X-=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
 
-    if(T_M>360||T_M<-360)//限制IMU的数值在0-360之间
+    if(T_M_X>360||T_M_X<-360)//限制IMU的数值在0-360之间
     {
-        T_M=0;
+        T_M_X=0;
+    }
+		
+		    T_M_Y-=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+
+    if(T_M_Y>360||T_M_Y<-360)//限制IMU的数值在0-360之间
+    {
+        T_M_Y=0;
+    }
+	
+    T_M_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+
+    if(T_M_Z>360||T_M_Z<-360)//限制IMU的数值在0-360之间
+    {
+        T_M_Z=0;
     }
 }
 
 void IMU_Handle_0()
 {
-    T_N-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+    T_N_X-=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+		T_N_Y-=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
+		T_N_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
 
 }
 
 void IMU_SHOW()
 {
-	printf("yaw: %f \n",Daty_Z);
+	printf("yaw row pitch: %f , %f , %f\n",Data_Z,Data_X,Data_Y);
+}
+
+
+void GPS_direction_average()//计算GPS偏航角平均值
+{
+    if(1)
+    {
+        if(direction_count <= 20)
+        {
+            gps_direction_sum += gnss.direction;
+            direction_count++;
+        }
+        gps_direction_average=(double)(gps_direction_sum/direction_count);
+    }
+}
+void GPS_IMU_Complementary_filter()//将GPS反馈的direction(航向角)和IMU反馈的YAW(航向角)进行互补滤波
+{
+    if(gnss.direction>180)    //获取到GPS方位角信息
+    {
+        GPS_Daty_Z=gnss.direction-360;
+    }
+    else
+    {
+        GPS_Daty_Z=gnss.direction;
+    }
+
+
+    if(encoder>100)
+    {
+         GPS_IMU_Daty_Z=0.8*IMU_Daty_Z+0.2*GPS_Daty_Z;//互补滤波
+         Flag=1;
+         Daty_Z=GPS_IMU_Daty_Z;
+    }
+    else
+    {
+        if(Flag==1)
+        {
+            IMU_Daty_Z=GPS_IMU_Daty_Z;
+            Flag=0;
+        }
+
+        IMU_Daty_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);
+        if(IMU_Daty_Z>360||IMU_Daty_Z<-360)//限制IMU的数值在0-360之间
+        {
+            IMU_Daty_Z=0;
+        }
+        Daty_Z=IMU_Daty_Z;
+
+    }
+
 }

@@ -1,0 +1,20 @@
+# ninja log v5
+4	243	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/audioss_1346650047966882938.dir/cy_i2s.xcl	64ebfd90e75ec0b9
+16	251	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/cpu_15938736945165268644.dir/cy_cpu.xcl	2a16a70b54a9f73
+19	260	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/canfd_1800690984773873875.dir/cy_canfd.xcl	86cddd56e8156ef5
+10	269	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/adc_11722776235721520015.dir/cy_adc.xcl	9dd1bfe0ec82d379
+41	276	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/crypto_1190170608956581615.dir/cy_crypto_config.xcl	b1b76544978dc623
+35	284	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ethernet_6029839089178797009.dir/cy_ethif.xcl	adc2d6171f36aa32
+25	292	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ethernet_6029839089178797009.dir/edd_rx.xcl	55dbbb66d16b571f
+30	300	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/dma_12106025507578611576.dir/cy_mdma.xcl	1774b63cae962906
+263	499	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/gpio_3999404635324069351.dir/cy_gpio.xcl	813ea854a3c72bfe
+246	505	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/dma_12106025507578611576.dir/cy_pdma.xcl	f2b87888b4fe3d9b
+254	511	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ethernet_6029839089178797009.dir/edd.xcl	c06d1d8f4d593937
+272	517	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/evtgen_3404189088603873129.dir/cy_evtgen.xcl	365585f42894a760
+279	523	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ipc_10145506163450686023.dir/cy_ipc_drv.xcl	124ba21830570467
+287	529	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ipc_10145506163450686023.dir/cy_ipc_pipe.xcl	283a8235279df57f
+295	536	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/flash_8529866181315662935.dir/cy_flash.xcl	e507788050812418
+303	545	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ethernet_6029839089178797009.dir/edd_tx.xcl	91a950c65e4422f8
+501	716	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/lvd_6353935867039560245.dir/cy_lvd.xcl	cc2c15bf18d94279
+525	735	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/ipc_10145506163450686023.dir/cy_ipc_sema.xcl	51cd9c2df1ac5f13
+513	743	7344594740000000	E:/桌面/Seekfree_CYT4BB_Opensource_Library/project/iar/Debug_m0_plus/BrowseInfo/lin_18429031207028094880.dir/cy_lin.xcl	507f3162fc077801

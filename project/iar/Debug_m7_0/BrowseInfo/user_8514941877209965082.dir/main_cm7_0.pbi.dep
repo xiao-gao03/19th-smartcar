@@ -218,4 +218,6 @@ E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\Debug_m7_0\BrowseInfo\use
   E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\..\libraries\zf_device\zf_device_wireless_uart.h \
   E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\..\libraries\zf_components\seekfree_assistant.h \
   E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\..\libraries\zf_components\seekfree_assistant_interface.h \
-  E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\code\IMU.h
+  E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\code\IMU.h \
+  E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\code\GPS.h \
+  E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\..\..\code\Common_Peripherals.h

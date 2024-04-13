@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"E:\software\IAR\common\bin\cspybat" -f "E:\project\smart car\CYT4BB7_Library-master\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --backend -f "E:\project\smart car\CYT4BB7_Library-master\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
+"E:\software\IAR\common\bin\cspybat" -f "E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --backend -f "E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"E:\software\IAR\common\bin\cspybat" -f "E:\project\smart car\CYT4BB7_Library-master\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\project\smart car\CYT4BB7_Library-master\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
+"E:\software\IAR\common\bin\cspybat" -f "E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\桌面\Seekfree_CYT4BB_Opensource_Library\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
 
 @echo off 
 :end

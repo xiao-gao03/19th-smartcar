@@ -1,21 +1,20 @@
 #ifndef __IMU_H__
 #define __IMU_H__
 
-//ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 typedef struct{
-    float Xdata;   //ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½X
-    float Ydata;   //ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Y
-    float Zdata;   //ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Z
+    float Xdata;   //xÖá½Ç¶È
+    float Ydata;   //YÖá½Ç¶È
+    float Zdata;   //ZÖá½Ç¶È
 }gyro_param_t ;
 
 typedef struct{
-    float acc_x;   //xï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
-    float acc_y;   //yï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
-    float acc_z;   //zï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+    float acc_x;   //x½ÇËÙ¶ÈÊıÖµ
+    float acc_y;   //y½ÇËÙ¶ÈÊıÖµ
+    float acc_z;   //z½ÇËÙ¶ÈÊıÖµ
 
-    float gyro_x;  //xï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
-    float gyro_y;  //yï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
-    float gyro_z;  //zï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+    float gyro_x;  //x¼ÓËÙ¶ÈÊıÖµ
+    float gyro_y;  //y¼ÓËÙ¶ÈÊıÖµ
+    float gyro_z;  //z¼ÓËÙ¶ÈÊıÖµ
 }IMU_param_t ;
 
 extern float gyro_Offset_flag;

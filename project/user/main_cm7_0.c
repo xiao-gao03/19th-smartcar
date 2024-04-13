@@ -45,18 +45,19 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 
 // **************************** 代码区域 ****************************
-#define LED1                    (P19_0)                                         // 单排排针 SPI 两寸屏 这里宏定义填写 IPS200_TYPE_SPI
+#define UART_LED                    (P19_0)                                         // 单排排针 SPI 两寸屏 这里宏定义填写 IPS200_TYPE_SPI
 
 
 int main(void)
 {
     clock_init(SYSTEM_CLOCK_250M); 	// 时钟配置及系统初始化<务必保留>
     debug_info_init();                  // 调试串口信息初始化
-		IMU_init();
-    
+		ALL_Init();
+		pit_ms_init(PIT_CH1, 100);
+    pit_ms_init(PIT_CH2, 7);
     // 此处编写用户代码 例如外设初始化代码等
     
-		gpio_init(LED1, GPO, GPIO_HIGH, GPO_PUSH_PULL);                             // 初始化 LED1 输出 默认高电平 推挽输出模式
+		gpio_init(UART_LED, GPO, GPIO_HIGH, GPO_PUSH_PULL);                             // 初始化 LED1 输出 默认高电平 推挽输出模式
 		
 
     
@@ -65,7 +66,6 @@ int main(void)
     {
         // 此处编写需要循环执行的代码
 			IMU_SHOW();
-      
         // 此处编写需要循环执行的代码
     }
 }

@@ -110,4 +110,10 @@
 
 
 #include "IMU.h"
+#include "GPS.h"
+#include "Common_Peripherals.h"
+#include "Algorithm.h"
+#include "motor.h"
+#include "GL_CRC.h"
+#include "A_Master_ctrl.h"
 #endif
