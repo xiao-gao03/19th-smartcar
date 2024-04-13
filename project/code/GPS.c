@@ -261,7 +261,7 @@ void GPS_Record_flash()    //将采集的点位记录到缓冲区并储存至GPS_FLASH
                         flash_erase_page(FLASH_SECTION_INDEX, GPS_PAGE_INDEX);                //擦除Flash数据
                     }
 
-                flash_write_page_from_buffer(FLASH_SECTION_INDEX, GPS_PAGE_INDEX);        //将缓冲区的数据写入到指定Flash 扇区的页码
+                flash_write_page_from_buffer(FLASH_SECTION_INDEX, GPS_PAGE_INDEX,300);        //将缓冲区的数据写入到指定Flash 扇区的页码
 
 
     }
@@ -286,7 +286,7 @@ void GPS_Flash_use()//将GPS_FLASH的数据重新读回缓冲区并赋值给数组
     flash_buffer_clear();//清空缓冲区
     if(flash_check(FLASH_SECTION_INDEX, GPS_PAGE_INDEX))                      //判断Flash是否有数据 : 有数据返回1，无数据返回0
     {
-        flash_read_page_to_buffer(FLASH_SECTION_INDEX, GPS_PAGE_INDEX);       //将数据从FLASH指定扇区页码放入到缓冲区
+        flash_read_page_to_buffer(FLASH_SECTION_INDEX, GPS_PAGE_INDEX,300);       //将数据从FLASH指定扇区页码放入到缓冲区
 
         int TG=0;//用以切换二维数组下标
 
