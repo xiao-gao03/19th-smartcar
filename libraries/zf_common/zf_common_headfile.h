@@ -116,4 +116,6 @@
 #include "motor.h"
 #include "GL_CRC.h"
 #include "A_Master_ctrl.h"
+#include "position_calculation.h"
+#include "voice.h"
 #endif

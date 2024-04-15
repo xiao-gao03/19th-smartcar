@@ -58,8 +58,6 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
-    "common_peripherals.h": "c",
-    "zf_common_headfile.h": "c",
-    "zf_device_virtual_oscilloscope.h": "c"
+    "zf_common_headfile.h": "c"
   }
 }

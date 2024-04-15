@@ -356,6 +356,6 @@ void GPS_SHOW()//GPS–≈œ¢œ‘ æ
     ips_show_string(0, 16*1,"direction:");    ips_show_float(90, 16*1, gnss.direction,4, 6);
     ips_show_string(0, 16*2,"latitude:");     ips_show_float(90, 16*2, gnss.latitude,4, 6);
     ips_show_string(0, 16*3,"longitude:");    ips_show_float(90, 16*3, gnss.longitude,4, 6);
-    ips_show_string(0, 16*4,"yaw:");          ips_show_float(90, 16*4, Daty_Z,4, 6);
+    ips_show_string(0, 16*4,"yaw:");          ips_show_float(90, 16*4, Data_Z,4, 6);
 
 }

@@ -7,13 +7,15 @@ void ALL_Init()
     Key_init();
 	IMU_init();
     Steer_init();
+    motor_init();
+    HALL_init();
     
 }
 
 //===================================================蜂鸣器===================================================
 void Buzzer_init()//蜂鸣器初始化
 {
-    gpio_init(BUZZER_PIN, GPO, 0, GPO_PUSH_PULL); //TODO
+    gpio_init(BUZZER_PIN, GPO, 0, GPO_PUSH_PULL); 
 }
 
 void Buzzer_check(int time1,int time2)//蜂鸣器的自检函数
@@ -62,7 +64,6 @@ uint16 switch2_count=-1;
 
 void Key_init()//按键与LED初始化
 {
-				//TODO
        gpio_init(LED1, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED1 输出 默认高电平 推挽输出模式
        gpio_init(LED2, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED2 输出 默认高电平 推挽输出模式
        gpio_init(LED3, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED3 输出 默认高电平 推挽输出模式
@@ -127,3 +128,5 @@ void Steer_set(int angle)//舵机驱动
     pwm_set_duty(SERVO_MOTOR_PWM, (uint32)SERVO_MOTOR_DUTY(angle));
 
 }
+
+/*TODO:添加舵机转向模块代码，需搭配硅麦，gps，陀螺仪的角度计算*/

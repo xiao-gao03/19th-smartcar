@@ -34,7 +34,7 @@ extern uint8 key3_flag;
 extern uint8 key4_flag;
 extern uint8 key_val;
 extern float Steer_Value;
-extern int16 x6f_out[6];
+//extern int16 x6f_out[6];
 extern int   Ctrl_GO_FLAG;
 extern int16 encoder; 
 extern int16 stand;
@@ -44,6 +44,7 @@ void Buzzer_check(int time1,int time2);//按键与LED初始化
 void Key_init();//按键与LED初始化
 void key_scan(void);//按键扫描
 void Steer_init();
+void Steer_set(int angle);
 
 
 void ALL_Init(void);//总初始化

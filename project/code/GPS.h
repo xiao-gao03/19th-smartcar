@@ -49,7 +49,7 @@ extern double    GPS_GET_LOT[];
 #define RP_MAX                    20                                 //设置的采集点上限(自己决定)
 #define Point_NUM                 (10)                                //精度或纬度采集个数
 #define FLASH_SECTION_INDEX       (0)                                 // 存储数据用的扇区
-#define FLASH_PAGE_INDEX          (11)                                // 存储数据用的页码 倒数第一个页码
+#define FLASH_PAGE_INDEX          (95)                                // 存储数据用的页码 倒数第一个页码
 #define GPS_PAGE_INDEX   (95)                                         //GPS存储页码
 
 

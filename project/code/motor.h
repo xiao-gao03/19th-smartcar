@@ -14,6 +14,8 @@ void motor_init();
 void motor_run(int16 speed);
 void motor_stop();
 void motor_off();
-
+void HALL_init();
+void HALL_gather();
+void BLDC_Cloop_ctrl(int16 SPEED);
 #endif
 

@@ -53,7 +53,8 @@ void BLDC_Cloop_ctrl(int16 SPEED) //BLDC闭环控制
 //刹车函数
 void motor_stop()
 {
-
+/*TODO:添加刹车代码。法1：直接将占空比设为0；法2：电机倒转；
+        PS:采用电流较小的方法，防止对驱动板以及元器件造成不可逆的伤害。*/
 }
 
 

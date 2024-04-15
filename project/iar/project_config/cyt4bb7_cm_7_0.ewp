@@ -1116,6 +1116,9 @@
     <group>
         <name>code</name>
         <file>
+            <name>$PROJ_DIR$\..\..\code\A_Master_ctrl.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\code\Algorithm.c</name>
         </file>
         <file>

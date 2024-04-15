@@ -13,9 +13,9 @@ float T_N_X=0;
 float T_N_Y=0;
 float T_N_Z=0;
 
-float IMU_Daty_Z=0;
-float GPS_Daty_Z=0;
-float GPS_IMU_Daty_Z=0;//经过互补滤波计算出的航向角
+float IMU_Data_Z=0;
+float GPS_Data_Z=0;
+float GPS_IMU_Data_Z=0;//经过互补滤波计算出的航向角
 int    direction_count;//GPS累加循环数
 int    Flag=0;
 int    GL_IMU_Flag=0;
@@ -246,34 +246,34 @@ void GPS_IMU_Complementary_filter()//将GPS反馈的direction(航向角)和IMU反馈的YAW(
 {
     if(gnss.direction>180)    //获取到GPS方位角信息
     {
-        GPS_Daty_Z=gnss.direction-360;
+        GPS_Data_Z=gnss.direction-360;
     }
     else
     {
-        GPS_Daty_Z=gnss.direction;
+        GPS_Data_Z=gnss.direction;
     }
 
 
     if(encoder>100)
     {
-         GPS_IMU_Daty_Z=0.8*IMU_Daty_Z+0.2*GPS_Daty_Z;//互补滤波
+         GPS_IMU_Data_Z=0.8*IMU_Data_Z+0.2*GPS_Data_Z;//互补滤波
          Flag=1;
-         Daty_Z=GPS_IMU_Daty_Z;
+         Data_Z=GPS_IMU_Data_Z;
     }
     else
     {
         if(Flag==1)
         {
-            IMU_Daty_Z=GPS_IMU_Daty_Z;
+            IMU_Data_Z=GPS_IMU_Data_Z;
             Flag=0;
         }
 
-        IMU_Daty_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);
-        if(IMU_Daty_Z>360||IMU_Daty_Z<-360)//限制IMU的数值在0-360之间
+        IMU_Data_Z-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);
+        if(IMU_Data_Z>360||IMU_Data_Z<-360)//限制IMU的数值在0-360之间
         {
-            IMU_Daty_Z=0;
+            IMU_Data_Z=0;
         }
-        Daty_Z=IMU_Daty_Z;
+        Data_Z=IMU_Data_Z;
 
     }
 

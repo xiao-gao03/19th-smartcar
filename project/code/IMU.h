@@ -18,7 +18,10 @@ typedef struct{
 }IMU_param_t ;
 
 extern float gyro_Offset_flag;
-extern float Daty_Z;
+extern float Data_Z;
+extern float T_M_Z;
+extern float T_N_Z;
+extern int GL_IMU_Flag;
 
 
 float IMU_gyro_Offset_Init();
