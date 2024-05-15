@@ -1,0 +1,582 @@
+cmake_minimum_required(VERSION 3.27)
+project(Seekfree_CYT4BB_Opensource_Library C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(libraries/sdk/common/hdr)
+include_directories(libraries/sdk/common/hdr/cmsis)
+include_directories(libraries/sdk/common/hdr/cmsis/dsp)
+include_directories(libraries/sdk/common/hdr/cmsis/include)
+include_directories(libraries/sdk/common/src/drivers/adc)
+include_directories(libraries/sdk/common/src/drivers/canfd)
+include_directories(libraries/sdk/common/src/drivers/crypto)
+include_directories(libraries/sdk/common/src/drivers/cxpi)
+include_directories(libraries/sdk/common/src/drivers/dma)
+include_directories(libraries/sdk/common/src/drivers/evtgen)
+include_directories(libraries/sdk/common/src/drivers/flash)
+include_directories(libraries/sdk/common/src/drivers/gpio)
+include_directories(libraries/sdk/common/src/drivers/ipc)
+include_directories(libraries/sdk/common/src/drivers/lin)
+include_directories(libraries/sdk/common/src/drivers/lvd)
+include_directories(libraries/sdk/common/src/drivers/mcwdt)
+include_directories(libraries/sdk/common/src/drivers/mpu)
+include_directories(libraries/sdk/common/src/drivers/prot)
+include_directories(libraries/sdk/common/src/drivers/scb)
+include_directories(libraries/sdk/common/src/drivers/smartio)
+include_directories(libraries/sdk/common/src/drivers/smif/common)
+include_directories(libraries/sdk/common/src/drivers/smif/ver2)
+include_directories(libraries/sdk/common/src/drivers/smif/ver3_1)
+include_directories(libraries/sdk/common/src/drivers/smif/ver4)
+include_directories(libraries/sdk/common/src/drivers/srom)
+include_directories(libraries/sdk/common/src/drivers/sysflt)
+include_directories(libraries/sdk/common/src/drivers/sysint)
+include_directories(libraries/sdk/common/src/drivers/syslib)
+include_directories(libraries/sdk/common/src/drivers/syspm)
+include_directories(libraries/sdk/common/src/drivers/sysreset)
+include_directories(libraries/sdk/common/src/drivers/sysrtc)
+include_directories(libraries/sdk/common/src/drivers/systick)
+include_directories(libraries/sdk/common/src/drivers/syswdt)
+include_directories(libraries/sdk/common/src/drivers/tcpwm)
+include_directories(libraries/sdk/common/src/drivers/trigmux)
+include_directories(libraries/sdk/common/src/ethstack/include)
+include_directories(libraries/sdk/common/src/ethstack/portable/Compiler)
+include_directories(libraries/sdk/common/src/ethstack/portable/Compiler/GCC)
+include_directories(libraries/sdk/common/src/ethstack/portable/Compiler/GHS)
+include_directories(libraries/sdk/common/src/ethstack/portable/Compiler/IAR)
+include_directories(libraries/sdk/common/src/ethstack/portable/NetworkInterface/include)
+include_directories(libraries/sdk/common/src/mcalstubs)
+include_directories(libraries/sdk/common/src/mw/aic261)
+include_directories(libraries/sdk/common/src/mw/button)
+include_directories(libraries/sdk/common/src/mw/flash)
+include_directories(libraries/sdk/common/src/mw/semihosting)
+include_directories(libraries/sdk/common/src/mw/sw_timer)
+include_directories(libraries/sdk/common/src/rtos/include)
+include_directories(libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F)
+include_directories(libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1)
+include_directories(libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F)
+include_directories(libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1)
+include_directories(libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F)
+include_directories(libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1)
+include_directories(libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F)
+include_directories(libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1)
+include_directories(libraries/sdk/common/src/startup)
+include_directories(libraries/sdk/tviibh4m/hdr)
+include_directories(libraries/sdk/tviibh4m/hdr/ip)
+include_directories(libraries/sdk/tviibh4m/hdr/mcureg)
+include_directories(libraries/sdk/tviibh4m/src/drivers/audioss)
+include_directories(libraries/sdk/tviibh4m/src/drivers/canfd)
+include_directories(libraries/sdk/tviibh4m/src/drivers/cpu)
+include_directories(libraries/sdk/tviibh4m/src/drivers/ethernet)
+include_directories(libraries/sdk/tviibh4m/src/drivers/sd_host)
+include_directories(libraries/sdk/tviibh4m/src/drivers/sysclk)
+include_directories(libraries/sdk/tviibh4m/src/drivers/sysflt)
+include_directories(libraries/sdk/tviibh4m/src/drivers/sysreghc)
+include_directories(libraries/sdk/tviibh4m/src/interrupts)
+include_directories(libraries/sdk/tviibh4m/src/mw/eth_phy)
+include_directories(libraries/sdk/tviibh4m/src/mw/power)
+include_directories(libraries/sdk/tviibh4m/src/mw/smif_mem)
+include_directories(libraries/sdk/tviibh4m/src/system)
+include_directories(libraries/zf_common)
+include_directories(libraries/zf_components)
+include_directories(libraries/zf_device)
+include_directories(libraries/zf_driver)
+include_directories(project/code)
+
+add_executable(Seekfree_CYT4BB_Opensource_Library
+        libraries/sdk/common/hdr/cmsis/dsp/arm_common_tables.h
+        libraries/sdk/common/hdr/cmsis/dsp/arm_const_structs.h
+        libraries/sdk/common/hdr/cmsis/dsp/arm_helium_utils.h
+        libraries/sdk/common/hdr/cmsis/dsp/arm_math.h
+        libraries/sdk/common/hdr/cmsis/dsp/arm_mve_tables.h
+        libraries/sdk/common/hdr/cmsis/dsp/arm_vec_math.h
+        libraries/sdk/common/hdr/cmsis/include/cachel1_armv7.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_armcc.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_armclang.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_armclang_ltm.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_compiler.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_diab.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_gcc.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_ghs.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_iccarm.h
+        libraries/sdk/common/hdr/cmsis/include/cmsis_version.h
+        libraries/sdk/common/hdr/cmsis/include/core_cm0plus.h
+        libraries/sdk/common/hdr/cmsis/include/core_cm4.h
+        libraries/sdk/common/hdr/cmsis/include/core_cm7.h
+        libraries/sdk/common/hdr/cmsis/include/mpu_armv7.h
+        libraries/sdk/common/hdr/cy_project.h
+        libraries/sdk/common/src/drivers/adc/cy_adc.c
+        libraries/sdk/common/src/drivers/adc/cy_adc.h
+        libraries/sdk/common/src/drivers/canfd/cy_canfd.c
+        libraries/sdk/common/src/drivers/canfd/cy_canfd.h
+        libraries/sdk/common/src/drivers/crypto/cy_crypto.h
+        libraries/sdk/common/src/drivers/crypto/cy_crypto_common.h
+        libraries/sdk/common/src/drivers/crypto/cy_crypto_config.c
+        libraries/sdk/common/src/drivers/crypto/cy_crypto_config.h
+        libraries/sdk/common/src/drivers/crypto/cy_crypto_server.h
+        libraries/sdk/common/src/drivers/cxpi/cy_cxpi.c
+        libraries/sdk/common/src/drivers/cxpi/cy_cxpi.h
+        libraries/sdk/common/src/drivers/dma/cy_mdma.c
+        libraries/sdk/common/src/drivers/dma/cy_mdma.h
+        libraries/sdk/common/src/drivers/dma/cy_pdma.c
+        libraries/sdk/common/src/drivers/dma/cy_pdma.h
+        libraries/sdk/common/src/drivers/evtgen/cy_evtgen.c
+        libraries/sdk/common/src/drivers/evtgen/cy_evtgen.h
+        libraries/sdk/common/src/drivers/flash/cy_flash.c
+        libraries/sdk/common/src/drivers/flash/cy_flash.h
+        libraries/sdk/common/src/drivers/gpio/cy_gpio.c
+        libraries/sdk/common/src/drivers/gpio/cy_gpio.h
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_config.h
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.c
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.h
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.c
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.h
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.c
+        libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.h
+        libraries/sdk/common/src/drivers/lin/cy_lin.c
+        libraries/sdk/common/src/drivers/lin/cy_lin.h
+        libraries/sdk/common/src/drivers/lvd/cy_lvd.c
+        libraries/sdk/common/src/drivers/lvd/cy_lvd.h
+        libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.c
+        libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.h
+        libraries/sdk/common/src/drivers/mpu/cy_mpu.c
+        libraries/sdk/common/src/drivers/mpu/cy_mpu.h
+        libraries/sdk/common/src/drivers/prot/cy_prot.c
+        libraries/sdk/common/src/drivers/prot/cy_prot.h
+        libraries/sdk/common/src/drivers/scb/cy_scb_common.c
+        libraries/sdk/common/src/drivers/scb/cy_scb_common.h
+        libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.c
+        libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.h
+        libraries/sdk/common/src/drivers/scb/cy_scb_i2c.c
+        libraries/sdk/common/src/drivers/scb/cy_scb_i2c.h
+        libraries/sdk/common/src/drivers/scb/cy_scb_spi.c
+        libraries/sdk/common/src/drivers/scb/cy_scb_spi.h
+        libraries/sdk/common/src/drivers/scb/cy_scb_uart.c
+        libraries/sdk/common/src/drivers/scb/cy_scb_uart.h
+        libraries/sdk/common/src/drivers/smartio/cy_smartio.c
+        libraries/sdk/common/src/drivers/smartio/cy_smartio.h
+        libraries/sdk/common/src/drivers/smif/common/cy_smif.c
+        libraries/sdk/common/src/drivers/smif/common/cy_smif.h
+        libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.c
+        libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.h
+        libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.c
+        libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.h
+        libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.c
+        libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.h
+        libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.c
+        libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.h
+        libraries/sdk/common/src/drivers/srom/cy_srom.c
+        libraries/sdk/common/src/drivers/srom/cy_srom.h
+        libraries/sdk/common/src/drivers/sysflt/cy_sysflt.c
+        libraries/sdk/common/src/drivers/sysflt/cy_sysflt.h
+        libraries/sdk/common/src/drivers/sysint/cy_sysint.c
+        libraries/sdk/common/src/drivers/sysint/cy_sysint.h
+        libraries/sdk/common/src/drivers/syslib/gcc/cy_syslib_newlib_systemcalls.c
+        libraries/sdk/common/src/drivers/syslib/cy_syslib.c
+        libraries/sdk/common/src/drivers/syslib/cy_syslib.h
+        libraries/sdk/common/src/drivers/syspm/cy_syspm.c
+        libraries/sdk/common/src/drivers/syspm/cy_syspm.h
+        libraries/sdk/common/src/drivers/sysreset/cy_sysreset.c
+        libraries/sdk/common/src/drivers/sysreset/cy_sysreset.h
+        libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.c
+        libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.h
+        libraries/sdk/common/src/drivers/systick/cy_systick.c
+        libraries/sdk/common/src/drivers/systick/cy_systick.h
+        libraries/sdk/common/src/drivers/syswdt/cy_syswdt.c
+        libraries/sdk/common/src/drivers/syswdt/cy_syswdt.h
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.c
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.h
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.c
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.h
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.c
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.h
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.c
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.h
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.c
+        libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.h
+        libraries/sdk/common/src/drivers/trigmux/cy_trigmux.c
+        libraries/sdk/common/src/drivers/trigmux/cy_trigmux.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_ARP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_DHCP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_DNS.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_errno_TCP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_IP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_IP_Private.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_Sockets.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_Stream_Buffer.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_TCP_IP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_TCP_WIN.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOS_UDP_IP.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOSIPConfig.h
+        libraries/sdk/common/src/ethstack/include/FreeRTOSIPConfigDefaults.h
+        libraries/sdk/common/src/ethstack/include/IPTraceMacroDefaults.h
+        libraries/sdk/common/src/ethstack/include/NetworkBufferManagement.h
+        libraries/sdk/common/src/ethstack/include/NetworkInterface.h
+        libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_1.c
+        libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_2.c
+        libraries/sdk/common/src/ethstack/portable/Compiler/GCC/pack_struct_end.h
+        libraries/sdk/common/src/ethstack/portable/Compiler/GCC/pack_struct_start.h
+        libraries/sdk/common/src/ethstack/portable/Compiler/GHS/pack_struct_end.h
+        libraries/sdk/common/src/ethstack/portable/Compiler/GHS/pack_struct_start.h
+        libraries/sdk/common/src/ethstack/portable/Compiler/IAR/pack_struct_end.h
+        libraries/sdk/common/src/ethstack/portable/Compiler/IAR/pack_struct_start.h
+        libraries/sdk/common/src/ethstack/portable/NetworkInterface/Common/phyHandling.c
+        libraries/sdk/common/src/ethstack/portable/NetworkInterface/include/phyHandling.h
+        libraries/sdk/common/src/ethstack/portable/NetworkInterface/Traveo_T2G/NetworkInterface.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_ARP.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_DHCP.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_DNS.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_IP.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_Sockets.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_Stream_Buffer.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_TCP_IP.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_TCP_WIN.c
+        libraries/sdk/common/src/ethstack/FreeRTOS_UDP_IP.c
+        libraries/sdk/common/src/mcalstubs/CanIf_Cbk.c
+        libraries/sdk/common/src/mcalstubs/CanIf_Cbk.h
+        libraries/sdk/common/src/mcalstubs/CanIf_MemMap.h
+        libraries/sdk/common/src/mcalstubs/Dem.h
+        libraries/sdk/common/src/mcalstubs/Dem_MemMap.h
+        libraries/sdk/common/src/mcalstubs/Dem_ReportErrorStatus.c
+        libraries/sdk/common/src/mcalstubs/Det.h
+        libraries/sdk/common/src/mcalstubs/Det_MemMap.h
+        libraries/sdk/common/src/mcalstubs/Det_ReportError.c
+        libraries/sdk/common/src/mcalstubs/Det_ReportRuntimeError.c
+        libraries/sdk/common/src/mcalstubs/EcuM.h
+        libraries/sdk/common/src/mcalstubs/EcuM_Cbk.c
+        libraries/sdk/common/src/mcalstubs/EcuM_Cbk.h
+        libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.c
+        libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.h
+        libraries/sdk/common/src/mcalstubs/Interrupts_DisableRestore.h
+        libraries/sdk/common/src/mcalstubs/LinIf_Cbk.c
+        libraries/sdk/common/src/mcalstubs/LinIf_Cbk.h
+        libraries/sdk/common/src/mcalstubs/MemIf_Types.h
+        libraries/sdk/common/src/mcalstubs/Os.c
+        libraries/sdk/common/src/mcalstubs/Os.h
+        libraries/sdk/common/src/mcalstubs/Os_MemMap.h
+        libraries/sdk/common/src/mcalstubs/SchM_Adc.c
+        libraries/sdk/common/src/mcalstubs/SchM_Adc.h
+        libraries/sdk/common/src/mcalstubs/SchM_Can.c
+        libraries/sdk/common/src/mcalstubs/SchM_Can.h
+        libraries/sdk/common/src/mcalstubs/SchM_Common.h
+        libraries/sdk/common/src/mcalstubs/SchM_CorTst.c
+        libraries/sdk/common/src/mcalstubs/SchM_CorTst.h
+        libraries/sdk/common/src/mcalstubs/SchM_Dio.c
+        libraries/sdk/common/src/mcalstubs/SchM_Dio.h
+        libraries/sdk/common/src/mcalstubs/SchM_Fee.c
+        libraries/sdk/common/src/mcalstubs/SchM_Fee.h
+        libraries/sdk/common/src/mcalstubs/SchM_Fls.c
+        libraries/sdk/common/src/mcalstubs/SchM_Fls.h
+        libraries/sdk/common/src/mcalstubs/SchM_FlsTst.c
+        libraries/sdk/common/src/mcalstubs/SchM_FlsTst.h
+        libraries/sdk/common/src/mcalstubs/SchM_Gpt.c
+        libraries/sdk/common/src/mcalstubs/SchM_Gpt.h
+        libraries/sdk/common/src/mcalstubs/SchM_Icu.c
+        libraries/sdk/common/src/mcalstubs/SchM_Icu.h
+        libraries/sdk/common/src/mcalstubs/SchM_Lin.c
+        libraries/sdk/common/src/mcalstubs/SchM_Lin.h
+        libraries/sdk/common/src/mcalstubs/SchM_Mcu.c
+        libraries/sdk/common/src/mcalstubs/SchM_Mcu.h
+        libraries/sdk/common/src/mcalstubs/SchM_MemMap.h
+        libraries/sdk/common/src/mcalstubs/SchM_Ocu.c
+        libraries/sdk/common/src/mcalstubs/SchM_Ocu.h
+        libraries/sdk/common/src/mcalstubs/SchM_Port.c
+        libraries/sdk/common/src/mcalstubs/SchM_Port.h
+        libraries/sdk/common/src/mcalstubs/SchM_Pwm.c
+        libraries/sdk/common/src/mcalstubs/SchM_Pwm.h
+        libraries/sdk/common/src/mcalstubs/SchM_RamTst.c
+        libraries/sdk/common/src/mcalstubs/SchM_RamTst.h
+        libraries/sdk/common/src/mcalstubs/SchM_Spi.c
+        libraries/sdk/common/src/mcalstubs/SchM_Spi.h
+        libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.c
+        libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.h
+        libraries/sdk/common/src/mcalstubs/WdgIf_Types.h
+        libraries/sdk/common/src/mw/aic261/cy_aic261.c
+        libraries/sdk/common/src/mw/aic261/cy_aic261.h
+        libraries/sdk/common/src/mw/button/cy_button.c
+        libraries/sdk/common/src/mw/button/cy_button.h
+        libraries/sdk/common/src/mw/flash/cy_mw_flash.c
+        libraries/sdk/common/src/mw/flash/cy_mw_flash.h
+        libraries/sdk/common/src/mw/semihosting/cy_semihosting.c
+        libraries/sdk/common/src/mw/semihosting/cy_semihosting.h
+        libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.c
+        libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.h
+        libraries/sdk/common/src/rtos/include/atomic.h
+        libraries/sdk/common/src/rtos/include/croutine.h
+        libraries/sdk/common/src/rtos/include/deprecated_definitions.h
+        libraries/sdk/common/src/rtos/include/event_groups.h
+        libraries/sdk/common/src/rtos/include/FreeRTOS.h
+        libraries/sdk/common/src/rtos/include/FreeRTOSConfig.h
+        libraries/sdk/common/src/rtos/include/list.h
+        libraries/sdk/common/src/rtos/include/message_buffer.h
+        libraries/sdk/common/src/rtos/include/mpu_prototypes.h
+        libraries/sdk/common/src/rtos/include/mpu_wrappers.h
+        libraries/sdk/common/src/rtos/include/portable.h
+        libraries/sdk/common/src/rtos/include/projdefs.h
+        libraries/sdk/common/src/rtos/include/queue.h
+        libraries/sdk/common/src/rtos/include/semphr.h
+        libraries/sdk/common/src/rtos/include/stack_macros.h
+        libraries/sdk/common/src/rtos/include/StackMacros.h
+        libraries/sdk/common/src/rtos/include/stream_buffer.h
+        libraries/sdk/common/src/rtos/include/task.h
+        libraries/sdk/common/src/rtos/include/timers.h
+        libraries/sdk/common/src/rtos/portable/Common/mpu_wrappers.c
+        libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/port.c
+        libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/portmacro.h
+        libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/port.c
+        libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/portmacro.h
+        libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/port.c
+        libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/portmacro.h
+        libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c
+        libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/portmacro.h
+        libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/port.c
+        libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/portmacro.h
+        libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/port.c
+        libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/portmacro.h
+        libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/port.c
+        libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/portmacro.h
+        libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/port.c
+        libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/portmacro.h
+        libraries/sdk/common/src/rtos/portable/MemMang/heap_1.c
+        libraries/sdk/common/src/rtos/portable/MemMang/heap_2.c
+        libraries/sdk/common/src/rtos/portable/MemMang/heap_3.c
+        libraries/sdk/common/src/rtos/portable/MemMang/heap_4.c
+        libraries/sdk/common/src/rtos/portable/MemMang/heap_5.c
+        libraries/sdk/common/src/rtos/croutine.c
+        libraries/sdk/common/src/rtos/event_groups.c
+        libraries/sdk/common/src/rtos/list.c
+        libraries/sdk/common/src/rtos/queue.c
+        libraries/sdk/common/src/rtos/stream_buffer.c
+        libraries/sdk/common/src/rtos/tasks.c
+        libraries/sdk/common/src/rtos/timers.c
+        libraries/sdk/common/src/startup/startup.c
+        libraries/sdk/common/src/startup/startup_customize.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_backup_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_canfd.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_coredefines.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_cpuss.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_crypto.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_dmac.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_dw.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_efuse_data_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_efuse_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_eth_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_evtgen.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_fault.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_flashc.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_gpio_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_headers.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_hsiom_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_i2s_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_ipc.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_lin.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_pass.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_peri_ms_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_peri_pclk_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_peri_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_prot.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_scb_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_sdhc.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_sflash_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_smartio_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_smif_v2.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_srss_v3.h
+        libraries/sdk/tviibh4m/hdr/ip/cyip_tcpwm_v2.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_backup.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_canfd.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_cpuss.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_crypto.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_dmac.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_dw.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_efuse.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_efuse_data.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_eth.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_evtgen.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_fault.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_flashc.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_gpio.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_hsiom.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_i2s.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_ipc.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_lin.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_pass.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_peri.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_peri_ms.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_peri_pclk.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_prot.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_scb.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_sdhc.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_sflash.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_smartio.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_smif.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_srss.h
+        libraries/sdk/tviibh4m/hdr/mcureg/cyreg_tcpwm.h
+        libraries/sdk/tviibh4m/hdr/mcureg/mcureg.h
+        libraries/sdk/tviibh4m/hdr/bb_bsp_tviibh4m.h
+        libraries/sdk/tviibh4m/hdr/bb_bsp_tviibh4m_revb.h
+        libraries/sdk/tviibh4m/hdr/cy_device_headers.h
+        libraries/sdk/tviibh4m/hdr/cyt4bb7cee.h
+        libraries/sdk/tviibh4m/hdr/cyt4bb_config.h
+        libraries/sdk/tviibh4m/hdr/gpio_cyt4bb_144_teqfp.h
+        libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.c
+        libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.h
+        libraries/sdk/tviibh4m/src/drivers/canfd/cy_canfd_config.h
+        libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.c
+        libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cdn_errno.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cdn_stdint.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cedi.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cps_v2.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.c
+        libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/edd.c
+        libraries/sdk/tviibh4m/src/drivers/ethernet/edd_int.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/edd_rx.c
+        libraries/sdk/tviibh4m/src/drivers/ethernet/edd_tx.c
+        libraries/sdk/tviibh4m/src/drivers/ethernet/emac_regs.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/emac_regs_macro.h
+        libraries/sdk/tviibh4m/src/drivers/ethernet/log.h
+        libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.c
+        libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.h
+        libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.c
+        libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.h
+        libraries/sdk/tviibh4m/src/drivers/sysflt/cy_sysflt_config.h
+        libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.c
+        libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.h
+        libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map.c
+        libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map_cm0plus.h
+        libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map_cm7_0.h
+        libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map_cm7_1.h
+        libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.c
+        libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.h
+        libraries/sdk/tviibh4m/src/mw/power/cy_power.c
+        libraries/sdk/tviibh4m/src/mw/power/cy_power.h
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.c
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.h
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.c
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.h
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.c
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.h
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.c
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.h
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.c
+        libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.h
+        libraries/sdk/tviibh4m/src/system/system_cyt4bb.h
+        libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm0plus.c
+        libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm7.c
+        libraries/sdk/tviibh4m/src/main_cm0plus.c
+        libraries/sdk/tviibh4m/src/main_cm7_0.c
+        libraries/sdk/tviibh4m/src/main_cm7_1.c
+        libraries/zf_common/zf_common_clock.c
+        libraries/zf_common/zf_common_clock.h
+        libraries/zf_common/zf_common_debug.c
+        libraries/zf_common/zf_common_debug.h
+        libraries/zf_common/zf_common_fifo.c
+        libraries/zf_common/zf_common_fifo.h
+        libraries/zf_common/zf_common_font.c
+        libraries/zf_common/zf_common_font.h
+        libraries/zf_common/zf_common_function.c
+        libraries/zf_common/zf_common_function.h
+        libraries/zf_common/zf_common_headfile.h
+        libraries/zf_common/zf_common_interrupt.c
+        libraries/zf_common/zf_common_interrupt.h
+        libraries/zf_common/zf_common_typedef.h
+        libraries/zf_components/seekfree_assistant.c
+        libraries/zf_components/seekfree_assistant.h
+        libraries/zf_components/seekfree_assistant_interface.c
+        libraries/zf_components/seekfree_assistant_interface.h
+        libraries/zf_device/zf_device_absolute_encoder.c
+        libraries/zf_device/zf_device_absolute_encoder.h
+        libraries/zf_device/zf_device_bluetooth_ch9141.c
+        libraries/zf_device/zf_device_bluetooth_ch9141.h
+        libraries/zf_device/zf_device_config.h
+        libraries/zf_device/zf_device_dl1a.c
+        libraries/zf_device/zf_device_dl1a.h
+        libraries/zf_device/zf_device_dl1b.c
+        libraries/zf_device/zf_device_dl1b.h
+        libraries/zf_device/zf_device_gnss.c
+        libraries/zf_device/zf_device_gnss.h
+        libraries/zf_device/zf_device_icm20602.c
+        libraries/zf_device/zf_device_icm20602.h
+        libraries/zf_device/zf_device_imu660ra.c
+        libraries/zf_device/zf_device_imu660ra.h
+        libraries/zf_device/zf_device_imu963ra.c
+        libraries/zf_device/zf_device_imu963ra.h
+        libraries/zf_device/zf_device_ips114.c
+        libraries/zf_device/zf_device_ips114.h
+        libraries/zf_device/zf_device_ips200.c
+        libraries/zf_device/zf_device_ips200.h
+        libraries/zf_device/zf_device_key.c
+        libraries/zf_device/zf_device_key.h
+        libraries/zf_device/zf_device_mpu6050.c
+        libraries/zf_device/zf_device_mpu6050.h
+        libraries/zf_device/zf_device_oled.c
+        libraries/zf_device/zf_device_oled.h
+        libraries/zf_device/zf_device_tft180.c
+        libraries/zf_device/zf_device_tft180.h
+        libraries/zf_device/zf_device_tsl1401.c
+        libraries/zf_device/zf_device_tsl1401.h
+        libraries/zf_device/zf_device_type.c
+        libraries/zf_device/zf_device_type.h
+        libraries/zf_device/zf_device_uart_receiver.c
+        libraries/zf_device/zf_device_uart_receiver.h
+        libraries/zf_device/zf_device_virtual_oscilloscope.c
+        libraries/zf_device/zf_device_virtual_oscilloscope.h
+        libraries/zf_device/zf_device_wifi_spi.c
+        libraries/zf_device/zf_device_wifi_spi.h
+        libraries/zf_device/zf_device_wifi_uart.c
+        libraries/zf_device/zf_device_wifi_uart.h
+        libraries/zf_device/zf_device_wireless_uart.c
+        libraries/zf_device/zf_device_wireless_uart.h
+        libraries/zf_driver/zf_driver_adc.c
+        libraries/zf_driver/zf_driver_adc.h
+        libraries/zf_driver/zf_driver_delay.c
+        libraries/zf_driver/zf_driver_delay.h
+        libraries/zf_driver/zf_driver_dma.c
+        libraries/zf_driver/zf_driver_dma.h
+        libraries/zf_driver/zf_driver_encoder.c
+        libraries/zf_driver/zf_driver_encoder.h
+        libraries/zf_driver/zf_driver_exti.c
+        libraries/zf_driver/zf_driver_exti.h
+        libraries/zf_driver/zf_driver_flash.c
+        libraries/zf_driver/zf_driver_flash.h
+        libraries/zf_driver/zf_driver_gpio.c
+        libraries/zf_driver/zf_driver_gpio.h
+        libraries/zf_driver/zf_driver_ipc.c
+        libraries/zf_driver/zf_driver_ipc.h
+        libraries/zf_driver/zf_driver_pit.c
+        libraries/zf_driver/zf_driver_pit.h
+        libraries/zf_driver/zf_driver_pwm.c
+        libraries/zf_driver/zf_driver_pwm.h
+        libraries/zf_driver/zf_driver_soft_iic.c
+        libraries/zf_driver/zf_driver_soft_iic.h
+        libraries/zf_driver/zf_driver_soft_spi.c
+        libraries/zf_driver/zf_driver_soft_spi.h
+        libraries/zf_driver/zf_driver_spi.c
+        libraries/zf_driver/zf_driver_spi.h
+        libraries/zf_driver/zf_driver_timer.c
+        libraries/zf_driver/zf_driver_timer.h
+        libraries/zf_driver/zf_driver_uart.c
+        libraries/zf_driver/zf_driver_uart.h
+        project/code/A_Master_ctrl.h
+        project/code/Algorithm.c
+        project/code/Algorithm.h
+        project/code/Common_Peripherals.c
+        project/code/Common_Peripherals.h
+        project/code/GL_CRC.c
+        project/code/GL_CRC.h
+        project/code/GPS.c
+        project/code/GPS.h
+        project/code/IMU.c
+        project/code/IMU.h
+        project/code/motor.c
+        project/code/motor.h
+        project/code/position_calculation.c
+        project/code/position_calculation.h
+        project/code/voice.c
+        project/code/voice.h
+        project/user/cm0plus_isr.c
+        project/user/cm7_0_isr.c
+        project/user/cm7_1_isr.c
+        project/user/main_cm0plus.c
+        project/user/main_cm7_0.c
+        project/user/main_cm7_1.c)

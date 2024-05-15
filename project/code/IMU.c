@@ -34,7 +34,7 @@ float IMU_gyro_Offset_Init()
     Gyro_Offset.Xdata = 0;
     Gyro_Offset.Ydata = 0;
     Gyro_Offset.Zdata = 0;
-    for (uint16_t i = 0; i < 1000; i++)
+    for (uint16 i = 0 ; i < 1000; i++)
     {
 //        Gyro_Offset.Xdata += imu660ra_gyro_x;
 //        Gyro_Offset.Ydata += imu660ra_gyro_y;

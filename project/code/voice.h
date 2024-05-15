@@ -24,10 +24,10 @@
 
 
 
-#define ADC0          (P06_0)
-#define ADC1          (P06_1)
-#define ADC2          (P06_2)
-#define ADC3          (P06_3)
+#define ADC0          (ADC0_CH00_P06_0)
+#define ADC1          (ADC0_CH01_P06_1)
+#define ADC2          (ADC0_CH02_P06_2)
+#define ADC3          (ADC0_CH03_P06_3)
 
 /*
  * Ð¡³µ½Ç¶È

@@ -11,7 +11,7 @@ int Distance_FLAG=0;        //距离切换标志位
 int Angle_FLAG=0;           //角度切换标志位
 int IMU_suppression_FLAG=1; //IMU抑制开启标志位
 int16 SPEED_Value=0;        //目标速度
-
+int j;
 
 
 
@@ -38,3 +38,9 @@ float  PD_YAW=0;
         
         PS：如果在正后方+-60°就倒车
             同样采取以上方法计算所需转向角度，但反向转向*/
+
+void turn_angle()
+{
+    float car_target_angle;
+    car_target_angle = get_two_points_azimuth(gnss.latitude,gnss.longitude,GPS_GET_LAT[j],GPS_GET_LOT[j]);
+}

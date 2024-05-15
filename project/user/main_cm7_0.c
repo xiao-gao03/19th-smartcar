@@ -45,62 +45,19 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 
 // **************************** 代码区域 ****************************
-#define UART_LED                    (P19_0)                                         // 单排排针 SPI 两寸屏 这里宏定义填写 IPS200_TYPE_SPI
-
 
 int main(void)
 {
-    clock_init(SYSTEM_CLOCK_250M); 	// 时钟配置及系统初始化<务必保留>
-    debug_info_init();                  // 调试串口信息初始化
-		ALL_Init();
-		gpio_init(UART_LED, GPO, GPIO_HIGH, GPO_PUSH_PULL);                             // 初始化 LED1 输出 默认高电平 推挽输出模式
+  clock_init(SYSTEM_CLOCK_250M); 	// 时钟配置及系统初始化<务必保留>
+  debug_info_init();                  // 调试串口信息初始化
+  gnss_init(TAU1201);
 
-
-  #if ISR_Start_FLAG
   
-    pit_ms_init(PIT_CH0, 100);                            // GPS数据解析中断/霍尔编码器中断
-    pit_ms_init(PIT_CH1, 7);                              // 舵机
+  // 此处编写用户代码 例如外设初始化代码等
+  while (true)
+  {
 
-  #endif
-    // 此处编写用户代码 例如外设初始化代码等
-  Buzzer_check(200,200);                                  // 自检完成
-		
-
-    
-    // 此处编写用户代码 例如外设初始化代码等
-    while (true)
-    {
-
-        #if Main_FLAG
-                         if(x6f_out[0]<135) {Ctrl_GO_FLAG=1;}//控制发车标志位
-
-                         if(GO_FLAG==1)
-                           {
-
-                             if(Ctrl_GO_FLAG==1&&Control_FLAG==1) {Follow_Track();}//核心循迹程序
-                             if(x6f_out[2]>165&&x6f_out[2]<175)//有控模式
-                             {
-                                  Control_FLAG=0;
-                                  Control_Program();//控制程序
-                             }
-                           }
-
-                         if(STOP_MENU_FALG){Menu();}//菜单
-        #endif
-
-                         GL_CRC();
-
-                         if(GL_IMU_Flag==1) {Follow_Track();}//核心循迹程序
-                        //  if(x6f_out[2]>165&&x6f_out[2]<175)//有控模式
-                        //  {
-                        //       Control_FLAG=0;
-                        //       GL_IMU_Flag=0;
-                        //       //Control_Program();//控制程序
-                        //  }
-
-
-
-    }
+  }
 }
 
 // **************************** 代码区域 ****************************

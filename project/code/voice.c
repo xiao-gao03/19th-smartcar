@@ -27,7 +27,7 @@
 
 
 
-#include <Main.h>
+#include "math.h"
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -101,12 +101,13 @@ float g_Angle   = 0;
   */
 void VoiceInit(void)
 {
-	adc_init(ADC0, 1000000); //初始化
-	adc_init(ADC1, 1000000); //初始化
-	adc_init(ADC2, 1000000); //初始化
-	adc_init(ADC3, 1000000); //初始化
-//TODO:修改为PIT中断
-	CCU6_InitConfig(CCU60, CCU6_Channel0, 100);  //100us进入一次中断  中断中采集adc数据
+	
+	adc_init(ADC0, ADC_12BIT); //初始化
+	adc_init(ADC1, ADC_12BIT); //初始化
+	adc_init(ADC2, ADC_12BIT); //初始化
+	adc_init(ADC3, ADC_12BIT); //初始化
+
+	pit_us_init(PIT_CH2, 100);  //100us进入一次中断  中断中采集adc数据
 
 }
 
@@ -147,15 +148,10 @@ void VoiceGetSample(void)
 
 	if(AdcFinishFlag == 0)
 	{
-//		g_adc1Data[adcIndex][adcCount] = ADC_ReadAverage(ADC1, 3);
-//		g_adc2Data[adcIndex][adcCount] = ADC_ReadAverage(ADC2, 3);
-//		g_adc3Data[adcIndex][adcCount] = ADC_ReadAverage(ADC3, 3);
-//		g_adc0Data[adcIndex][adcCount] = ADC_ReadAverage(ADC0, 3);
-
 		g_adc0Data[adcIndex][adcCount] = adc_convert(ADC0);
 		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC1);
-		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC2);
-		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC3);
+		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC3);
+		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC2);
 
 		adcCount++;
 	}
@@ -337,130 +333,94 @@ void VoiceProcess(void)
 
 	if(AdcFinishFlag)
 	{
+		//char txt[32];
+
+		/* 存放相关峰值下标 */
+		int16_t acorIndex[4];
+
+		/* 记录时间 */
+		//uint32_t nowTime = STM_GetNowUs(STM0);
+
 		/* 数据处理    */
 		Normal((int16_t *)g_adc0Data[AdcBuffIndex], ADC_DATA_LEN);
 		Normal((int16_t *)g_adc1Data[AdcBuffIndex], ADC_DATA_LEN);
 		Normal((int16_t *)g_adc2Data[AdcBuffIndex], ADC_DATA_LEN);
 		Normal((int16_t *)g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
 
-		for(int i = 0; i < ADC_DATA_LEN; i ++)
+		/* 互相关 */
+       Xcorr((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], (int16_t *)&g_adc0Data[AdcBuffIndex], (int16_t *)&g_adc1Data[AdcBuffIndex], (int16_t *)&g_adc2Data[AdcBuffIndex], (int16_t *)&g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
+
+		/** 获取最大相关峰值  */
+		SeekMaxAcor((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], 30, acorIndex);
+
+		/* 四组相关数据 最大最小结果下标 */
+		uint8_t IndexMax = 0, IndexMin = 0;
+
+		/** 找到绝对值最小和最大的值下标 */
+		for(uint8_t i = 1; i < 4; i++)
 		{
-          /* 上报匿名上位机  看原始数据波形 */
-			ANO_DT_send_int16(g_adc0Data[AdcBuffIndex][i], g_adc1Data[AdcBuffIndex][i], g_adc2Data[AdcBuffIndex][i], g_adc3Data[AdcBuffIndex][i], 0, 0, 0, 0);
+			if(abs(acorIndex[i]) >= abs(acorIndex[IndexMax]))
+			{
+				IndexMax = i;
+			}
+			if(abs(acorIndex[i]) <= abs(acorIndex[IndexMin]))
+			{
+				IndexMin = i;
+			}
 		}
 
+		/* 判断大致方位 */
+		if(IndexMin == 0)
+		{
+			if(acorIndex[1] > 0)
+			{
+				g_Angle = 0;
+			}
+			else
+			{
+				g_Angle = 180;
+			}
+		}
+
+		else if(IndexMin == 1)
+		{
+			if(acorIndex[0] > 0)
+			{
+				g_Angle = 270;
+			}
+			else
+			{
+				g_Angle = 90;
+			}
+		}
+
+		else if(IndexMin == 2)
+		{
+			if(acorIndex[3] > 0)
+			{
+				g_Angle = 45;
+			}
+			else
+			{
+				g_Angle = 225;
+			}
+		}
+
+		else if(IndexMin == 3)
+		{
+			if(acorIndex[2] > 0)
+			{
+				g_Angle = 315;
+			}
+			else
+			{
+				g_Angle = 135;
+			}
+		}
+
+			printf("angle: %-5.2f\n", g_Angle);             //显示角度信息
+			
 		AdcFinishFlag = 0;
 	}
-
-
-//	if(AdcFinishFlag)
-//	{
-//		char txt[32];
-//
-//		/* 存放相关峰值下标 */
-//		int16_t acorIndex[4];
-//
-//		/* 记录时间 */
-//		uint32_t nowTime = STM_GetNowUs(STM0);
-//
-//		/* 数据处理    */
-//		Normal((int16_t *)g_adc0Data[AdcBuffIndex], ADC_DATA_LEN);
-//		Normal((int16_t *)g_adc1Data[AdcBuffIndex], ADC_DATA_LEN);
-//		Normal((int16_t *)g_adc2Data[AdcBuffIndex], ADC_DATA_LEN);
-//		Normal((int16_t *)g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
-//
-//		/* 互相关 */
-//        Xcorr((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], (int16_t *)&g_adc0Data[AdcBuffIndex], (int16_t *)&g_adc1Data[AdcBuffIndex], (int16_t *)&g_adc2Data[AdcBuffIndex], (int16_t *)&g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
-//
-//		/** 获取最大相关峰值  */
-//		SeekMaxAcor((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], 30, acorIndex);
-//
-//		/* 四组相关数据 最大最小结果下标 */
-//		uint8_t IndexMax = 0, IndexMin = 0;
-//
-//		/** 找到绝对值最小和最大的值下标 */
-//		for(uint8_t i = 1; i < 4; i++)
-//		{
-//			if(abs(acorIndex[i]) >= abs(acorIndex[IndexMax]))
-//			{
-//				IndexMax = i;
-//			}
-//			if(abs(acorIndex[i]) <= abs(acorIndex[IndexMin]))
-//			{
-//				IndexMin = i;
-//			}
-//		}
-//
-//		/* 判断大致方位 */
-//		if(IndexMin == 0)
-//		{
-//			if(acorIndex[1] > 0)
-//			{
-//				g_Angle = 0;
-//			}
-//			else
-//			{
-//				g_Angle = 180;
-//			}
-//		}
-//
-//		else if(IndexMin == 1)
-//		{
-//			if(acorIndex[0] > 0)
-//			{
-//				g_Angle = 270;
-//			}
-//			else
-//			{
-//				g_Angle = 90;
-//			}
-//		}
-//
-//		else if(IndexMin == 2)
-//		{
-//			if(acorIndex[3] > 0)
-//			{
-//				g_Angle = 45;
-//			}
-//			else
-//			{
-//				g_Angle = 225;
-//			}
-//		}
-//
-//		else if(IndexMin == 3)
-//		{
-//			if(acorIndex[2] > 0)
-//			{
-//				g_Angle = 315;
-//			}
-//			else
-//			{
-//				g_Angle = 135;
-//			}
-//		}
-//
-//
-//		nowTime = STM_GetNowUs(STM0) - nowTime;
-//
-//		if(IfxCpu_acquireMutex(&mutexTFTIsOk))
-//		{
-//			/* 显示距离 */
-//			sprintf(txt, "%-3d %-3d %-3d %-3d", acorIndex[0], acorIndex[1], acorIndex[2], acorIndex[3]);
-//			TFTSPI_P8X16Str(0, 2, txt, u16WHITE, u16BLUE);		//字符串显示
-//
-//
-//			sprintf(txt, "index: % 5d", nowTime);               //显示运算时间
-//			TFTSPI_P8X16Str(0, 6, txt, u16WHITE, u16BLUE);		//字符串显示
-//
-//			sprintf(txt, "angle: %-5.2f", g_Angle);             //显示角度信息
-//			TFTSPI_P8X16Str(0, 4, txt, u16WHITE, u16BLUE);		//字符串显示
-//
-//			IfxCpu_releaseMutex(&mutexTFTIsOk);
-//		}
-//
-//
-//		AdcFinishFlag = 0;
-//	}
 }
 

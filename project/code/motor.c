@@ -20,15 +20,15 @@ void motor_init()
 //电机运行，设置PWM占空比duty
 void motor_run(int16 speed)
 {
-    int duty = speed * (PWM_DUTY_MAX / 100);
-    if(duty>=0)//正转
+    //int duty = speed * (PWM_DUTY_MAX / 100);
+    if(speed>=0)//正转
     {
-        pwm_set_duty(PWM_CH1, duty);
+        pwm_set_duty(PWM_CH1, speed * (PWM_DUTY_MAX / 100));
         gpio_set_level(DIR_CH1,1);
     }
     else             //反转
     {
-        pwm_set_duty(PWM_CH1, -duty);
+        pwm_set_duty(PWM_CH1, -speed * (PWM_DUTY_MAX / 100));
         gpio_set_level(DIR_CH1,0);
     }
 }

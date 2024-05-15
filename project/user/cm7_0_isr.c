@@ -69,6 +69,8 @@ void pit0_ch2_isr()
 {
     pit_isr_flag_clear(PIT_CH2);
 	
+    VoiceGetSample();
+
 	key_scan();  //°´¼üÉ¨Ãè
 	
 	

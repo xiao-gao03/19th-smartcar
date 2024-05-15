@@ -56,8 +56,13 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "C_Cpp.errorSquiggles": "Disabled",
+  "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
-    "zf_common_headfile.h": "c"
-  }
+    "zf_common_headfile.h": "c",
+    "limits": "c",
+    "*.tcc": "c",
+    "cmath": "c",
+    "typeinfo": "c"
+  },
+  "files.encoding": "gbk"
 }

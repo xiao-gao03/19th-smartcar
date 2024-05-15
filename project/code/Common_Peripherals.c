@@ -117,8 +117,8 @@ float Steer_Value=SERVO_MOTOR_MID;
 
 void Steer_init()//舵机初始化
 {
-    pwm_init(SERVO_MOTOR_PWM, SERVO_MOTOR_FREQ, (uint32)SERVO_MOTOR_DUTY(SERVO_MOTOR_MID));
-    PidInit(&PID_Init);
+    pwm_init(SERVO_MOTOR_PWM, SERVO_MOTOR_FREQ, (uint32)SERVO_MOTOR_DUTY(95));
+    //PidInit(&PID_Init);
 }
 
 void Steer_set(int angle)//舵机驱动
