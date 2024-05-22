@@ -107,7 +107,7 @@ void VoiceInit(void)
 	adc_init(ADC2, ADC_12BIT); //初始化
 	adc_init(ADC3, ADC_12BIT); //初始化
 
-	pit_us_init(PIT_CH2, 100);  //100us进入一次中断  中断中采集adc数据
+	//pit_us_init(PIT_CH2, 100);  //100us进入一次中断  中断中采集adc数据
 
 }
 

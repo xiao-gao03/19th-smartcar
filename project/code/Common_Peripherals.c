@@ -1,29 +1,16 @@
 #include "zf_common_headfile.h"
 
-void ALL_Init()
-{
-	gnss_init(TAU1201);
-	Buzzer_init();
-    Key_init();
-	IMU_init();
-    Steer_init();
-    motor_init();
-    HALL_init();
-    
-}
 
 //===================================================蜂鸣器===================================================
 void Buzzer_init()//蜂鸣器初始化
 {
-    gpio_init(BUZZER_PIN, GPO, 0, GPO_PUSH_PULL); 
+    gpio_init(BUZZER_PIN, GPO, 0, GPO_PUSH_PULL);
+    gpio_set_level(BUZZER_PIN,0);
+    system_delay_ms(50);
+    gpio_set_level(BUZZER_PIN,1);
 }
 
-void Buzzer_check(int time1,int time2)//蜂鸣器的自检函数
-{
-    gpio_set_level(BUZZER_PIN,1);
-    system_delay_ms(time2);
-    gpio_set_level(BUZZER_PIN,0);
-}
+
 
 
 //===================================================按键与LED===================================================
@@ -81,8 +68,6 @@ void Key_init()//按键与LED初始化
 
 void key_scan()//按键扫描
     {
-
-
         //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
 
         //保存按键状态
@@ -97,7 +82,6 @@ void key_scan()//按键扫描
         key3_state = gpio_get_level(KEY3);
         key4_state = gpio_get_level(KEY4);
 
-
         //检测到按键按下之后  并放开置位标志位
         if(key1_state && !key1_state_last)   {key1_flag = 1;}
         if(key2_state && !key2_state_last)   {key2_flag = 1;}
@@ -105,8 +89,6 @@ void key_scan()//按键扫描
         if(key4_state && !key4_state_last)   {key4_flag = 1;}
 
         //标志位置位之后，可以使用标志位执行自己想要做的事件
-
-//        system_delay_ms(10);//延时，按键程序应该保证调用时间不小于10ms
 
     }
 
@@ -117,8 +99,8 @@ float Steer_Value=SERVO_MOTOR_MID;
 
 void Steer_init()//舵机初始化
 {
-    pwm_init(SERVO_MOTOR_PWM, SERVO_MOTOR_FREQ, (uint32)SERVO_MOTOR_DUTY(95));
-    //PidInit(&PID_Init);
+    pwm_init(SERVO_MOTOR_PWM, SERVO_MOTOR_FREQ, (uint32)SERVO_MOTOR_DUTY(80));
+    PidInit(&PID_Init);
 }
 
 void Steer_set(int angle)//舵机驱动
@@ -126,7 +108,6 @@ void Steer_set(int angle)//舵机驱动
     if(angle<SERVO_MOTOR_LMAX){angle=SERVO_MOTOR_LMAX;}
     if(angle>SERVO_MOTOR_RMAX){angle=SERVO_MOTOR_RMAX;}
     pwm_set_duty(SERVO_MOTOR_PWM, (uint32)SERVO_MOTOR_DUTY(angle));
-
 }
 
 /*TODO:添加舵机转向模块代码，需搭配硅麦，gps，陀螺仪的角度计算*/

@@ -217,7 +217,7 @@ void encoder_quad_init (encoder_index_enum encoder_n, encoder_channel1_enum ch1_
 //  参数说明      ch1_pin         设置计数引脚
 //  参数说明      ch2_pin         设置方向引脚
 //  返回参数      void
-//  使用示例      encoder_dir_init(TC_CH7_ENCODER, TC_CH7_ENCODER_CH1_P7_6, TC_CH7_ENCODER_CH2_P7_7);// 使用TCPWM定时器   P7_6引脚进行计数    计数方向使用P7_7引脚
+//  使用示例      encoder_dir_init(TC_CH7_ENCODER, TC_CH7_ENCODER_CH1_P7_6, TC_CH7_ENCODER_CH2_P7_7);// 使用TCPWM定时器   P7_6引脚进行计数        
 //  备注信息      
 //-------------------------------------------------------------------------------------------------------------------
 void encoder_dir_init (encoder_index_enum encoder_n, encoder_channel1_enum count_pin, encoder_channel2_enum dir_pin)

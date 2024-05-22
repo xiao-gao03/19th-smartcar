@@ -1,43 +1,5 @@
 #include "zf_common_headfile.h"
 
-
-
-
-
-
-int       GL_Point=40;
-int       GL_NUM=0;
-int       i=0;
-double    GPS_GET_LAT[40];//维度数组
-double    GPS_GET_LOT[40];//精度数组
-
-
-
-void GPS_GL_GET()  //获取目标点
-{
-
-            GPS_GET_LAT[i]=gnss.latitude;
-            GPS_GET_LOT[i]=gnss.longitude;
-
-            printf("\r\n缓冲区纬度数据:%f", GPS_GET_LAT[i]);
-
-            printf("\r\n缓冲区经度数据:%f",GPS_GET_LOT[i]);
-
-            i++;
-            GL_NUM++;
-
-
-
-
-              if(GL_NUM>40)                                                               //如果采集点次数大于规定次数的最大值，则让他等于1
-                  {
-                  GL_NUM=1;
-                  }
-
-
-
-}
-
 //TODO：修改发车代码，了解一下如何发车，信标控制器发车 or 手动发车
 void GL_CRC()    //发车！
 {

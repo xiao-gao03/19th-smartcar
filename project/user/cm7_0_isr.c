@@ -39,15 +39,15 @@
 void pit0_ch0_isr()
 {
     pit_isr_flag_clear(PIT_CH0);
-    imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
 
-		if( gyro_Offset_flag==1)
-	{
-			imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
-			IMU_YAW_integral();           //积分出角度值
-
-	}
-	
+    IMU_getangle(&yaw);
+//		if( gyro_Offset_flag==1)
+//	{
+//			imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
+//			IMU_YAW_integral();           //积分出角度值
+//
+//	}
+    key_scan();  //按键扫描
 	
 }
 
@@ -69,9 +69,9 @@ void pit0_ch2_isr()
 {
     pit_isr_flag_clear(PIT_CH2);
 	
-    VoiceGetSample();
+    VoiceGetSample();       //硅麦adc采集信息
+    VoiceProcess();         //硅麦处理信息获取角度g——angle
 
-	key_scan();  //按键扫描
 	
 	
 }
@@ -308,14 +308,14 @@ void uart1_isr (void)
         Cy_SCB_ClearRxInterrupt(get_scb_module(UART_1), CY_SCB_UART_RX_NOT_EMPTY);              // 清除接收中断标志位
 
         wireless_module_uart_handler();
-        
+        gnss_uart_callback();
         
     }
     else if(Cy_SCB_GetTxInterruptMask(get_scb_module(UART_1)) & CY_SCB_UART_TX_DONE)            // 串口1发送中断
     {
         Cy_SCB_ClearTxInterrupt(get_scb_module(UART_1), CY_SCB_UART_TX_DONE);                   // 清除接收中断标志位
-        
-        
+
+
         
     }
 }
@@ -326,7 +326,7 @@ void uart2_isr (void)
     {
         Cy_SCB_ClearRxInterrupt(get_scb_module(UART_2), CY_SCB_UART_RX_NOT_EMPTY);              // 清除接收中断标志位
 
-        gnss_uart_callback();
+
         
         
     }

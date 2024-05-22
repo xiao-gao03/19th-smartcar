@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(Seekfree_CYT4BB_Opensource_Library C)
+project(963ra_ C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -82,7 +82,7 @@ include_directories(libraries/zf_device)
 include_directories(libraries/zf_driver)
 include_directories(project/code)
 
-add_executable(Seekfree_CYT4BB_Opensource_Library
+add_executable(963ra_
         libraries/sdk/common/hdr/cmsis/dsp/arm_common_tables.h
         libraries/sdk/common/hdr/cmsis/dsp/arm_const_structs.h
         libraries/sdk/common/hdr/cmsis/dsp/arm_helium_utils.h
@@ -568,6 +568,8 @@ add_executable(Seekfree_CYT4BB_Opensource_Library
         project/code/GPS.h
         project/code/IMU.c
         project/code/IMU.h
+        project/code/lora.c
+        project/code/lora.h
         project/code/motor.c
         project/code/motor.h
         project/code/position_calculation.c
@@ -579,4 +581,6 @@ add_executable(Seekfree_CYT4BB_Opensource_Library
         project/user/cm7_1_isr.c
         project/user/main_cm0plus.c
         project/user/main_cm7_0.c
-        project/user/main_cm7_1.c)
+        project/user/main_cm7_1.c
+        project/code/move.c
+        project/code/move.h)

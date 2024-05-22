@@ -118,4 +118,6 @@
 #include "A_Master_ctrl.h"
 #include "position_calculation.h"
 #include "voice.h"
+#include "lora.h"
+#include "move.h"
 #endif

@@ -1496,6 +1496,12 @@
             <name>$PROJ_DIR$\..\..\code\IMU.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\code\lora.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\lora.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\code\motor.c</name>
         </file>
         <file>

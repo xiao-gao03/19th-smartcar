@@ -1,29 +1,7 @@
 #include "zf_common_headfile.h"
 
-
-int Control_FLAG=1;         //该标志位意义是，当它为1时是无控模式(靠GPS+IMU导航)/当手柄上的按键按下时，该标志位被清0,无法执行无控模式，转入有控模式
-int S_Point=0;              //停止点位参数
-int P_Distance=0;           //点位距离参数
-int next_point=0;           //下一个目标点
-int Point_interval=0;       //点位区间数
-int ZT_FLAG=0;              //绕锥桶一周标志位
-int Distance_FLAG=0;        //距离切换标志位
-int Angle_FLAG=0;           //角度切换标志位
-int IMU_suppression_FLAG=1; //IMU抑制开启标志位
-int16 SPEED_Value=0;        //目标速度
-int j;
-
-
-
-double distance=0;    //两点的距离
-double azimuth=0;     //方位角(得出的函数返回值为double)
-double last_azimuth=0;//上一次的方位角
-double Error=0;       //方位角和航向角的误差(得出的函数返回值为double)
-
-float  PD_YAW=0;
-
-
-
+double angle;
+double SERVO_angle;
 //***************************************************************************************
                        /*运动逻辑，待讨论*/
 //***************************************************************************************
@@ -38,9 +16,56 @@ float  PD_YAW=0;
         
         PS：如果在正后方+-60°就倒车
             同样采取以上方法计算所需转向角度，但反向转向*/
-
-void turn_angle()
+/**
+ * 自身方位角转换函数，将gps的360°转化到0-180
+ * @param angle 得到的角度
+ */
+void car_ang_trans(double angle)
 {
-    float car_target_angle;
-    car_target_angle = get_two_points_azimuth(gnss.latitude,gnss.longitude,GPS_GET_LAT[j],GPS_GET_LOT[j]);
+    if(gnss.direction >= 0 && gnss.direction <=180)
+    {
+        angle = gnss.direction;
+    }
+    else if(gnss.direction > 180 &&gnss.direction <= 360)
+    {
+        angle = gnss.direction - 180;
+    }
+}
+
+void ang_trans(float angle)
+{
+    if(angle > 180 && angle <= 360)
+    {
+        angle = angle - 180;
+    }
+}
+
+/**
+ * gps和imu互补滤波得到yaw
+ * @param a
+ * @param b
+ * @param alpha
+ * @return
+ */
+void ComplementaryFilter(float a, float b, float alpha,float angle) {
+    // alpha 是滤波系数，范围在0到1之间
+    // alpha 越接近 1，a 的影响越大
+    // alpha 越接近 0，b 的影响越大
+    angle = alpha * a + (1 - alpha) * b;
+}
+
+void turn_angle(double angle)
+{
+    if(angle >= 15)
+    {
+        SERVO_MOTOR_DUTY(SERVO_MOTOR_RMAX);
+    }
+    else if(angle <= -15)
+    {
+        SERVO_MOTOR_DUTY(SERVO_MOTOR_LMAX);
+    }
+    else if(angle > -15 && angle <15)
+    {
+        SERVO_MOTOR_DUTY(SERVO_MOTOR_MID + angle);
+    }
 }

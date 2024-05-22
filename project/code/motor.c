@@ -6,7 +6,7 @@ int16 Gap=0;
 int32 OUT=0;
 int16 encoder=0;  //转速
 int16 stand=0;
-
+int16 Dir ;
 
 //电机初始化，打开PWM_CH1通道，频率设置1kHz
 void motor_init()
@@ -18,25 +18,39 @@ void motor_init()
 
 
 //电机运行，设置PWM占空比duty
-void motor_run(int16 speed)
+/**
+ *
+ * @param dir  电机方向
+ * @param speed 电机速度  max==10000；
+ */
+void motor_run(int16 dir,int32 speed)
 {
     //int duty = speed * (PWM_DUTY_MAX / 100);
-    if(speed>=0)//正转
+    if(dir == 1)                                            //正转
     {
-        pwm_set_duty(PWM_CH1, speed * (PWM_DUTY_MAX / 100));
+        pwm_set_duty(PWM_CH1, speed);
         gpio_set_level(DIR_CH1,1);
     }
-    else             //反转
+    else if(dir == 0)                                                   //反转
     {
-        pwm_set_duty(PWM_CH1, -speed * (PWM_DUTY_MAX / 100));
-        gpio_set_level(DIR_CH1,0);
+        pwm_set_duty(PWM_CH1, -speed);
+        gpio_set_level(DIR_CH1, 0);
+    }
+    else
+    {
+        printf("Motor direction error!\n");
     }
 }
 
-
-void BLDC_Cloop_ctrl(int16 SPEED) //BLDC闭环控制
+/**
+ * @brief BLDC闭环控制
+ * 
+ * @param dir   电机方向
+ * @param SPEED 电机速度  max==10000；
+ */
+void BLDC_Cloop_ctrl(int16 dir,int32 SPEED) //BLDC闭环控制
 {
-
+    Dir = dir;
     Target_speed=SPEED;      //目标速度
     Current_speed= encoder;   //当前速度
     Gap=Target_speed-Current_speed;       //速度差距
@@ -46,19 +60,26 @@ void BLDC_Cloop_ctrl(int16 SPEED) //BLDC闭环控制
     if(OUT> 10000) {OUT=10000;}
     if(OUT<-10000) {OUT=-10000;}
 
-    motor_run((int16)OUT);
+    motor_run(Dir,OUT);
 }
 
 
 //刹车函数
 void motor_stop()
 {
-/*TODO:添加刹车代码。法1：直接将占空比设为0；法2：电机倒转；
-        PS:采用电流较小的方法，防止对驱动板以及元器件造成不可逆的伤害。*/
+    if(Dir == 1)
+    {
+        BLDC_Cloop_ctrl(1,0);
+    }
+    else
+    {
+        BLDC_Cloop_ctrl(0,0);
+    }
+
 }
 
 
-//停止输出PWM靠摩擦力刹车
+//停止输出PWM靠摩擦力刹车or紧急停车
 void motor_off()
 {
     pwm_all_channel_close();
@@ -72,10 +93,11 @@ void HALL_init()//霍尔编码器初始化
     encoder_dir_init(ENCODER1_TIM,ENCODER1_PLUS,ENCODER1_DIR);
 }
 
-void HALL_gather()//霍尔编码器获取值
+uint16 HALL_gather()//霍尔编码器获取值
 {
 
     encoder= (encoder_get_count(ENCODER1_TIM));
     encoder_clear_count(ENCODER1_TIM);                                // 采集对应编码器数据
+    return encoder;
 }
 
