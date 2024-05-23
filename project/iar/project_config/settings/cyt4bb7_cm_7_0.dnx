@@ -27,16 +27,16 @@
     <Jet>
         <PrevWtdReset>System</PrevWtdReset>
         <OnlineReset>Software</OnlineReset>
-        <JetConnSerialNo>SEEKFREE CMSIS-DAP V2:SF-3184185613204</JetConnSerialNo>
-        <JetConnFoundProbes />
         <DisableInterrupts>0</DisableInterrupts>
         <LeaveRunning>0</LeaveRunning>
         <MultiCoreRunAll>0</MultiCoreRunAll>
         <CpuHaltOnBreakpointSet>0</CpuHaltOnBreakpointSet>
+        <JetConnSerialNo>SEEKFREE CMSIS-DAP V2:SF-3184185613204</JetConnSerialNo>
+        <JetConnFoundProbes>SEEKFREE CMSIS-DAP V2:SF-3184185613204:WCH CMSIS-DAP:BC6864D12139:</JetConnFoundProbes>
     </Jet>
     <ArmDriver>
-        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
         <EnableCache>1</EnableCache>
+        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
     </ArmDriver>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -56,7 +56,7 @@
         <PowerConnectPC>1</PowerConnectPC>
     </SWOManager>
     <DebugChecksum>
-        <Checksum>1245272020</Checksum>
+        <Checksum>1484998941</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -102,11 +102,7 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\user\main_cm7_0.c}.62.11" 0 0 1 "" 0 "" 0</Bp0>
-        <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\user\main_cm7_0.c}.66.16" 0 0 1 "" 0 "" 0</Bp1>
-        <Bp2>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\user\main_cm7_0.c}.64.15" 0 0 1 "" 0 "" 0</Bp2>
-        <Bp3>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\user\main_cm7_0.c}.68.15" 0 0 1 "" 0 "" 0</Bp3>
-        <Count>4</Count>
+        <Count>0</Count>
     </Breakpoints2>
     <Aliases>
         <Count>0</Count>

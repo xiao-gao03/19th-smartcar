@@ -20,23 +20,19 @@ double SERVO_angle;
  * 自身方位角转换函数，将gps的360°转化到0-180
  * @param angle 得到的角度
  */
-void car_ang_trans(double angle)
+void car_ang_trans(double *angle0)
 {
-    if(gnss.direction >= 0 && gnss.direction <=180)
+    if(*angle0 > 180 && *angle0 <= 360)
     {
-        angle = gnss.direction;
-    }
-    else if(gnss.direction > 180 &&gnss.direction <= 360)
-    {
-        angle = gnss.direction - 180;
+        *angle0 = *angle0 - 180;
     }
 }
 
-void ang_trans(float angle)
+void ang_trans(double *angle)
 {
-    if(angle > 180 && angle <= 360)
+    if(*angle > 180 && *angle <= 360)
     {
-        angle = angle - 180;
+        *angle = *angle - 180;
     }
 }
 
@@ -47,11 +43,11 @@ void ang_trans(float angle)
  * @param alpha
  * @return
  */
-void ComplementaryFilter(float a, float b, float alpha,float angle) {
+void ComplementaryFilter(float a, float b, float alpha,float *angle) {
     // alpha 是滤波系数，范围在0到1之间
     // alpha 越接近 1，a 的影响越大
     // alpha 越接近 0，b 的影响越大
-    angle = alpha * a + (1 - alpha) * b;
+    *angle = alpha * a + (1 - alpha) * b;
 }
 
 void turn_angle(double angle)

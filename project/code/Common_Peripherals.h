@@ -43,9 +43,8 @@ extern uint8 switch1_flag;
 extern uint8 switch2_flag;
 
 void Buzzer_init();//蜂鸣器初始化
-void Buzzer_check(int time1,int time2);//按键与LED初始化
 void Key_init();//按键与LED初始化
-void key_scan(void);//按键扫描
+void key_scan();//按键扫描
 void Steer_init();
 void Steer_set(int angle);
 

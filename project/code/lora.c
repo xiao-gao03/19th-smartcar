@@ -14,14 +14,14 @@
 
 uint8_t number[4];
 uint8_t witch_one;
-
+uint8 data = 0;
 /**
  * ´®¿Ú³õÊ¼»¯
  */
 void lora_init(void)
 {
     uart_init(UART_2,115200,UART2_TX_P10_1,UART2_RX_P10_0);
-    uart_init(UART_1,9600,UART1_TX_P04_1,UART1_RX_P04_0);
+    uart_init(UART_3,9600,UART3_TX_P17_2,UART3_RX_P17_1);
 }
 
 /**
@@ -29,16 +29,13 @@ void lora_init(void)
  */
 void lora_receive()
 {
-    uint8 data;
-    uart_query_byte(UART_1,&data);
+    uart_query_byte(UART_3,&data);
     if(data == 0x31)
     {
-        motor_run(1,3000);
+        data = 0x00;
+        pwm_all_channel_close();
     }
-    else if(data == 0x32)
-    {
-        motor_stop();
-    }
+
 }
 
 /**
@@ -46,13 +43,22 @@ void lora_receive()
  */
 void LQ_lora()
 {
-    uart_query_byte(UART_2,number);
-    if(number[0] == 0x66)
+    uint8_t Dat;
+    uart_query_byte(UART_2,&Dat);
+    if(Dat == 0x66)
+    {
+        for(int i = 0; i < 4;i++)
+        {
+            number[i] = Dat;
+            uart_query_byte(UART_2,&Dat);
+        }
+
+    }
+
+    if(number[0] == 0x66 )
     {
         switch (number[1])
         {
-            case 0x00: witch_one = 0;
-                break;
             case 0x01: witch_one = 1;
                 break;
             case 0x02: witch_one = 2;
@@ -68,6 +74,8 @@ void LQ_lora()
             case 0x07: witch_one = 7;
                 break;
             case 0x08: witch_one = 8;
+                break;
+            default:
                 break;
         }
     }

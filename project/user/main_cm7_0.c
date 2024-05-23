@@ -34,7 +34,6 @@
 ********************************************************************************************************************/
 
 #include "zf_common_headfile.h"
-#include "lora.h"
 
 // 打开新的工程或者工程移动了位置务必执行以下操作
 // 第一步 关闭上面所有打开的文件
@@ -51,19 +50,19 @@ int main(void)
     clock_init(SYSTEM_CLOCK_250M); 	// 时钟配置及系统初始化<务必保留>
     debug_info_init();                  // 调试串口信息初始化
 
-    Buzzer_init();      //蜂鸣器初始化
+    //Buzzer_init();      //蜂鸣器初始化
 
-    key_init();         //按键初始化
-
+    Key_init();         //按键初始化
+  
     Steer_init();       //舵机初始化
 
     GPS_Init();         //gps初始化
 
     IMU_init();         //陀螺仪初始化
-
+ 
     lora_init();        //无线串口初始化
 
-    motor_init();       //电机初始化
+    //motor_init();       //电机初始化
 
     VoiceInit();        //硅麦初始化
 
@@ -75,9 +74,13 @@ int main(void)
   while (1)
   {
       gps_getpoint();  //采点
+      lora_receive();
       LQ_lora();        //接收裁判系统的信息，得出是第几个信标在工作
 
-      move();
+
+
+
+      //car_move();
 
   }
   // 此处编写用户代码 例如外设初始化代码等

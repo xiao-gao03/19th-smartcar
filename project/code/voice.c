@@ -58,9 +58,9 @@ volatile uint32 adcCount = 0;
 /*
  * ADC数据   adc0 1 2 3 采集麦克风信号
  *
- *     2     1
+ *     2     1      2    3
  *
- *     3     0
+ *     3     0      0    1
  */
 __attribute__ ((aligned(256)))  volatile int16_t g_adc0Data[2][ADC_DATA_LEN];
 __attribute__ ((aligned(256)))  volatile int16_t g_adc1Data[2][ADC_DATA_LEN];
@@ -148,10 +148,10 @@ void VoiceGetSample(void)
 
 	if(AdcFinishFlag == 0)
 	{
-		g_adc0Data[adcIndex][adcCount] = adc_convert(ADC0);
-		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC1);
-		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC3);
-		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC2);
+		g_adc0Data[adcIndex][adcCount] = adc_convert(ADC1);
+		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC3);
+		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC2);
+		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC0);
 
 		adcCount++;
 	}
@@ -386,7 +386,7 @@ void VoiceProcess(void)
 		{
 			if(acorIndex[0] > 0)
 			{
-				g_Angle = 270;
+				g_Angle = -90;
 			}
 			else
 			{
@@ -402,7 +402,7 @@ void VoiceProcess(void)
 			}
 			else
 			{
-				g_Angle = 225;
+				g_Angle = -135;
 			}
 		}
 
@@ -410,7 +410,7 @@ void VoiceProcess(void)
 		{
 			if(acorIndex[2] > 0)
 			{
-				g_Angle = 315;
+				g_Angle = -45;
 			}
 			else
 			{
@@ -418,7 +418,7 @@ void VoiceProcess(void)
 			}
 		}
 
-			printf("angle: %-5.2f\n", g_Angle);             //显示角度信息
+			//printf("angle: %-5.2f\n", g_Angle);             //显示角度信息
 			
 		AdcFinishFlag = 0;
 	}

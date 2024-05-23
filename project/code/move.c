@@ -10,11 +10,11 @@ double car_target_angle;     //小车和目标点之间的方位角
 double car_target_dis;      //小车和姆比熬点之间的距离
 float car_direction;
 
-void move()
+void car_move()
 {
-    car_ang_trans(angle);      //得到自身角度0~+-180
+    car_ang_trans(&angle);      //得到自身角度0~+-180
 
-    ComplementaryFilter(angle,yaw,0.6,car_direction);//gps和陀螺仪互补滤波
+    ComplementaryFilter(angle,yaw,0.6,&car_direction);//gps和陀螺仪互补滤波
 
     switch(witch_one)               //目标点赋值
     {
@@ -41,8 +41,8 @@ void move()
     gps_ang_dis(target_wei,target_jing,&car_target_angle,&car_target_dis);
 
     //角度转换 0~+-180
-    ang_trans(car_target_angle);
-    ang_trans(g_Angle);
+    ang_trans(&car_target_angle);
+
 
     //距离目标大于一米用gps方位角转向，小于一米用硅麦转向//舵机转向
     if(car_target_dis > 1)
@@ -54,9 +54,19 @@ void move()
         turn_angle(g_Angle);
     }
 
-
-
-
+    //TODO：速度后期可调
+    if(car_target_dis >= 50)            //距离目标50米开外，占空比50
+    {
+        motor_run(1,5000);
+    }
+    else if(car_target_dis >=20 && car_target_dis <50)      //距离目标20-50米，占空比30
+    {
+        motor_run(1,3000);
+    }
+    else if(car_target_dis < 20)            //距离目标小于20米，占空比10
+    {
+        motor_run(1,1000);
+    }
 
 
     //电机运动

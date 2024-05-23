@@ -5,9 +5,6 @@
 void Buzzer_init()//蜂鸣器初始化
 {
     gpio_init(BUZZER_PIN, GPO, 0, GPO_PUSH_PULL);
-    gpio_set_level(BUZZER_PIN,0);
-    system_delay_ms(50);
-    gpio_set_level(BUZZER_PIN,1);
 }
 
 
@@ -69,6 +66,11 @@ void Key_init()//按键与LED初始化
 void key_scan()//按键扫描
     {
         //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
+
+        key1_state = gpio_get_level(KEY1);
+        key2_state = gpio_get_level(KEY2);
+        key3_state = gpio_get_level(KEY3);
+        key4_state = gpio_get_level(KEY4);
 
         //保存按键状态
         key1_state_last = key1_state;

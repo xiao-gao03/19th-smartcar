@@ -11,7 +11,7 @@ void IMU_init()
 {
     imu963ra_init();
 
-    nitPose_Module(&pose);
+    initPose_Module(&pose);
 
     //连接接口
     pose.interface.data.a_x = &acc_x;

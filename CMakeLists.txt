@@ -570,8 +570,14 @@ add_executable(963ra_
         project/code/IMU.h
         project/code/lora.c
         project/code/lora.h
+        project/code/math.c
+        project/code/math.h
         project/code/motor.c
         project/code/motor.h
+        project/code/move.c
+        project/code/move.h
+        project/code/pose.c
+        project/code/pose.h
         project/code/position_calculation.c
         project/code/position_calculation.h
         project/code/voice.c
@@ -581,6 +587,7 @@ add_executable(963ra_
         project/user/cm7_1_isr.c
         project/user/main_cm0plus.c
         project/user/main_cm7_0.c
-        project/user/main_cm7_1.c
-        project/code/move.c
-        project/code/move.h)
+        project/user/main_cm7_1.c)
+
+message(STATUS "Using toolchain file: ${CMAKE_TOOLCHAIN_FILE}.")
+

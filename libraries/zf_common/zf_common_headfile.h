@@ -120,4 +120,5 @@
 #include "voice.h"
 #include "lora.h"
 #include "move.h"
+#include "pose.h"
 #endif
