@@ -40,14 +40,14 @@ void pit0_ch0_isr()
 {
     pit_isr_flag_clear(PIT_CH0);
 
-    IMU_getangle(&yaw);
-//		if( gyro_Offset_flag==1)
-//	{
-//			imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
-//			IMU_YAW_integral();           //积分出角度值
-//
-//	}
-    key_scan();  //按键扫描
+    //IMU_getangle(&yaw);
+		if( gyro_Offset_flag==1)
+	{
+			imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
+			IMU_YAW_integral();           //积分出角度值
+
+	}
+
 	
 }
 
@@ -345,9 +345,9 @@ void uart3_isr (void)
     {
         Cy_SCB_ClearRxInterrupt(get_scb_module(UART_3), CY_SCB_UART_RX_NOT_EMPTY);              // 清除接收中断标志位
 
-        
-        
-        
+
+
+
     }
     else if(Cy_SCB_GetTxInterruptMask(get_scb_module(UART_3)) & CY_SCB_UART_TX_DONE)            // 串口3发送中断
     {

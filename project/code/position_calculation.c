@@ -20,20 +20,22 @@ double SERVO_angle;
  * 自身方位角转换函数，将gps的360°转化到0-180
  * @param angle 得到的角度
  */
-void car_ang_trans(double *angle0)
+void car_ang_trans(double angle0)
 {
-    if(*angle0 > 180 && *angle0 <= 360)
+    if(angle0 > 180 && angle0 <= 360)
     {
-        *angle0 = *angle0 - 180;
+        angle0 = angle0 - 180;
     }
 }
 
-void ang_trans(double *angle)
+double ang_trans(double a)
 {
-    if(*angle > 180 && *angle <= 360)
+  double correct_angle;
+    if(a > 180 && a <= 360)
     {
-        *angle = *angle - 180;
+        correct_angle = a - 360;
     }
+    return correct_angle;
 }
 
 /**
@@ -54,14 +56,14 @@ void turn_angle(double angle)
 {
     if(angle >= 15)
     {
-        SERVO_MOTOR_DUTY(SERVO_MOTOR_RMAX);
+        Steer_set(SERVO_MOTOR_RMAX);
     }
     else if(angle <= -15)
     {
-        SERVO_MOTOR_DUTY(SERVO_MOTOR_LMAX);
+        Steer_set(SERVO_MOTOR_LMAX);
     }
     else if(angle > -15 && angle <15)
     {
-        SERVO_MOTOR_DUTY(SERVO_MOTOR_MID + angle);
+        Steer_set(SERVO_MOTOR_MID + angle);
     }
 }

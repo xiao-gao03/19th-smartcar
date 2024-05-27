@@ -64,35 +64,52 @@ void Key_init()//按键与LED初始化
 }
 
 void key_scan()//按键扫描
-    {
-        //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
+{
+    //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
 
-        key1_state = gpio_get_level(KEY1);
-        key2_state = gpio_get_level(KEY2);
-        key3_state = gpio_get_level(KEY3);
-        key4_state = gpio_get_level(KEY4);
+    key1_state = gpio_get_level(KEY1);
+    key2_state = gpio_get_level(KEY2);
+    key3_state = gpio_get_level(KEY3);
+    key4_state = gpio_get_level(KEY4);
+    switch1_flag = gpio_get_level(SWITCH1);
+    switch2_flag = gpio_get_level(SWITCH2);
 
-        //保存按键状态
-        key1_state_last = key1_state;
-        key2_state_last = key2_state;
-        key3_state_last = key3_state;
-        key4_state_last = key4_state;
+        if (gpio_get_level(KEY1) == 0) {
+            system_delay_ms(20);
+            while (gpio_get_level(KEY1) == 0);
+            system_delay_ms(20);
+            key1_flag = 1;
+        } else if (gpio_get_level(KEY2) == 0) {
+            system_delay_ms(20);
+            while (gpio_get_level(KEY2) == 0);
+            system_delay_ms(20);
+            key2_flag = 1;
+        } else if (gpio_get_level(KEY3) == 0) {
+            system_delay_ms(20);
+            while (gpio_get_level(KEY3) == 0);
+            system_delay_ms(20);
+            key3_flag = 1;
+        } else if (gpio_get_level(KEY4) == 0) {
+            system_delay_ms(20);
+            while (gpio_get_level(KEY4) == 0);
+            system_delay_ms(20);
+            key4_flag = 1;
+        } else {
+            key1_flag = 0;
+            key2_flag = 0;
+            key3_flag = 0;
+            key4_flag = 0;
+        }
 
-        //读取当前按键状态
-        key1_state = gpio_get_level(KEY1);
-        key2_state = gpio_get_level(KEY2);
-        key3_state = gpio_get_level(KEY3);
-        key4_state = gpio_get_level(KEY4);
+}
 
-        //检测到按键按下之后  并放开置位标志位
-        if(key1_state && !key1_state_last)   {key1_flag = 1;}
-        if(key2_state && !key2_state_last)   {key2_flag = 1;}
-        if(key3_state && !key3_state_last)   {key3_flag = 1;}
-        if(key4_state && !key4_state_last)   {key4_flag = 1;}
-
-        //标志位置位之后，可以使用标志位执行自己想要做的事件
-
-    }
+void flag_clear()
+{
+    key1_flag = 0;
+    key2_flag = 0;
+    key3_flag = 0;
+    key4_flag = 0;
+}
 
 //===================================================舵机===================================================
 

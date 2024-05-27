@@ -38,7 +38,7 @@ void motor_run(int16 dir,int32 speed)
     }
     else
     {
-        printf("Motor direction error!\n");
+        printf("Motor error!\n");
     }
 }
 
@@ -88,16 +88,10 @@ void motor_off()
 //===================================================霍尔编码器===================================================
 
 
-void HALL_init()//霍尔编码器初始化
-{
-    encoder_dir_init(ENCODER1_TIM,ENCODER1_PLUS,ENCODER1_DIR);
-}
-
-uint16 HALL_gather()//霍尔编码器获取值
+void HALL_gather()//霍尔编码器获取值
 {
 
     encoder= (encoder_get_count(ENCODER1_TIM));
     encoder_clear_count(ENCODER1_TIM);                                // 采集对应编码器数据
-    return encoder;
 }
 

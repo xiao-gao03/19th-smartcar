@@ -21,7 +21,7 @@ uint8 data = 0;
 void lora_init(void)
 {
     uart_init(UART_2,115200,UART2_TX_P10_1,UART2_RX_P10_0);
-    uart_init(UART_3,9600,UART3_TX_P17_2,UART3_RX_P17_1);
+    uart_init(UART_4,9600,UART4_TX_P14_1,UART4_RX_P14_0);
 }
 
 /**
@@ -29,8 +29,13 @@ void lora_init(void)
  */
 void lora_receive()
 {
-    uart_query_byte(UART_3,&data);
+    uart_query_byte(UART_4,&data);
     if(data == 0x31)
+    {
+        data = 0x00;
+        motor_init();
+    }
+    else if(data == 0x32)
     {
         data = 0x00;
         pwm_all_channel_close();
@@ -50,6 +55,7 @@ void LQ_lora()
         for(int i = 0; i < 4;i++)
         {
             number[i] = Dat;
+            system_delay_ms(1);
             uart_query_byte(UART_2,&Dat);
         }
 
@@ -59,6 +65,8 @@ void LQ_lora()
     {
         switch (number[1])
         {
+            case 0x00: witch_one = 0;
+                break;
             case 0x01: witch_one = 1;
                 break;
             case 0x02: witch_one = 2;
@@ -79,5 +87,25 @@ void LQ_lora()
                 break;
         }
     }
+}
+
+/**
+ * Ô¶³ÌÒ£¿Ø´úÂë
+ */
+void remote_ctrl()
+{
+//    uint8_t receive[2];
+//    uint8_t i = 0;
+//    uart_query_byte(UART_4, &i);
+//    if(i == 30)
+//    {
+//        uart_query_byte(UART_4,&receive[0]);
+//    }
+//    else if(i == 29)
+//    {
+//        uart_query_byte(UART_4,&receive[1]);
+//    }
+
+
 }
 

@@ -120,5 +120,6 @@
 #include "voice.h"
 #include "lora.h"
 #include "move.h"
-#include "pose.h"
+//#include "pose.h"
+#include "TJC.h"
 #endif

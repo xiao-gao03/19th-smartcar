@@ -8,6 +8,6 @@
 #ifndef CODE_A_MASTER_CTRL_H_
 #define CODE_A_MASTER_CTRL_H_
 
-#define  remote_ctrl   (0)
+
 
 #endif /* CODE_A_MASTER_CTRL_H_ */
