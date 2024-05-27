@@ -1,437 +1,218 @@
 # ninja log v5
-13192	15310	7380795028506978	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/power_14453085144426420577.dir/cy_power.o	2f2e8b6d80c11fa7
-9106	11468	7380794989471346	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif_memslot.o	7b6296c0c6c4cdd
-2470	5984	7380794935709393	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd.o	5d5d962ea5c3eeba
-13177	14827	7380795024494959	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_sr.o	ca8b1a200d1aaa04
-11630	13169	7380795007934584	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_pwm.o	4cb302edc273a2b
-8293	10920	7380794985140462	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sd_host_2982766354293506895.dir/cy_sd_host.o	9e4ae96b59a33eb1
-51	1985	7380794895991756	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/adc_11722776235721520015.dir/cy_adc.o	6679a831a472b1b4
-2523	4574	7380794921086214	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/dma_12106025507578611576.dir/cy_pdma.o	fd4647c6664f519d
-2324	4601	7380794921469123	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/audioss_1346650047966882938.dir/cy_i2s.o	890892fa34fbf534
-2027	3515	7380794911013558	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/crypto_1190170608956581615.dir/cy_crypto_config.o	8e05c0a86f161596
-21720	23269	7380795108988144	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_exti.o	71912f69d443a739
-19641	19910	7380795074782926	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_dma.o	33de82c820976c5
-12176	13750	7380795013824493	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm.o	2939252c1a653431
-3521	4871	7380794924964357	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/dma_12106025507578611576.dir/cy_mdma.o	4c23d95ff8ed658c
-19892	21367	7380795089809422	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_uart_receiver.o	b37d7a474f10433c
-2456	4664	7380794922911240	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/canfd_1800690984773873875.dir/cy_canfd.o	97863385250455b0
-15315	18005	7380795056067519	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_hb_flash.o	e128fd79210ec242
-2441	4589	7380794920960698	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/cpu_15938736945165268644.dir/cy_cpu.o	8052b30ead0b78ff
-8278	10166	7380794976978869	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_spi.o	7cd5795b8c4fa82d
-17786	18411	7380795060710052	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_font.o	b6d2bb2b8a7e92c2
-16857	18620	7380795062501435	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/startup_479057977785470282.dir/startup.o	3d4de730706fb343
-4607	6271	7380794938001141	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/gpio_3999404635324069351.dir/cy_gpio.o	2797fb475128d257
-4875	6295	7380794938441304	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_drv.o	7f70974a0af2f411
-14844	16852	7380795044292040	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/button_4990804375159372270.dir/cy_button.o	213de26fe08e885c
-4582	6312	7380794938386178	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/evtgen_3404189088603873129.dir/cy_evtgen.o	bd1475ff50f7c2b7
-4668	6512	7380794940120259	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/flash_8529866181315662935.dir/cy_flash.o	37fe78522d64f994
-11740	13404	7380795009852761	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysrtc_10747768817563771611.dir/cy_sysrtc.o	d39a3f9a87a353e6
-4595	6728	7380794941898151	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd_tx.o	2d735a8aa66f1c95
-5933	7655	7380794952845193	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_pipe.o	62187a4b114aa8ee
-13793	15332	7380795029390977	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/rev_b_6162237342861132223.dir/cy_interrupt_map.o	c4cd095806e31b6f
-19604	20011	7380795075837246	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_spi.o	771f0e807ca83f45
-4026	6525	7380794941288725	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd_rx.o	630b8940dd5f7cb4
-2537	5929	7380794935360341	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/cy_ethif.o	98a9b2ff598d1ca4
-50	2764	7380808614067815	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	f354a9816108cadb
-13662	16043	7380795035777015	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/eth_phy_18133017486186456677.dir/cy_dp83867.o	cda6ee822163021d
-5992	7822	7380794953170803	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/lvd_6353935867039560245.dir/cy_lvd.o	18b5e7bbd7fb725
-6302	8286	7380794958878864	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/lin_18429031207028094880.dir/cy_lin.o	10daccce0e664501
-6318	8274	7380794958402385	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_sema.o	655a7da9175fd2b9
-6277	8132	7380794957725716	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/mcwdt_4052485907822033969.dir/cy_mcwdt.o	c62af52bf37d044d
-6518	8652	7380794962632005	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_ezi2c.o	a88ad43700c56ec
-7826	9103	7380794967147550	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/mpu_5663187252346826382.dir/cy_mpu.o	e2fe950bab1c1cd2
-6529	8385	7380794959826118	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_common.o	9fd32ad7fb57d1ab
-13754	16268	7380795038376772	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_device_common.o	d0d266f06744e011
-10171	11736	7380794993609312	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/syspm_10887939769544754770.dir/cy_syspm.o	88dad6ae2e497cd2
-22195	23762	7380795114012468	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pwm.o	670e66153b70f72f
-6733	8608	7380794962452723	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif_ver_specific.o	f8ccffe72f980f1
-8391	10187	7380794977199266	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smartio_5451710003740070188.dir/cy_smartio.o	cc4d88868daddecf
-10830	12358	7380794999162013	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysflt_12293435975120599261.dir/cy_sysflt.o	d5067ba4a0ab2528
-8613	10262	7380794978606298	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_uart.o	77c4832635169c81
-42	2757	7380808614067815	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	239a984fe34bb0de
-8656	10654	7380794982002486	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_i2c.o	e6c6e3c81d83529c
-8138	10826	7380794983273930	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif.o	d8463b47869b255f
-10660	12171	7380794997774412	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysint_7435970359207984181.dir/cy_sysint.o	5ea0ffd48f567eb3
-11	2584	7380808611569209	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	924df75b9c8dc97a
-10927	12372	7380794999382747	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysreghc_17676636058511625587.dir/cy_sysreghc.o	b6078fbc41d7c017
-7660	11285	7380794989195598	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/prot_10722960861768657883.dir/cy_prot.o	39ec8728ded7296e
-11473	12999	7380795005290630	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/srom_13018798572330080582.dir/cy_srom.o	80a03c7b56711cb7
-10266	11695	7380794993221189	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/syslib_16330585751512546975.dir/cy_syslib.o	70cb1ed654d5690e
-13007	14839	7380795024137676	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/systick_16016591671695740695.dir/cy_systick.o	b054f302a1ae2692
-11290	13655	7380795011740271	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysclk_16149231235676103872.dir/cy_sysclk.o	ae545dc8ac1de254
-10195	11624	7380794992720190	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sysreset_14586141425677365288.dir/cy_sysreset.o	1c9869d4991de8a0
-13878	16060	7380795035235039	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/flash_864493325053435817.dir/cy_mw_flash.o	8e9c474dd0c20fdc
-12376	13789	7380795014090410	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/syswdt_9118657615806274156.dir/cy_syswdt.o	d49afd398daadfc8
-18415	18721	7380795063892282	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant.o	1095f9cb6497c1c8
-11701	13185	7380795007712152	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_counter.o	b8162f4551733de0
-18623	20155	7380795076782796	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant_interface.o	ee0a71cb7d717950
-12362	13872	7380795014958938	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_quaddec.o	be3a600803bebed1
-20894	21201	7380795087958308	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_mpu6050.o	88bf42501f1068f2
-14831	16209	7380795038256201	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/trigmux_9729677290734583340.dir/cy_trigmux.o	e67e2a6bfb2290c
-13411	15514	7380795030986847	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/semihosting_143864889731838620.dir/cy_semihosting.o	35d1cbf6cd74387e
-16218	18200	7380795057188822	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/rev_b_4986922561640112550.dir/system_tviibh4m_cm7.o	8a03b5c358369b54
-16275	18311	7380795058854665	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fs.o	b5fad03daf6399b7
-18515	18980	7380795065343020	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_fifo.o	6df46c5f7ed6efa5
-16051	18211	7380795058192684	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/sw_timer_4215635015939382130.dir/cy_sw_tmr.o	b343e0e3542a5e47
-17451	19650	7380795072462652	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fl.o	119eee737cd915d2
-18205	18650	7380795063068153	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_function.o	6a44aa86a2d4a2e7
-18216	18510	7380795061192570	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_absolute_encoder.o	530f3c24d9f753a0
-18725	19241	7380795068106046	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1a.o	e87c6c08a0d8b14d
-22955	24115	7380795117502987	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_timer.o	cbb4c90dacbda6e0
-18014	19601	7380795070880155	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_debug.o	52c7142a1b9b45de
-16067	18422	7380795059372978	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_semp.o	50e9e4987fb7490f
-18318	19637	7380795072693115	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_interrupt.o	fd6fa384866867c3
-20013	20199	7380795078363985	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_virtual_oscilloscope.o	4e684b57e95ec052
-19916	20137	7380795077619961	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_type.o	63a5be88ed2d7e7b
-18427	19886	7380795075150379	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_clock.o	7b83ca2826412818
-20203	20411	7380795080723531	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1b.o	190d6c415cfee5ca
-18656	20145	7380795077093669	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_bluetooth_ch9141.o	9de5f0dd6c663bfe
-20711	20976	7380795085647588	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_icm20602.o	da89e4e5630dfd58
-20139	21823	7380795094227490	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_adc.o	89575620db08c2a9
-20326	20634	7380795082095190	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu660ra.o	b02f4e4b01b598f5
-2587	4352	7380808630461888	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	45ab7143278ac8f4
-20904	21717	7380795091994708	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips114.o	963cc15d33f90cfa
-19656	21209	7380795087487777	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wireless_uart.o	ee28b595b41ba734
-20149	20322	7380795079923663	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_key.o	1e15bfc2537112c7
-19244	20708	7380795083475597	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_delay.o	7e63c283b3c37866
-20638	20900	7380795085457015	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu963ra.o	a3f8ef3c8b0bf4fe
-21370	21460	7380795090875657	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/syslib_16330585751512546975.dir/cy_syslib_iar.o	a024cb4184cf0bb8
-21216	21353	7380795089408667	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/startup_479057977785470282.dir/startup_cm7.o	dce1a6c104e30a34
-21204	21727	7380795093548438	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_oled.o	1f2c30743baa8792
-20415	21089	7380795087293419	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips200.o	a360e50902f9af44
-21094	21739	7380795093821328	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tft180.o	eafb88488cdd0f5c
-21829	22189	7380795098189876	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_spi.o	542e2bd66dcd6741
-21731	22328	7380795099008756	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_iic.o	a5eb47cb9fd562a8
-18985	20888	7380795083998899	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_uart.o	dbc40d5b6bd47f7
-20160	21906	7380795094688139	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_gnss.o	93554071632d23be
-20980	22575	7380795101146095	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tsl1401.o	903811a9a414c4e3
-21359	23040	7380795106525304	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_uart.o	1d64e2a2c6118b81
-21912	23492	7380795110291402	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pit.o	987995e3b42e8fdc
-22579	23868	7380795114952510	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_ipc.o	64847024ee72e5b1
-22331	23758	7380795113794839	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_gpio.o	aed2615ba5cdb0f7
-21745	23575	7380795111595087	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_encoder.o	82b9d7ed6ef549b3
-21467	22948	7380795105639857	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_flash.o	79d240942b5144ad
-23045	24442	7380795120973995	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_spi.o	6eb6cafbc0f4d4fa
-18	2605	7380808612088147	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	8a9d43be618b4c45
-24	2637	7380808612863454	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	84bf4dad3141d125
-59	2744	7380808613272564	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	e617282fbd123ed2
-31	2750	7380808613718026	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	fe83252b171ec88f
-2613	4535	7380808632073547	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	58689c16412d64ba
-2645	4395	7380808631272078	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	66eb6993b92e09a3
-36	2621	7380808612318883	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	4a31a5d2f4f64d13
-2338	3998	7380805641337336	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	4debf7e6676f1c05
-29	198	7380796882229428	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/math.o	95515d228dc33c5e
-40	393	7380796883084178	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/pose.o	880d2521c05f63ee
-4033	4376	7380805645860142	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	3eaab062690eb6ff
-4383	4405	7380805646452938	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	1a50b5b2c8625f0
-45	2478	7380810688262837	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	fe83252b171ec88f
-62	2542	7380810688804956	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	e617282fbd123ed2
-10	2693	7380810690660019	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	924df75b9c8dc97a
-39	2709	7380810690384187	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	4a31a5d2f4f64d13
-57	2762	7380810691356970	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	239a984fe34bb0de
-51	2771	7380810691041019	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	f354a9816108cadb
-28	2804	7380810691422194	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	8a9d43be618b4c45
-33	2814	7380810691422194	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	84bf4dad3141d125
-2481	4287	7380810706797046	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	45ab7143278ac8f4
-2552	4368	7380810707553917	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	58689c16412d64ba
-2701	4376	7380810707815660	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	66eb6993b92e09a3
-8	1041	7380811175361359	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	4debf7e6676f1c05
-1043	1409	7380811179134223	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	3eaab062690eb6ff
-1415	1438	7380811179719539	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	1a50b5b2c8625f0
-7	1276	7380817918233317	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	58689c16412d64ba
-1280	1670	7380817922245442	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	3eaab062690eb6ff
-1677	1704	7380817922895600	E:/桌面/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	1a50b5b2c8625f0
-31	457	7381482760240085	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/math.o	1861e7fe8fb9252b
-459	755	7381482763092664	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/pose.o	e82764bc667d4186
-38	2458	7381482779463927	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-10	2509	7381482780084410	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
-22	2526	7381482780324961	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
-5	2557	7381482780344946	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
-760	2614	7381482781188134	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
-14	2629	7381482780706110	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
-18	2642	7381482780971796	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
-26	2730	7381482781694812	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
+4535	4748	7383272612914323	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_mpu6050.o	46a420173ec824aa
+4514	5033	7383272615960913	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips200.o	3865b2e7d6ff3fd9
+6642	8063	7384085245366347	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_gnss.o	208c91ffc88f238c
+16516	17098	7381482926224096	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_font.o	6aa406260a8be320
+7226	8381	7381482839112983	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_sema.o	829af692fe7ff6ce
+9403	10688	7384085271507917	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_spi.o	629db350ae33f310
+6151	7892	7384085243460939	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fl.o	84e2a0eb5ce7213
+6223	7544	7381482830400287	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/mpu_5663187252346826382.dir/cy_mpu.o	15dd57a0497b0c28
+2656	4622	7384085210651277	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/adc_11722776235721520015.dir/cy_adc.o	b62980623c1de412
+18681	18913	7381482944148762	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_virtual_oscilloscope.o	34008cc4c5f00996
+4565	4819	7383272613601104	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_spi.o	4f483c611a986c6f
+2699	4936	7384085213694779	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif_memslot.o	ed2283ac82dd4702
+19163	19396	7381482949233817	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_type.o	2b45b38c71f7a629
+19542	20748	7381482962782979	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_gpio.o	4363eaeca9681f48
+6099	7529	7381482830285049	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/evtgen_3404189088603873129.dir/cy_evtgen.o	889a04c47e7b03c2
+4305	4527	7383272610800890	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu963ra.o	ed6d01615a0ad591
+3085	4227	7383272607312617	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_bluetooth_ch9141.o	51d11362a5b6113c
+2382	3754	7384085565768878	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
+11820	13431	7381482888176847	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/systick_16016591671695740695.dir/cy_systick.o	66f6081ea3cf8b9b
+4230	4512	7383272610059151	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_icm20602.o	1a36b88a9826ca95
+7214	7655	7384085240960430	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_function.o	31318d9c25191b51
+10152	12410	7381482878820746	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sd_host_2982766354293506895.dir/cy_sd_host.o	9861674c886c4be3
+4791	5971	7383272624978498	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wireless_uart.o	2876e7514189ce64
+4981	6172	7383272626618752	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_exti.o	5d3e13a8a1393194
+7550	9135	7381482846607155	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_ezi2c.o	81832112cbfed766
+8	1312	7384086367796891	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/TJC.o	127ad21209350341
+11265	12675	7381482881446149	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysreghc_17676636058511625587.dir/cy_sysreghc.o	7b062a47d700be3d
+4952	6907	7384085234028588	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_device_common.o	8e5e524a0d9fd66c
+9213	10540	7384085269173445	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_uart.o	cb600f1a3b693bf7
+3806	3959	7383272605332412	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1b.o	430a3f384de77596
+4402	6461	7384085228941912	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/eth_phy_18133017486186456677.dir/cy_dp83867.o	7ef8fb0946468d03
+4763	5928	7383272624722965	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tsl1401.o	c0db9affae989fd0
+2770	3075	7383272596124677	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_fifo.o	1bde7b8780bd912f
+9964	11677	7381482871189190	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_uart.o	d457ecf5877f1d24
+18	2357	7384085551371396	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
+43	2546	7384085552083571	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+38	2379	7384085551446660	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
+12	2207	7384085549874009	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
+5333	7478	7384085238718208	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_hb_flash.o	beccd726d3139757
+2000	3387	7384085562040345	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
+22	2539	7384085551787325	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
+17	1403	7384090245909753	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+10	1397	7384090245871244	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
+2362	3824	7384085566430924	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
 2538	4398	7381482799028893	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_drv.o	785e9bf3247eb2d6
 2565	4639	7381482800365110	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/gpio_3999404635324069351.dir/cy_gpio.o	99fa628af9c38b92
 2620	4649	7381482800834346	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/audioss_1346650047966882938.dir/cy_i2s.o	edaf0ac757c1c245
 2738	4660	7381482801992463	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/cpu_15938736945165268644.dir/cy_cpu.o	9c89997a812066a0
-2635	4674	7381482801947256	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/adc_11722776235721520015.dir/cy_adc.o	b62980623c1de412
 2648	4843	7381482802403518	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/canfd_1800690984773873875.dir/cy_canfd.o	f78189e9a68e4d10
-2464	5140	7381482805539562	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
-2518	5150	7381482806589120	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
+2195	3569	7384085563807927	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
 4679	6093	7381482815645351	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/crypto_1190170608956581615.dir/cy_crypto_config.o	879ce55780997fe3
 4644	6218	7381482816862527	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/dma_12106025507578611576.dir/cy_mdma.o	72ee9110512f22a7
 4654	6228	7381482816912744	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/dma_12106025507578611576.dir/cy_pdma.o	fcf7f71dfb8622b7
+5930	6369	7383272629353520	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_iic.o	50b3df407d77cbe4
 5144	6798	7381482822682905	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/flash_8529866181315662935.dir/cy_flash.o	8ed02880676404c6
+8068	9901	7384085263044791	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_encoder.o	dd6b9b3c8dd9785d
 5161	6983	7381482825089402	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd_tx.o	fb39d0eb7d2d42ff
 4405	7221	7381482827641362	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd.o	633c332dc8b85f1c
+6233	9500	7381482850277234	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/prot_10722960861768657883.dir/cy_prot.o	2c7a5e20edee8621
 4847	7444	7381482829843550	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/edd_rx.o	cd0d21aec372de37
-6099	7529	7381482830285049	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/evtgen_3404189088603873129.dir/cy_evtgen.o	889a04c47e7b03c2
-6223	7544	7381482830400287	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/mpu_5663187252346826382.dir/cy_mpu.o	15dd57a0497b0c28
-4666	7578	7381482830711389	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/cy_ethif.o	291725e381c5e091
+2682	5534	7384085219325720	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ethernet_6029839089178797009.dir/cy_ethif.o	291725e381c5e091
+6631	8240	7384085247241033	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/startup_479057977785470282.dir/startup.o	cad0ab13961f58f1
 6988	8188	7381482837080822	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_pipe.o	5726095d3b97288e
 6803	8279	7381482837764330	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/lin_18429031207028094880.dir/cy_lin.o	2314bfc4b50b57f1
-7226	8381	7381482839112983	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/ipc_10145506163450686023.dir/cy_ipc_sema.o	829af692fe7ff6ce
 7450	8899	7381482843893943	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/lvd_6353935867039560245.dir/cy_lvd.o	87cfab243cdc78ca
 7535	8918	7381482844571454	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/mcwdt_4052485907822033969.dir/cy_mcwdt.o	429e9fa7aeea57e
 7583	8995	7381482845253794	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_common.o	dd17de3c35b1b530
-7550	9135	7381482846607155	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_ezi2c.o	81832112cbfed766
-6233	9500	7381482850277234	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/prot_10722960861768657883.dir/cy_prot.o	2c7a5e20edee8621
 8197	9514	7381482849608987	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysint_7435970359207984181.dir/cy_sysint.o	cb4347930e1c65d
 8386	9959	7381482854376370	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_spi.o	17d0289de57e1e93
 8283	10146	7381482856722688	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_i2c.o	e861765107547938
+6197	7899	7384085243305636	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fs.o	8693ff6fb01fc882
 8924	10428	7381482859803687	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smartio_5451710003740070188.dir/cy_smartio.o	6ef8ee9e88dcdb2b
 9000	10645	7381482861167007	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif_ver_specific.o	ae554510b280e7b9
 9507	10976	7381482864114873	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/srom_13018798572330080582.dir/cy_srom.o	f3a041ccfd38651
-9139	11258	7381482866547125	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysclk_16149231235676103872.dir/cy_sysclk.o	79074b2992a56d83
-8907	11416	7381482869089296	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif.o	5d2f3f391d493a33
-9519	11443	7381482869812967	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif_memslot.o	ed2283ac82dd4702
-9964	11677	7381482871189190	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/scb_15490842639181808494.dir/cy_scb_uart.o	d457ecf5877f1d24
-10652	11816	7381482873047795	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysflt_12293435975120599261.dir/cy_sysflt.o	6b7d86e2cf72dda0
+2922	4945	7384085214165000	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysclk_16149231235676103872.dir/cy_sysclk.o	79074b2992a56d83
 10432	11826	7381482872221577	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_counter.o	4d80936c2f7edb13
+10652	11816	7381482873047795	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysflt_12293435975120599261.dir/cy_sysflt.o	6b7d86e2cf72dda0
+2721	5329	7384085217202839	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_427648126384146252.dir/cy_smif.o	5d2f3f391d493a33
 10980	12397	7381482878249086	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysrtc_10747768817563771611.dir/cy_sysrtc.o	721ffe80509bcc12
-10152	12410	7381482878820746	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sd_host_2982766354293506895.dir/cy_sd_host.o	9861674c886c4be3
-11265	12675	7381482881446149	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysreghc_17676636058511625587.dir/cy_sysreghc.o	7b062a47d700be3d
 11422	12849	7381482883848584	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/syswdt_9118657615806274156.dir/cy_syswdt.o	aba66e68a150a9aa
 11448	13088	7381482884600565	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/syspm_10887939769544754770.dir/cy_syspm.o	fdcbf2fc91a4572a
 11684	13188	7381482886465970	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sysreset_14586141425677365288.dir/cy_sysreset.o	d4430b4015233944
 11832	13199	7381482887449844	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/syslib_16330585751512546975.dir/cy_syslib.o	9c827711a3eb006c
-11820	13431	7381482888176847	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/systick_16016591671695740695.dir/cy_systick.o	66f6081ea3cf8b9b
+2374	3761	7384085565854428	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
 12401	13633	7381482891797331	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm.o	6cf8a1b45a99bc10
 12416	13688	7381482892308742	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_quaddec.o	2b10d5022aa024c1
-12682	14323	7381482898138802	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/eth_phy_18133017486186456677.dir/cy_dp83867.o	7ef8fb0946468d03
 13092	14400	7381482899098937	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_pwm.o	4172d5adc731b2a
 13193	14414	7381482899525711	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/trigmux_9729677290734583340.dir/cy_trigmux.o	efd711d4d304ec8
-12854	14635	7381482900345685	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/flash_864493325053435817.dir/cy_mw_flash.o	98c4c6c20e011278
+4555	6145	7384085226068271	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/flash_864493325053435817.dir/cy_mw_flash.o	98c4c6c20e011278
 13205	14644	7381482900370819	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/rev_b_6162237342861132223.dir/cy_interrupt_map.o	a19ba8164d92a856
+2052	2077	7384090253132343	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
 13435	14806	7381482902362739	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/tcpwm_422923530147891246.dir/cy_tcpwm_sr.o	a6d13a17f665af05
-13692	15397	7381482909401997	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/power_14453085144426420577.dir/cy_power.o	80531b0493c8162d
-13638	15421	7381482908748907	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/button_4990804375159372270.dir/cy_button.o	795d368764d8ecfc
-14331	16231	7381482917435026	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_semp.o	23180ec0ab794142
-14649	16293	7381482918094210	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/semihosting_143864889731838620.dir/cy_semihosting.o	d1b840f7800abd92
-14419	16398	7381482918238643	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sw_timer_4215635015939382130.dir/cy_sw_tmr.o	97931861fe2436d2
-14639	16511	7381482919755764	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fs.o	8693ff6fb01fc882
-14405	16628	7381482921606792	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_hb_flash.o	beccd726d3139757
-16301	16693	7381482922487586	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_function.o	31318d9c25191b51
-14810	16744	7381482922432416	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_device_common.o	8e5e524a0d9fd66c
-16634	16930	7381482924768106	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant.o	eb5d5c96c535e99d
-16748	17037	7381482926128934	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_fifo.o	1bde7b8780bd912f
-15429	17089	7381482926184084	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/startup_479057977785470282.dir/startup.o	cad0ab13961f58f1
-16516	17098	7381482926224096	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_font.o	6aa406260a8be320
-15402	17267	7381482928055770	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_s25fl.o	84e2a0eb5ce7213
-17270	17588	7381482930609382	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu963ra.o	ed6d01615a0ad591
+6466	8050	7384085245245930	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/power_14453085144426420577.dir/cy_power.o	80531b0493c8162d
+4495	6191	7384085226825736	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/button_4990804375159372270.dir/cy_button.o	795d368764d8ecfc
+4632	6636	7384085230092029	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/smif_mem_6470536964353725183.dir/cy_smif_semp.o	23180ec0ab794142
+8245	9907	7384085262874418	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_timer.o	bc74f3d784880838
+4941	6626	7384085230046990	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/semihosting_143864889731838620.dir/cy_semihosting.o	d1b840f7800abd92
+5539	7207	7384085237084115	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/sw_timer_4215635015939382130.dir/cy_sw_tmr.o	97931861fe2436d2
+3498	3804	7383272602836569	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant.o	eb5d5c96c535e99d
 16404	17670	7381482931825802	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_interrupt.o	b763226baeabc67
-17675	17884	7381482934473557	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu660ra.o	3855045521cb38f7
-17594	17898	7381482933716684	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_absolute_encoder.o	189599013427cfca
-16239	17946	7381482934703985	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/rev_b_4986922561640112550.dir/system_tviibh4m_cm7.o	5b016825d9785700
-16701	18057	7381482935535237	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_debug.o	ba5d14bcbdd7aebf
-17889	18102	7381482936634201	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_icm20602.o	1a36b88a9826ca95
-17953	18195	7381482937415717	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1b.o	430a3f384de77596
+3098	3295	7383272598676402	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_imu660ra.o	3855045521cb38f7
+3298	3495	7383272600589419	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_absolute_encoder.o	189599013427cfca
+7663	9393	7384085258154571	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/rev_b_4986922561640112550.dir/system_tviibh4m_cm7.o	5b016825d9785700
+2622	4090	7383272606024642	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_debug.o	ba5d14bcbdd7aebf
 17041	18400	7381482939508564	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_common_1201165462030747823.dir/zf_common_clock.o	b957be36d8c0cee0
-18062	18526	7381482940212969	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1a.o	f504529170d2117
-18403	18665	7381482941454889	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_key.o	614f192784ca948a
-17105	18676	7381482941500121	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_gnss.o	208c91ffc88f238c
-18198	18819	7381482942730700	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips114.o	246e2da06ba3b2f5
-18681	18913	7381482944148762	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_virtual_oscilloscope.o	34008cc4c5f00996
-16935	19098	7381482944792175	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-18532	19108	7381482946756343	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips200.o	3865b2e7d6ff3fd9
-17092	19124	7381482946483951	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-17901	19155	7381482946821673	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_bluetooth_ch9141.o	51d11362a5b6113c
-18668	19171	7381482946946911	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_oled.o	9e9cecf86b80b887
-18106	19243	7381482947954379	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant_interface.o	2dafc7c27de18b91
-19163	19396	7381482949233817	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_type.o	2b45b38c71f7a629
-19128	19405	7381482949163564	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_mpu6050.o	46a420173ec824aa
-19116	19539	7381482950085916	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_spi.o	4f483c611a986c6f
-18917	19548	7381482950456368	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tft180.o	62c4cfee8d3f8d0c
-18826	20310	7381482958250718	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_uart.o	7a0bda18288833d3
+3962	4299	7383272608695753	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_dl1a.o	f504529170d2117
+4578	4769	7383272613124753	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_key.o	614f192784ca948a
+4521	5002	7383272615685149	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_ips114.o	246e2da06ba3b2f5
+4755	5281	7383272617101467	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_oled.o	9e9cecf86b80b887
+4093	5264	7383272617822827	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_components_14936052685886095442.dir/seekfree_assistant_interface.o	2dafc7c27de18b91
+4779	5270	7383272618058312	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tft180.o	62c4cfee8d3f8d0c
+5005	6362	7383272628719302	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wifi_uart.o	7a0bda18288833d3
 19102	20410	7381482958826024	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_uart_receiver.o	2b6b1d333b0a4558
-19246	20497	7381482960522629	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_flash.o	bc53c03da1504978
-19176	20701	7381482961700493	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_tsl1401.o	c0db9affae989fd0
-19542	20748	7381482962782979	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_gpio.o	4363eaeca9681f48
-19551	20819	7381482963469819	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_exti.o	5d3e13a8a1393194
-19400	20952	7381482963740484	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_delay.o	db3a30be62397997
-19409	21101	7381482964537690	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_adc.o	3c78e98cdeeaec62
-20705	21110	7381482964452416	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_dma.o	3850cef0ef5a36a7
+5274	6473	7383272630326043	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_flash.o	bc53c03da1504978
+8055	9670	7384085261505857	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_delay.o	db3a30be62397997
+7894	9623	7384085260238692	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_adc.o	3c78e98cdeeaec62
+4826	4978	7383272615279207	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_dma.o	3850cef0ef5a36a7
 20956	21164	7381482967476423	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/syslib_16330585751512546975.dir/cy_syslib_iar.o	5ff6507399aa7427
-21114	21575	7381482969618298	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_spi.o	5473d67c4ec20b5a
-20314	21584	7381482970691173	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_device_6570275422786408770.dir/zf_device_wireless_uart.o	2876e7514189ce64
+5284	5563	7383272621310053	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_spi.o	5473d67c4ec20b5a
 20415	21593	7381482970671100	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_ipc.o	11a81d90de335e57
-21105	21606	7381482971203183	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_soft_iic.o	50b3df407d77cbe4
 21588	21682	7381482972282186	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/startup_479057977785470282.dir/startup_cm7.o	d20f5c8c2cd4e136
-20501	21791	7381482972848470	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_encoder.o	dd6b9b3c8dd9785d
-20753	22119	7381482976786201	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pit.o	fb0783d6886cc699
-21167	22214	7381482977635941	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_timer.o	bc74f3d784880838
-20823	22290	7381482978148814	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pwm.o	badbdb2330c992c0
-21599	22713	7381482982605614	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_uart.o	cb600f1a3b693bf7
-21577	22842	7381482983995366	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_spi.o	629db350ae33f310
-22847	23357	7381482989208822	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-23361	23437	7381482990304934	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1449	7381503066409890	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-19	1453	7381503066525089	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-1458	1894	7381503071023411	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1899	1927	7381503071684095	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-20	2009	7381507654588098	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
-42	2066	7381507655117710	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-51	2082	7381507655162816	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
-35	2173	7381507656230875	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
-30	2182	7381507655438560	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
-16	2190	7381507656407846	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
-6	2199	7381507656573078	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
-47	2268	7381507657395844	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
-2178	3460	7381507668963757	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-2089	3465	7381507669079032	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-2074	3470	7381507668953766	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
-2012	3474	7381507669329049	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
-3479	3892	7381507673648905	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-3898	3924	7381507674464626	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-12	1183	7381508426929065	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-7	1185	7381508426949068	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
-1190	1610	7381508431261673	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1615	1639	7381508431852173	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-13	1249	7381523901594161	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1254	2200	7381523911226084	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-2205	2274	7381523912214831	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	992	7381525837981844	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-994	1294	7381525841082786	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1300	1317	7381525841535549	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-5	994	7381526311621748	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-996	1318	7381526314930474	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1324	1343	7381526315402257	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1018	7381539833509761	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1022	1345	7381539836928968	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1351	1372	7381539837411585	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1001	7381540478007263	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1004	1328	7381540481351368	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1334	1353	7381540481868734	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1136	7381544822186022	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1138	1463	7381544825539502	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1468	1485	7381544826059468	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-16	1106	7381547527885025	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-7	1114	7381547527919890	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1120	1448	7381547531570068	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1453	1468	7381547532021877	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1169	7381547896336531	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1172	1486	7381547899629447	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1491	1508	7381547900078550	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1105	7381550955845767	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1107	1426	7381550959187053	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1432	1450	7381550959663064	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1013	7381551840343742	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1015	1333	7381551843713262	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1340	1358	7381551844154849	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1108	7381555368613417	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1110	1410	7381555371825776	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1415	1429	7381555372194646	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	997	7381555729540520	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1001	1316	7381555732831544	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1321	1339	7381555733258847	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1003	7381556377551894	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1005	1325	7381556380870682	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1333	1349	7381556381325085	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1013	7381556709594084	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1016	1342	7381556713000306	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1347	1363	7381556713411401	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	999	7381556846430909	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1002	1316	7381556849728036	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1322	1343	7381556850194409	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1171	7381557220813526	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1174	1501	7381557224285019	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1508	1525	7381557224721502	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1032	7381557612174598	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1036	1362	7381557615702600	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1368	1382	7381557616159097	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1380	7381561415574895	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-17	1383	7381561415606558	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1389	1726	7381561419291755	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1732	1747	7381561419713688	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1021	7381562234564133	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1024	1332	7381562237753957	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1339	1355	7381562238189876	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	1053	7381563292843790	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1055	1379	7381563296199969	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1385	1409	7381563296742878	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	1124	7381564474548783	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1126	1440	7381564477826315	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1446	1463	7381564478258763	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1150	7381565473073553	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1152	1482	7381565476492610	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1487	1503	7381565476968523	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1090	7381566284514787	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1092	1436	7381566288018341	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1443	1457	7381566288494537	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1009	7381574754789589	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1012	1324	7381574758053143	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1328	1343	7381574758444535	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1125	7381575588955187	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1128	1439	7381575592354158	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1445	1458	7381575592764710	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1063	7381576921893544	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1067	1380	7381576925167205	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1385	1401	7381576925589233	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1153	7381579953618449	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1156	1475	7381579956980654	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1481	1497	7381579957403276	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1040	7381581617981367	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1044	1358	7381581621318064	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1363	1381	7381581621750775	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1175	7381586666656706	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1178	1485	7381586669946087	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1491	1508	7381586670357815	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-11	1223	7381587950737992	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-7	1251	7381587951178963	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-1256	1599	7381587954838955	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1607	1625	7381587955310504	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1019	7381589493751139	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1021	1349	7381589497115052	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1355	1372	7381589497574370	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1233	7381591549324521	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-1235	1583	7381591552920571	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1588	1606	7381591553422442	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-13	1260	7381597622581050	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-8	1308	7381597623202276	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
-18	1343	7381597623644637	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-1348	1681	7381597627440479	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1686	1707	7381597627966289	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1007	7381598195839632	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1010	1338	7381598199247654	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1345	1363	7381598199732529	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1029	7381598447071567	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1031	1357	7381598450457195	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1362	1381	7381598450979911	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-24	1240	7381601801691542	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-7	1280	7381601802124137	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-1284	1631	7381601805822291	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1636	1658	7381601806339410	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	1046	7381602232567073	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1050	1391	7381602236160029	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1396	1414	7381602236645076	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1283	7381606259410189	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
-1286	1621	7381606262797850	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1626	1647	7381606263368935	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1041	7381606635898950	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1044	1365	7381606639255224	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1371	1391	7381606639752265	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	1190	7381607074837263	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
-1192	1542	7381607078551266	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1547	1567	7381607079073667	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1150	7381608900205792	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
-1156	1488	7381608903719242	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1495	1516	7381608904236965	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1163	7381611151605154	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
-1166	1489	7381611154962748	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1496	1512	7381611155477490	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-7	1205	7381627724882888	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1208	2233	7381627735129447	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-2240	2321	7381627736407615	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-8	1067	7381628113315303	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1071	1464	7381628117259178	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1471	1506	7381628117939546	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1027	7381630451681422	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1030	1382	7381630455343005	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1388	1408	7381630455858442	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-6	1210	7381640977295451	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
-1213	1585	7381640981152968	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1590	1610	7381640981701915	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
-9	1065	7381642431607419	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
-1067	1403	7381642435118890	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	9c6f8874ce3f1aef
-1410	1431	7381642435674495	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+7905	9629	7384085260238692	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pit.o	fb0783d6886cc699
+8424	10244	7384085266720211	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/zf_driver_11922370083829174090.dir/zf_driver_pwm.o	badbdb2330c992c0
+1408	2045	7384090252243608	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+8	1287	7384095341961264	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1290	1692	7384095346238478	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1698	1727	7384095346901585	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+8	1325	7384097486047139	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1328	1759	7384097490431150	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1765	1790	7384097491047186	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+10	1207	7384179501742887	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+1210	1619	7384179505902833	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1626	1649	7384179506532692	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+9	2173	7384189317425231	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+2176	3065	7384189326399265	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+3072	3147	7384189327453123	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+8	1672	7384196823504386	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1674	2165	7384196828575799	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+2179	2207	7384196829311892	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+18	1688	7385234951421900	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+1690	3075	7385234965428592	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+3083	3199	7385234967023350	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+12	1302	7385236548502442	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
+1306	1754	7385236553115023	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1760	1788	7385236553763447	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+39	2597	7385242847208755	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
+21	2714	7385242847514207	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
+33	2864	7385242850073159	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
+16	2968	7385242850402222	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
+51	2978	7385242850749784	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
+44	2995	7385242850940177	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
+8	3004	7385242850995444	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+27	3013	7385242851130901	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
+2599	4977	7385242871183678	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/TJC.o	127ad21209350341
+2722	5284	7385242874147861	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+2987	5376	7385242875141625	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
+2973	5452	7385242875703007	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
+2874	5504	7385242876597788	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
+5510	6061	7385242882354520	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+6067	6096	7385242883207098	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+9	1182	7385244462260040	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1186	1600	7385244466649038	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1606	1627	7385244467255756	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+8	1720	7385250796112838	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
+1722	2163	7385250800827391	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+2171	2202	7385250801717951	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+13	2014	7385253279344929	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
+2016	2471	7385253284072778	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+2476	2507	7385253284729383	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+6	1144	7385259287535401	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1148	1495	7385259291132982	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1501	1522	7385259291645426	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+7	1152	7385263433119369	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+1155	1503	7385263436750000	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1510	1532	7385263437282881	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+7	3035	7385266773941122	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
+19	3117	7385266774573805	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+15	3281	7385266775872682	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
+27	3422	7385266777611639	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
+36	3434	7385266777988983	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
+23	3447	7385266777848640	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
+31	3462	7385266777788438	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
+43	3470	7385266777828628	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+3046	4985	7385266794013483	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/TJC.o	127ad21209350341
+3133	5242	7385266795518062	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
+3429	5250	7385266795985606	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
+3440	5259	7385266796075656	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
+9	1447	7385267437675977	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
+1452	1921	7385267442511060	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1927	1956	7385267443234021	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+29	2124	7385295723237831	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+45	2131	7385295723418182	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GL_CRC.o	b659c9dec526898
+50	2146	7385295724377966	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Common_Peripherals.o	3e8f86d19c0a4bf9
+35	2162	7385295724377966	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/motor.o	3beee4127cf06666
+24	2173	7385295723854112	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/GPS.o	bbe4f80931033c88
+56	2188	7385295724623598	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/voice.o	19afc7cc1a6f702f
+39	2197	7385295724518330	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/Algorithm.o	dcb016871d7a546c
+6	2231	7385295724927060	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/IMU.o	7c67f2c13c3d0f41
+2137	3458	7385295737929720	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/TJC.o	127ad21209350341
+2154	3465	7385295738017453	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/position_calculation.o	6d033602860216d7
+2180	3545	7385295738393984	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
+2127	3551	7385295738684632	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/move.o	10fd0f42655a61ea
+2168	3577	7385295739250486	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/cm7_0_isr.o	6a3d5e70ba103fcc
+3583	3957	7385295743092974	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+3962	3983	7385295743653668	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+7	2002	7385297057103221	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/user_8514941877209965082.dir/main_cm7_0.o	319c91edb7274bc9
+2005	2419	7385297061422292	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+2424	2447	7385297062073836	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+9	1384	7385300652731660	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+1387	1757	7385300656609598	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1763	1788	7385300657170430	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+10	1388	7385302050619167	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+1392	1790	7385302054701294	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1795	1831	7385302055349723	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364
+8	1257	7385304465356723	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Obj/code_17896468042025673432.dir/lora.o	ec9f1384cf939a14
+1260	1637	7385304469302816	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.out	5e5abce26c3aff70
+1643	1667	7385304469895100	E:/project/smart car/ok/963ra-/project/iar/Debug_m7_0/Exe/cyt4bb7_cm_7_0.hex	f324bc016954a364

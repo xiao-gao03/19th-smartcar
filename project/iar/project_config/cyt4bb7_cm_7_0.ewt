@@ -1502,12 +1502,6 @@
             <name>$PROJ_DIR$\..\..\code\lora.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\code\math.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\code\math.h</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\..\code\motor.c</name>
         </file>
         <file>
@@ -1520,16 +1514,16 @@
             <name>$PROJ_DIR$\..\..\code\move.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\code\pose.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\code\pose.h</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\..\code\position_calculation.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\code\position_calculation.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\TJC.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\TJC.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\code\voice.c</name>

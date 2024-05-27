@@ -587,7 +587,9 @@ add_executable(963ra_
         project/user/cm7_1_isr.c
         project/user/main_cm0plus.c
         project/user/main_cm7_0.c
-        project/user/main_cm7_1.c)
+        project/user/main_cm7_1.c
+        project/code/TJC.c
+        project/code/TJC.h)
 
 message(STATUS "Using toolchain file: ${CMAKE_TOOLCHAIN_FILE}.")
 

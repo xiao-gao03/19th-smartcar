@@ -92,7 +92,8 @@ E:\project\smart\ car\ok\963ra-\project\iar\Debug_m7_0\BrowseInfo\zf_driver_1192
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\syspm\cy_syspm.h \
   E:\software\IAR\arm\inc\c\stddef.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\systick\cy_systick.h \
-  E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\code\math.h \
+  E:\software\IAR\arm\inc\c\math.h \
+  E:\software\IAR\arm\inc\c\DLib_float_setup.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\gpio\cy_gpio.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_interrupt.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\sysint\cy_sysint.h \

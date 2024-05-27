@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "E:\software\IAR\common\bin\cspybat" -f "E:\桌面\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --backend -f "E:\桌面\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
+& "E:\software\IAR\common\bin\cspybat" -f "E:\project\smart car\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --backend -f "E:\project\smart car\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
 }
 else
 {
-& "E:\software\IAR\common\bin\cspybat" -f "E:\桌面\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\桌面\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
+& "E:\software\IAR\common\bin\cspybat" -f "E:\project\smart car\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\project\smart car\ok\963ra-\project\iar\project_config\settings\cyt4bb7_cm_0_plus.Debug.driver.xcl" 
 }

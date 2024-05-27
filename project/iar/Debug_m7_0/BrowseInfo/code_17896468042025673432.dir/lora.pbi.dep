@@ -107,7 +107,8 @@ E:\project\smart\ car\ok\963ra-\project\iar\Debug_m7_0\BrowseInfo\code_178964680
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\scb\cy_scb_spi.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\scb\cy_scb_uart.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\tviibh4m\src\drivers\sysclk\cy_sysclk.h \
-  E:\project\smart\ car\ok\963ra-\project\code\math.h \
+  E:\software\IAR\arm\inc\c\math.h \
+  E:\software\IAR\arm\inc\c\DLib_float_setup.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\syswdt\cy_syswdt.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\common\src\drivers\sysrtc\cy_sysrtc.h \
   E:\project\smart\ car\ok\963ra-\project\iar\project_config\..\..\..\libraries\sdk\tviibh4m\hdr\ip\cyip_srss_v3.h \
@@ -228,4 +229,4 @@ E:\project\smart\ car\ok\963ra-\project\iar\Debug_m7_0\BrowseInfo\code_178964680
   E:\project\smart\ car\ok\963ra-\project\code\voice.h \
   E:\project\smart\ car\ok\963ra-\project\code\lora.h \
   E:\project\smart\ car\ok\963ra-\project\code\move.h \
-  E:\project\smart\ car\ok\963ra-\project\code\pose.h
+  E:\project\smart\ car\ok\963ra-\project\code\TJC.h

@@ -1,0 +1,127 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/software/IAR/arm/bin/iccarm.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+         IAR ANSI C/C++ Compiler V9.50.1.380/W64 for ARM
+         Copyright 1999-2023 IAR Systems AB.
+         PC-locked license - IAR Embedded Workbench for ARM
+       
+        88 bytes of CODE  memory
+       208 bytes of CONST memory
+        20 bytes of DATA  memory
+      
+      Errors: none
+      Warnings: none
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is IAR, found in:
+        E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        
+           IAR ANSI C/C++ Compiler V9.50.1.380/W64 for ARM
+           Copyright 1999-2023 IAR Systems AB.
+           PC-locked license - IAR Embedded Workbench for ARM
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1155 (message)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        
+           IAR ANSI C/C++ Compiler V9.50.1.380/W64 for ARM
+           Copyright 1999-2023 IAR Systems AB.
+           PC-locked license - IAR Embedded Workbench for ARM
+        
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qq1e38"
+      binary: "E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qq1e38"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-r"
+      CMAKE_EXE_LINKER_FLAGS: "--silent"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qq1e38'
+        
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9c18c
+        [1/2] E:\\software\\IAR\\arm\\bin\\iccarm.exe  --silent "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"    --dependencies=ns CMakeFiles\\cmTC_9c18c.dir\\CMakeCCompilerABI.o.d -o CMakeFiles\\cmTC_9c18c.dir\\CMakeCCompilerABI.o
+        [2/2] cmd.exe /C "cd . && E:\\software\\IAR\\arm\\bin\\ilinkarm.exe CMakeFiles\\cmTC_9c18c.dir\\CMakeCCompilerABI.o --silent   -o cmTC_9c18c.exe && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake:73 (_record_compiler_features)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake:99 (_record_compiler_features_c)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake:18 (cmake_record_c_compile_features)"
+      - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:77 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compile features"
+    directories:
+      source: "E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qmmz84"
+      binary: "E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qmmz84"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-r"
+      CMAKE_EXE_LINKER_FLAGS: "--silent"
+    buildResult:
+      variable: "CMAKE_C_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/project/smart car/ok/963ra-/cmake-build-debug-iar/CMakeFiles/CMakeScratch/TryCompile-qmmz84'
+        
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_45cb1
+        [1/2] E:\\software\\IAR\\arm\\bin\\iccarm.exe  --silent "E:\\project\\smart car\\ok\\963ra-\\cmake-build-debug-iar\\CMakeFiles\\CMakeScratch\\TryCompile-qmmz84\\feature_tests.c"   --c89 --dependencies=ns CMakeFiles\\cmTC_45cb1.dir\\feature_tests.o.d -o CMakeFiles\\cmTC_45cb1.dir\\feature_tests.o
+        [2/2] cmd.exe /C "cd . && E:\\software\\IAR\\arm\\bin\\ilinkarm.exe CMakeFiles\\cmTC_45cb1.dir\\feature_tests.o --silent   -o cmTC_45cb1.exe && cd ."
+        
+      exitCode: 0
+...
