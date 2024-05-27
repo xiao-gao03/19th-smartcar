@@ -5,8 +5,8 @@ void GPS_Init()
     gnss_init(TAU1201);
 }
 
-double points_wei[8] = {37.166223,37.166291,37.166341};
-double points_jing[8] = {122.515352,122.516414,122.515614};
+double points_wei[8];
+double points_jing[8];
 int i =0;
 
 void gps_getpoint()

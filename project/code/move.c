@@ -15,15 +15,17 @@
 double target_jing,target_wei;  //目标点的经纬度
 double car_target_angle;     //小车和目标点之间的方位角
 double cor_car_target_angle;//修正后小车和目标点之间的方位角
-double car_target_dis;      //小车和姆比熬点之间的距离
+double car_target_dis;      //小车和目标点之间的距离
 float car_direction;
+double cor_self_a;
 
 void car_move()
 {
-    //car_ang_trans(angle);      //得到自身角度0~+-180
+    cor_self_a = car_ang_trans(gnss.direction);      //得到自身角度0~+-180
+
     if(gnss.state == 1 && encoder > 100)
     {
-      ComplementaryFilter(gnss.direction,Daty_Z,0.65,&car_direction);//gps和陀螺仪互补滤波
+      ComplementaryFilter(cor_self_a,Daty_Z,0.65,&car_direction);//gps和陀螺仪互补滤波
     }
     else{
         car_direction = Daty_Z;
@@ -51,7 +53,6 @@ void car_move()
     }
     
     //得到小车和目标点的方位角和距离
-    //gps_ang_dis(target_wei,target_jing,car_target_angle,car_target_dis);
     car_target_angle = get_two_points_azimuth(gnss.latitude,gnss.longitude,target_wei,target_jing);
     car_target_dis = get_two_points_distance(gnss.latitude,gnss.longitude,target_wei,target_jing);
     //角度转换 0~+-180
