@@ -30,15 +30,18 @@ void lora_init(void)
 void lora_receive()
 {
     uart_query_byte(UART_4,&data);
-    if(data == 0x31)
+//    if(data == 0x31)
+//    {
+//        data = 0x00;
+//        if(witch_one != 0)
+//        {
+//            motor_init();
+//        }
+//    }
+    if(data == 0x32)
     {
         data = 0x00;
-        motor_init();
-    }
-    else if(data == 0x32)
-    {
-        data = 0x00;
-        pwm_all_channel_close();
+        motor_run(1,0);
     }
 
 }
@@ -55,9 +58,10 @@ void LQ_lora()
         for(int i = 0; i < 4;i++)
         {
             number[i] = Dat;
-            system_delay_ms(1);
+            //system_delay_ms(1);
             uart_query_byte(UART_2,&Dat);
         }
+        //printf("%x, %x, %x, %x\n",number[0],number[1],number[2],number[3]);
 
     }
 
@@ -88,24 +92,3 @@ void LQ_lora()
         }
     }
 }
-
-/**
- * Ô¶³ÌÒ£¿Ø´úÂë
- */
-void remote_ctrl()
-{
-//    uint8_t receive[2];
-//    uint8_t i = 0;
-//    uart_query_byte(UART_4, &i);
-//    if(i == 30)
-//    {
-//        uart_query_byte(UART_4,&receive[0]);
-//    }
-//    else if(i == 29)
-//    {
-//        uart_query_byte(UART_4,&receive[1]);
-//    }
-
-
-}
-

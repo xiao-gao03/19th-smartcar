@@ -5,7 +5,7 @@ extern double angle;
 
 double car_ang_trans(double angle0);
 double ang_trans(double a);
-void turn_angle(double angle);
-void ComplementaryFilter(float a, float b, float alpha,float *angle);
+void turn_angle(float angle);
+float ComplementaryFilter(float a, float b, float alpha);
 
 #endif

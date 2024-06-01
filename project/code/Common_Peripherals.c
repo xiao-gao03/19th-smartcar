@@ -46,6 +46,7 @@ uint16 key4_count=-1;
 uint16 switch1_count=-1;
 uint16 switch2_count=-1;
 
+uint16_t key1_f = 1;
 void Key_init()//按键与LED初始化
 {
        gpio_init(LED1, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED1 输出 默认高电平 推挽输出模式
@@ -62,10 +63,11 @@ void Key_init()//按键与LED初始化
        gpio_init(SWITCH2, GPI, GPIO_HIGH, GPI_FLOATING_IN);    // 初始化 SWITCH2 输入 默认高电平 浮空输入
 
 }
-
+int count = 0;
 void key_scan()//按键扫描
 {
     //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
+    
 
     key1_state = gpio_get_level(KEY1);
     key2_state = gpio_get_level(KEY2);
@@ -74,58 +76,64 @@ void key_scan()//按键扫描
     switch1_flag = gpio_get_level(SWITCH1);
     switch2_flag = gpio_get_level(SWITCH2);
 
-        if (gpio_get_level(KEY1) == 0) {
-            system_delay_ms(20);
-            while (gpio_get_level(KEY1) == 0);
-            system_delay_ms(20);
+    if(key1_state != 1 && key1_f == 1)
+    {
+        count++;
+        if(count >10)
+        {
+            //count = 0;
             key1_flag = 1;
-        } else if (gpio_get_level(KEY2) == 0) {
-            system_delay_ms(20);
-            while (gpio_get_level(KEY2) == 0);
-            system_delay_ms(20);
-            key2_flag = 1;
-        } else if (gpio_get_level(KEY3) == 0) {
-            system_delay_ms(20);
-            while (gpio_get_level(KEY3) == 0);
-            system_delay_ms(20);
-            key3_flag = 1;
-        } else if (gpio_get_level(KEY4) == 0) {
-            system_delay_ms(20);
-            while (gpio_get_level(KEY4) == 0);
-            system_delay_ms(20);
-            key4_flag = 1;
-        } else {
-            key1_flag = 0;
-            key2_flag = 0;
-            key3_flag = 0;
-            key4_flag = 0;
+            gpio_set_level(LED1,0);
+            key1_f = 0;
         }
+    }
+    if(key1_state == 1)
+    {
+        count = 0;
+        key1_f = 1;
+        key1_flag = 0;
+        gpio_set_level(LED1,1);
+    }
+    
+//    if(key1_state != key1_state_last)
+//    {
+//      key1_flag = 1;
+//        gpio_set_level(LED1,0);
+//    }
+//
+//        if (gpio_get_level(KEY1) == 0) {
+//            key1_flag = 1;
+//        } else if (gpio_get_level(KEY2) == 0) {
+//            key2_flag = 1;
+//        } else if (gpio_get_level(KEY3) == 0) {
+//            key3_flag = 1;
+//        } else if (gpio_get_level(KEY4) == 0) {
+//            key4_flag = 1;
+//        } else {
+//            key1_flag = 0;
+//            key2_flag = 0;
+//            key3_flag = 0;
+//            key4_flag = 0;
+//        }
 
 }
 
-void flag_clear()
-{
-    key1_flag = 0;
-    key2_flag = 0;
-    key3_flag = 0;
-    key4_flag = 0;
-}
 
 //===================================================舵机===================================================
 
 
-float Steer_Value=SERVO_MOTOR_MID;
+//float Steer_Value=SERVO_MOTOR_MID;
 
 void Steer_init()//舵机初始化
 {
     pwm_init(SERVO_MOTOR_PWM, SERVO_MOTOR_FREQ, (uint32)SERVO_MOTOR_DUTY(80));
-    PidInit(&PID_Init);
+    //PidInit(&PID_Init);
 }
 
 void Steer_set(int angle)//舵机驱动
 {
-    if(angle<SERVO_MOTOR_LMAX){angle=SERVO_MOTOR_LMAX;}
-    if(angle>SERVO_MOTOR_RMAX){angle=SERVO_MOTOR_RMAX;}
+//    if(angle<SERVO_MOTOR_LMAX){angle=SERVO_MOTOR_LMAX;}
+//    if(angle>SERVO_MOTOR_RMAX){angle=SERVO_MOTOR_RMAX;}
     pwm_set_duty(SERVO_MOTOR_PWM, (uint32)SERVO_MOTOR_DUTY(angle));
 }
 

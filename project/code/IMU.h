@@ -32,6 +32,8 @@ extern float Daty_Z;
 extern float T_M;
 extern float T_N;
 extern int   GL_IMU_Flag;
+extern double gps_direction_average;//gps计算后的平均值
+extern float  plus_T_M;
 
 //函数声明
 

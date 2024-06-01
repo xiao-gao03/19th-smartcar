@@ -9,6 +9,5 @@ void lora_init(void);
 void lora_receive();
 void lora_stop();
 void LQ_lora();
-void remote_ctrl();
 
 #endif

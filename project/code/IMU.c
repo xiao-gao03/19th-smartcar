@@ -25,6 +25,7 @@ float GPS_Daty_Z=0;
 float GPS_IMU_Daty_Z=0;//经过互补滤波计算出的航向角
 float X;
 float T_M=0;
+float plus_T_M=0;  //0-360
 float T_N=0;
 float C_Direction_2=0;
 int    direction_count;//GPS累加循环数
@@ -93,7 +94,7 @@ void IMU_YAW_integral()//对角速度进行积分
     //    Daty_X+=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);
     //    Daty_Y+=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);
     //    if(IMU_Data.gyro_z<0.0045&&IMU_Data.gyro_z>-0.0045)
-        if(IMU_Data.gyro_z<0.015&&IMU_Data.gyro_z>-0.015)//滤波
+        if(IMU_Data.gyro_z<0.08&&IMU_Data.gyro_z>-0.08)//滤波
         {
             Daty_Z-=0;
 

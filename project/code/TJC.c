@@ -39,77 +39,48 @@ void TJC_Send(char *buf1)
 
 void TJC_messageSend()
 {
-    sprintf(tjcstr,"IMU.t1.txt=\"imu角度:%.0f\"",Daty_Z);
+    sprintf(tjcstr,"main.t0.txt=\"IMU:%f\"",plus_T_M); //0-360
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"MESE.t1.txt=\"硅麦角度:%.0f\"",g_Angle);
+    sprintf(tjcstr,"main.t1.txt=\"GPS? %d\"",gnss.state);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t1.txt=\"经度:%f\"",gnss.longitude);
+    sprintf(tjcstr,"main.t2.txt=\"距目角:%.0f\"",car_target_angle);  //0-360
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t4.txt=\"维度:%f\"",gnss.latitude);
+    sprintf(tjcstr,"main.t3.txt=\"采点数:%d\"",j);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t2.txt=\"角:%f\"",gnss.direction);
+    sprintf(tjcstr,"main.t4.txt=\"距离:%f\"",car_target_dis);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t5.txt=\"速度:%f\"",gnss.speed);
+    sprintf(tjcstr,"main.t5.txt=\"左前:%d\"",lf);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t3.txt=\"目距:%f\"",car_target_dis);
+    sprintf(tjcstr,"main.t6.txt=\"左后:%d\"",lb);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t6.txt=\"目角:%.0f\"",car_target_angle);
+    sprintf(tjcstr,"main.t7.txt=\"右前:%d\"",rf);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS.t7.txt=\"成功否:%d\"",gnss.state);
+    sprintf(tjcstr,"main.t8.txt=\"右后:%d\"",rb);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS2.t1.txt=\"1经%f\"",points_jing[0]);
+    sprintf(tjcstr,"main.t9.txt=\"spd:%d\"",encoder);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"GPS2.t5.txt=\"1维:%f\"",points_wei[0]);
+    sprintf(tjcstr,"main.t10.txt=\"应拐角:%.0f\"",my_beta);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t2.txt=\"2经:%f\"",points_jing[1]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t6.txt=\"2维:%f\"",points_wei[1]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t3.txt=\"3经:%f\"",points_jing[2]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t7.txt=\"3维:%f\"",points_wei[2]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t4.txt=\"4经:%f\"",points_jing[3]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"GPS2.t8.txt=\"4维:%f\"",points_wei[3]);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"all.t1.txt=\"第几个:%d\"",witch_one);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
 
 }

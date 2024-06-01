@@ -46,7 +46,6 @@ void Buzzer_init();//蜂鸣器初始化
 void Key_init();//按键与LED初始化
 void key_scan();//按键扫描
 void Steer_init();
-void flag_clear();
 void Steer_set(int angle);
 
 #endif

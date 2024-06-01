@@ -25,18 +25,18 @@
         <MemConfigValue>E:\software\IAR\arm\config\debugger\Infineon\CYT4BB_M7.ddf</MemConfigValue>
     </PlDriver>
     <Jet>
+        <JetConnSerialNo>SEEKFREE CMSIS-DAP V2:SF-3184185613204</JetConnSerialNo>
+        <JetConnFoundProbes>SEEKFREE CMSIS-DAP V2:SF-3184185613204:WCH CMSIS-DAP:BC6864D12139:</JetConnFoundProbes>
         <PrevWtdReset>System</PrevWtdReset>
         <OnlineReset>Software</OnlineReset>
-        <JetConnSerialNo>SEEKFREE CMSIS-DAP V2:SF-3184185613204</JetConnSerialNo>
-        <JetConnFoundProbes />
         <DisableInterrupts>0</DisableInterrupts>
         <LeaveRunning>0</LeaveRunning>
         <MultiCoreRunAll>0</MultiCoreRunAll>
         <CpuHaltOnBreakpointSet>0</CpuHaltOnBreakpointSet>
     </Jet>
     <ArmDriver>
-        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
         <EnableCache>1</EnableCache>
+        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
     </ArmDriver>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -45,8 +45,8 @@
     <SWOManager>
         <SamplingDivider>8192</SamplingDivider>
         <OverrideClock>0</OverrideClock>
-        <CpuClock>5640018915305670473</CpuClock>
-        <SwoClock>5140087414976425760</SwoClock>
+        <CpuClock>0</CpuClock>
+        <SwoClock>2097202</SwoClock>
         <DataLogMode>0</DataLogMode>
         <ItmPortsEnabled>63</ItmPortsEnabled>
         <ItmTermIOPorts>1</ItmTermIOPorts>
@@ -56,7 +56,7 @@
         <PowerConnectPC>1</PowerConnectPC>
     </SWOManager>
     <DebugChecksum>
-        <Checksum>857568280</Checksum>
+        <Checksum>2347815551</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>

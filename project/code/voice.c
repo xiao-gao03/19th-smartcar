@@ -83,7 +83,7 @@ float g_Angle   = 0;
 
 
 
-
+int lf,lb,rf,rb;
 
 
 /*!
@@ -152,6 +152,11 @@ void VoiceGetSample(void)
 		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC3);
 		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC2);
 		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC0);
+
+        lf = g_adc1Data[adcIndex][adcCount];
+        lb = g_adc2Data[adcIndex][adcCount];
+        rb = g_adc3Data[adcIndex][adcCount];
+        rf = g_adc0Data[adcIndex][adcCount];
 
 		adcCount++;
 	}

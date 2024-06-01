@@ -3,7 +3,6 @@
 #include "zf_common_typedef.h"
 
 //宏定义
-#define MAX_DUTY            (30 )                                              // 最大占空比输出限制
 #define DIR_CH1             (P18_4)                                            // 电机方向输出端口
 #define PWM_CH1             (TCPWM_CH51_P18_6)
 

@@ -33,7 +33,7 @@
  * Ð¡³µ½Ç¶È
  */
 extern float g_Angle;
-
+extern int lf,lb,rf,rb;
 void VoiceInit(void);
 
 void VoiceProcess(void);

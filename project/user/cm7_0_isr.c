@@ -45,7 +45,6 @@ void pit0_ch0_isr()
 	{
 			imu963ra_get_gyro();                                                        // 获取 IMU660RA 的角速度测量数值
 			IMU_YAW_integral();           //积分出角度值
-
 	}
 
 	
@@ -60,7 +59,8 @@ void pit0_ch1_isr()
 		gnss_flag = 0;
 		gnss_data_parse();
 	}
-	
+	lora_receive();
+        LQ_lora();        //接收裁判系统的信息，得出是第几个信标在工作
 	
 }
 

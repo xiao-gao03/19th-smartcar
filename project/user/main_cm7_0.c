@@ -64,27 +64,22 @@ int main(void)
  
     lora_init();        //无线串口初始化
 
-    //motor_init();       //电机初始化
+    motor_init();       //电机初始化
 
     VoiceInit();        //硅麦初始化
 
     pit_ms_init(PIT_CH0,5);
-    pit_ms_init(PIT_CH1,5);
-    pit_us_init(PIT_CH2, 100);  //100us进入一次中断  中断中采集adc数据
-
-
+    pit_ms_init(PIT_CH1,5);//100us进入一次中断  中断中采集adc数据
+    pit_us_init(PIT_CH2,100 );  
     
   // 此处编写用户代码 例如外设初始化代码等
   while (1)
   {
       key_scan();  //按键扫描
-      gps_getpoint();  //采点
-      lora_receive();
-      LQ_lora();        //接收裁判系统的信息，得出是第几个信标在工作
-      remote_ctrl();
+      gps_getpoint();  //采
+      
       HALL_gather();
       car_move();
-    printf("%.0f\n",g_Angle);
       TJC_messageSend();
 
   }

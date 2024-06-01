@@ -25,7 +25,7 @@ double car_ang_trans(double angle0)
     double cor_slef_angle;
     if(angle0 > 180 && angle0 <= 360)
     {
-        cor_slef_angle = angle0 - 180;
+        cor_slef_angle = angle0 - 360;
     }
     return cor_slef_angle;
 }
@@ -47,14 +47,16 @@ double ang_trans(double a)
  * @param alpha
  * @return
  */
-void ComplementaryFilter(float a, float b, float alpha,float *angle) {
+float ComplementaryFilter(float a, float b, float alpha) {
     // alpha 是滤波系数，范围在0到1之间
     // alpha 越接近 1，a 的影响越大
     // alpha 越接近 0，b 的影响越大
-    *angle = alpha * a + (1 - alpha) * b;
+  float i;
+  i = alpha * a + (1 - alpha) * b;
+    return i;
 }
 
-void turn_angle(double angle)
+void turn_angle(float angle)
 {
     if(angle >= 15)
     {

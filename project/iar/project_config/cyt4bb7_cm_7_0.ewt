@@ -1526,6 +1526,12 @@
             <name>$PROJ_DIR$\..\..\code\TJC.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\code\turn.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\code\turn.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\code\voice.c</name>
         </file>
         <file>
