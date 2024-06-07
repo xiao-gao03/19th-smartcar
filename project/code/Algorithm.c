@@ -1,275 +1,118 @@
-/*
- * Algorithm.c
- *
- *  Created on: 2023年3月19日
- *      Author: ORRN
- */
 #include "zf_common_headfile.h"
 
-//===================================================LQ_PID===================================================
+LowPassFilter mese_filter;
 
-pid_param_t PID_GPS;
-pid_param_t PID_IMU;
-pid_param_t PID_Init;
-pid_param_t PID_MOTOR;
-
-/*************************************************************************
- *  函数名称：float constrain_float(float amt, float low, float high)
- *  功能说明：限幅函数
- *  参数说明：
-  * @param    amt   ： 参数
-  * @param    low   ： 最低值
-  * @param    high  ： 最高值
- *  函数返回：无
- *  修改时间：2020年4月1日
- *  备    注：
- *************************************************************************/
-float constrain_float(float amt, float low, float high)
-{
-    return ((amt)<(low)?(low):((amt)>(high)?(high):(amt)));
-}
-
-// pid参数初始化函数
-void PidInit(pid_param_t * pid)
-{
-    pid->kp        = 0;
-    pid->ki        = 0;
-    pid->kd        = 0;
-    pid->imax      = 0;
-    pid->out_p     = 0;
-    pid->out_i     = 0;
-    pid->out_d     = 0;
-    pid->out       = 0;
-    pid->integrator= 0;
-    pid->last_error= 0;
-    pid->last_derivative   = 0;
-    pid->last_t    = 0;
-}
-
-/*************************************************************************
- *  函数名称：float constrain_float(float amt, float low, float high)
- *  功能说明：pid位置式控制器输出
- *  参数说明：
-  * @param    pid     pid参数
-  * @param    error   pid输入误差
- *  函数返回：PID输出结果
- *  修改时间：2020年4月1日
- *  备    注：
- *************************************************************************/
-float PidLocCtrl(pid_param_t * pid, float error)
-{
-//    PID_GPS.kp=1;
-//    PID_GPS.kd=1.05;
-
-
-    PID_GPS.kp=1.1;
-    PID_GPS.kd=5;
-
-    PID_IMU.kp=1;//1.15
-    PID_IMU.kd=7;
-
-    /* 累积误差 */
-    pid->integrator += error;
-
-    /* 误差限幅 */
-    constrain_float(pid->integrator, -pid->imax, pid->imax);
-
-
-    pid->out_p = pid->kp * error;
-    pid->out_i = pid->ki * pid->integrator;
-    pid->out_d = pid->kd * (error - pid->last_error);
-
-    pid->last_error = error;
-
-    pid->out = pid->out_p + pid->out_i + pid->out_d;
-
-//    if(pid->out>SERVO_MOTOR_LMAX)
-//    {pid->out=SERVO_MOTOR_LMAX;}
-//    if(pid->out<SERVO_MOTOR_RMIN)
-//    {pid->out=SERVO_MOTOR_RMIN;}
-    return pid->out;
-//    printf("OUT:%d\n",pid->out);
-}
-/*************************************************************************
- *  函数名称：float constrain_float(float amt, float low, float high)
- *  功能说明：pid增量式控制器输出
- *  参数说明：
-  * @param    pid     pid参数
-  * @param    error   pid输入误差
- *  函数返回：PID输出结果   注意输出结果已经包涵了上次结果
- *  修改时间：2020年4月1日
- *  备    注：
- *************************************************************************/
-float PidIncCtrl(pid_param_t * pid, float error)
-{
-    PID_MOTOR.kp=110;
-    PID_MOTOR.ki=6;
-    PID_MOTOR.kd=5;
-
-
-
-    pid->out_p = pid->kp * (error - pid->last_error);
-    pid->out_i = pid->ki * error;
-    pid->out_d = pid->kd * ((error - pid->last_error) - pid->last_derivative);
-
-    pid->last_derivative = error - pid->last_error;
-    pid->last_error = error;
-
-    pid->out += pid->out_p + pid->out_i + pid->out_d;
-    return pid->out;
-}
-
-//===================================================LQ_PID===================================================
-
-
-//===================================================GPS与IMU互补滤波===================================================
-
-extern float Data_Z;//陀螺仪积分得到的值(高频噪声)
-
-void GPS_IMU_COM_filtering()
-{
-    float K=0.9;//互补系数
-    float Fusion_angle;//融合后的航向角
-
-    Fusion_angle=K*Data_Z+(1-K)*gnss.direction;//将积分的YAW和逐飞GPS的direction进行互补融合
-
-    printf("\r\nFusion_angle---%f",Fusion_angle);
-
-}
-
-//===================================================GPS与IMU互补滤波===================================================
-
-
-//===================================================滑动平均滤波===================================================
-
-move_filter_struct GPS_Direction_filter;
-
-//-------------------------------------------------------------------------------------------------------------------
-// 函数简介     滑动平均滤波计算
-// 参数说明     move_filter     结构体传参
-// 参数说明     new_data        新输入的数据
-// 使用示例     (&speed_filter, 400);
-// 备注信息
-//-------------------------------------------------------------------------------------------------------------------
-void move_filter_calc(move_filter_struct *move_filter, int32 new_data)
-{
-    // 加上新的数值 减去最末尾的数值 求得最新的和
-    move_filter->data_sum = move_filter->data_sum + new_data - move_filter->data_buffer[move_filter->index];
-    // 重新求平均值
-    move_filter->data_average = move_filter->data_sum / move_filter->buffer_size;
-
-    // 将数据写入缓冲区
-    move_filter->data_buffer[move_filter->index] = new_data;
-    move_filter->index ++;
-    if(move_filter->buffer_size <= move_filter->index)
-    {
-        move_filter->index = 0;
-    }
-}
-
-
-//-------------------------------------------------------------------------------------------------------------------
-// 函数简介     滑动平均滤波初始化
-// 参数说明     move_filter     结构体传参
-// 使用示例     move_filter_init(&speed_filter);
-// 备注信息
-//-------------------------------------------------------------------------------------------------------------------
-void move_filter_init(move_filter_struct *move_filter)
-{
-    move_filter->data_average   = 0;
-    move_filter->data_sum       = 0;
-    move_filter->index          = 0;
-    //设置缓冲区大小
-    move_filter->buffer_size    = MOVE_AVERAGE_SIZE;
-
-    uint8 i;
-    for(i = 0; i < move_filter->buffer_size; i ++)
-    {
-        move_filter->data_buffer[i] = 0;
-    }
-}
-
-
-//===================================================滑动平均滤波===================================================
-
-//===================================================计算缓冲区数组元素个数===================================================
-int ARRAY_Element_Calculation()
-{
-    int i = 0;      // 定义计数器
-    int count = 0;  // 定义数组元素个数计数器
-
-    // 遍历数组，计算数组元素个数
-    while (i < 1024 && flash_union_buffer[i].uint32_type !=(-1)&&flash_union_buffer[i].uint32_type !=(0)) {
-        count++;
-        i++;
-    }
-//    printf("\r\n count=%d",count);
-    return count;
-}
-
-
-
-//===================================================动态PID===================================================
-typedef struct//参数结构体
-{
-   float kp_min;
-   float kp_max;
-   float ki_min;
-   float ki_max;
-   float kd_min;
-   float kd_max;
-   float setpoint;
-   float error_sum;
-   float last_error;
-}PIDContorller;
-
-void pid_init(PIDContorller*pid,float kp_min,float kp_max,float ki_min,float ki_max,float kd_min,float kd_max,float setpoint)
-{
-    pid->kp_min=kp_min;
-    pid->kp_max=kp_max;
-    pid->ki_min=ki_min;
-    pid->ki_max=ki_max;
-    pid->kd_min=kd_min;
-    pid->kd_max=kd_max;
-    pid->setpoint=setpoint;
-    pid->error_sum=0.0;
-    pid->last_error=0.0;
-
-}
-
-float pid_update(PIDContorller *pid, float input, float dt)
-{
-    float error = pid->setpoint - input;  //目标量-当前量
-    float proportional = 0.0;             //比例
-    float integral = 0.0;                 //积分
-    float derivative = 0.0;               //微分
-
-    //计算比例顶
-    float kp_range = pid->kp_max -pid->kp_min;
-    float kp_offset=(error / pid->setpoint)* kp_range;
-    proportional = pid->kp_min + kp_offset;
-
-    //计算积分项
-    pid->error_sum+= error* dt;
-    float ki_range = pid->ki_max - pid->ki_min;
-    float ki_offset =(pid->error_sum / pid->setpoint)* ki_range;
-    integral = pid->ki_min + ki_offset;
-
-    //计算微分项
-    float kd_range = pid->kd_max - pid->kd_min;
-    float kd_offset =((error-pid->last_error)/ dt / pid->setpoint)* kd_range;
-    derivative = pid->kd_min + kd_offset;
-
-    //更新上一次的误差
-    pid->last_error = error;
-    float output = proportional + integral + derivative;
-
+float updateLowPassFilter(LowPassFilter* filter, float input) {
+    // 一阶低通滤波器公式: y[n] = alpha * x[n] + (1 - alpha) * y[n-1]
+    float output = filter->alpha * input + (1.0f - filter->alpha) * filter->prevOutput;
+    filter->prevOutput = output; // 更新上一个输出值
     return output;
 }
 
 
-//===================================================动态PID===================================================
+// 初始化低通滤波器
+void initLowPassFilter(LowPassFilter* filter, float alpha) {
+    filter->alpha = alpha;
+    filter->prevOutput = 0.0f; // 初始输出值为0
+}
+//================================================================pid===============================================
+#include <stdio.h>
+#include <stdlib.h>//用到rand()函数
+#include "time.h"
+
+PID pid;
+steer_PID steer_pid;
+
+double measured_value = 0;//当前值
+double steer_measured_value = 0;//当前值
+
+double control_signal;
+double steer_control_signal;
+
+double dt = 0.01;  // 时间间隔
+double steer_dt = 0.01;  // 时间间隔
+
+// PID初始化函数
+void PID_Init(PID *pid, double kp, double ki, double kd) {
+    pid->kp = kp;
+    pid->ki = ki;
+    pid->kd = kd;
+
+    pid->integral = 0.0;
+    pid->prev_error = 0.0;
+    pid->output = 0.0;
+}
+
+// PID计算函数
+double PID_Compute(PID *pid, double measured_value, double dt, double setpoint) {
+    
+    pid->setpoint = setpoint;
+    double error = pid->setpoint - measured_value;
+    pid->integral += error * dt;
+    double derivative = (error - pid->prev_error) / dt;
+    pid->output = pid->kp * error + pid->ki * pid->integral + pid->kd * derivative;
+    pid->prev_error = error;
+    return pid->output;
+}
 
 
 
+double user_pid_control(double speed)
+{
+    control_signal = PID_Compute(&pid, measured_value, dt,speed);
+    // 更新过程变量（此处假设过程变量与控制信号的简单线性关系）
+    measured_value += control_signal * dt;
+    if(measured_value > 3000)
+    {
+      measured_value = 3000;
+    }
+    else if(measured_value < 0)
+    {
+      measured_value = 0;
+    }
+    
+    return measured_value;
+}
 
+//===============================================================舵机pid===================================================
+
+void steer_PID_Init(steer_PID *steer_pid, double kp, double ki, double kd) {
+    steer_pid->kp = kp;
+    steer_pid->ki = ki;
+    steer_pid->kd = kd;
+
+    steer_pid->integral = 0.0;
+    steer_pid->prev_error = 0.0;
+    steer_pid->output = 0.0;
+}
+
+// PID计算函数
+double steer_PID_Compute(steer_PID *steer_pid, double steer_measured_value, double dt, double setpoint) {
+    
+    steer_pid->setpoint = setpoint;
+    double error = steer_pid->setpoint - steer_measured_value;
+    steer_pid->integral += error * dt;
+    double derivative = (error - steer_pid->prev_error) / dt;
+    steer_pid->output = steer_pid->kp * error + steer_pid->ki * steer_pid->integral + steer_pid->kd * derivative;
+    steer_pid->prev_error = error;
+    return steer_pid->output;
+}
+
+
+
+double user_steer_pid_control(double angle)
+{
+    steer_control_signal = steer_PID_Compute(&steer_pid, steer_measured_value, dt,angle);
+    // 更新过程变量（此处假设过程变量与控制信号的简单线性关系）
+    steer_measured_value += steer_control_signal * dt;
+    if(steer_measured_value > 3000)
+    {
+      steer_measured_value = 3000;
+    }
+    else if(steer_measured_value < 0)
+    {
+      steer_measured_value = 0;
+    }
+    
+    return steer_measured_value;
+}

@@ -24,18 +24,16 @@ void car_move()
 {
    // cor_self_a = car_ang_trans(gnss.direction);      //得到自身角度0~+-180
 
-   if(T_M >= 0){
+   if(T_M >= 0)
+   {
        plus_T_M=T_M;
-   } else if (T_M < 0){
+   }
+   else if (T_M < 0)
+   {
        plus_T_M = 360 + T_M;
    }
-    //if(gnss.state == 1 && encoder > 100)
-    //{
-      //ComplementaryFilter(gps_direction_average,plus_T_M,0.65,&car_direction);//gps和陀螺仪互补滤波
-    //}
-    //else{
-        car_direction = plus_T_M;
-    //}
+
+   car_direction = plus_T_M;
 
     switch(witch_one)               //目标点赋值
     {
@@ -77,15 +75,15 @@ void car_move()
       //TODO：速度后期可调
       if(car_target_dis >= 50)            //距离目标50米开外，占空比50
       {
-          motor_run(1,500);
+          BLDC_Cloop_ctrl(1,5000);
       }
       else if(car_target_dis >=20 && car_target_dis <50)      //距离目标20-50米，占空比30
       {
-          motor_run(1,500);
+          BLDC_Cloop_ctrl(1,3000);
       }
       else if(car_target_dis < 20)            //距离目标小于20米，占空比10
       {
-          motor_run(1,500);
+          BLDC_Cloop_ctrl(1,1000);
       }
     }
     else if(witch_one == 0)

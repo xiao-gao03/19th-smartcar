@@ -108,18 +108,17 @@
 #include "seekfree_assistant_interface.h"
 //=====================================================组件应用层=====================================================
 
-
+//=====================================================应用层=========================================================
 #include "IMU.h"
 #include "GPS.h"
 #include "Common_Peripherals.h"
 #include "Algorithm.h"
 #include "motor.h"
-#include "GL_CRC.h"
-#include "A_Master_ctrl.h"
-#include "position_calculation.h"
 #include "voice.h"
 #include "lora.h"
 #include "move.h"
 #include "turn.h"
 #include "TJC.h"
+//=====================================================应用层=========================================================
+
 #endif

@@ -47,6 +47,7 @@ uint16 switch1_count=-1;
 uint16 switch2_count=-1;
 
 uint16_t key1_f = 1;
+uint16_t key2_f = 1;
 void Key_init()//按键与LED初始化
 {
        gpio_init(LED1, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED1 输出 默认高电平 推挽输出模式
@@ -64,6 +65,7 @@ void Key_init()//按键与LED初始化
 
 }
 int count = 0;
+int count2 = 0;
 void key_scan()//按键扫描
 {
     //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
@@ -81,7 +83,7 @@ void key_scan()//按键扫描
         count++;
         if(count >10)
         {
-            //count = 0;
+            count = 0;
             key1_flag = 1;
             gpio_set_level(LED1,0);
             key1_f = 0;
@@ -95,26 +97,24 @@ void key_scan()//按键扫描
         gpio_set_level(LED1,1);
     }
     
-//    if(key1_state != key1_state_last)
-//    {
-//      key1_flag = 1;
-//        gpio_set_level(LED1,0);
-//    }
-//
-//        if (gpio_get_level(KEY1) == 0) {
-//            key1_flag = 1;
-//        } else if (gpio_get_level(KEY2) == 0) {
-//            key2_flag = 1;
-//        } else if (gpio_get_level(KEY3) == 0) {
-//            key3_flag = 1;
-//        } else if (gpio_get_level(KEY4) == 0) {
-//            key4_flag = 1;
-//        } else {
-//            key1_flag = 0;
-//            key2_flag = 0;
-//            key3_flag = 0;
-//            key4_flag = 0;
-//        }
+    if(key2_state != 1 && key2_f == 1)
+    {
+        count2++;
+        if(count2 >10)
+        {
+            count2 = 0;
+            key2_flag = 1;
+            gpio_set_level(LED2,0);
+            key2_f = 0;
+        }
+    }
+    if(key2_state == 1)
+    {
+        count2 = 0;
+        key2_f = 1;
+        key2_flag = 0;
+        gpio_set_level(LED2,1);
+    }
 
 }
 

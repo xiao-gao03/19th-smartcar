@@ -124,6 +124,7 @@ void VoiceInit(void)
   *
   * @date     2020/4/28
   */
+float a,b,c,d;
 void VoiceGetSample(void)
 {
 	static uint8 adcIndex = 0;
@@ -148,15 +149,25 @@ void VoiceGetSample(void)
 
 	if(AdcFinishFlag == 0)
 	{
-		g_adc0Data[adcIndex][adcCount] = adc_convert(ADC1);
-		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC3);
-		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC2);
-		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC0);
+		g_adc0Data[adcIndex][adcCount] = adc_convert(ADC1);//右前
+		g_adc1Data[adcIndex][adcCount] = adc_convert(ADC3);//左前
+		g_adc2Data[adcIndex][adcCount] = adc_convert(ADC2);//左后
+		g_adc3Data[adcIndex][adcCount] = adc_convert(ADC0);//右后
 
-        lf = g_adc1Data[adcIndex][adcCount];
-        lb = g_adc2Data[adcIndex][adcCount];
-        rb = g_adc3Data[adcIndex][adcCount];
-        rf = g_adc0Data[adcIndex][adcCount];
+//        lf = g_adc1Data[adcIndex][adcCount];
+//        lb = g_adc2Data[adcIndex][adcCount];
+//        rb = g_adc3Data[adcIndex][adcCount];
+//        rf = g_adc0Data[adcIndex][adcCount];
+//
+//        a = updateLowPassFilter(&mese_filter,g_adc1Data[adcIndex][adcCount]);
+//        b = updateLowPassFilter(&mese_filter,g_adc2Data[adcIndex][adcCount]);
+//        c = updateLowPassFilter(&mese_filter,g_adc0Data[adcIndex][adcCount]);
+//        d = updateLowPassFilter(&mese_filter,g_adc3Data[adcIndex][adcCount]);
+//
+//        g_adc0Data[adcIndex][adcCount] = c;
+//        g_adc1Data[adcIndex][adcCount] = a;
+//        g_adc2Data[adcIndex][adcCount] = b;
+//        g_adc3Data[adcIndex][adcCount] = d;
 
 		adcCount++;
 	}
@@ -353,7 +364,7 @@ void VoiceProcess(void)
 		Normal((int16_t *)g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
 
 		/* 互相关 */
-       Xcorr((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], (int16_t *)&g_adc0Data[AdcBuffIndex], (int16_t *)&g_adc1Data[AdcBuffIndex], (int16_t *)&g_adc2Data[AdcBuffIndex], (int16_t *)&g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
+                Xcorr((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], (int16_t *)&g_adc0Data[AdcBuffIndex], (int16_t *)&g_adc1Data[AdcBuffIndex], (int16_t *)&g_adc2Data[AdcBuffIndex], (int16_t *)&g_adc3Data[AdcBuffIndex], ADC_DATA_LEN);
 
 		/** 获取最大相关峰值  */
 		SeekMaxAcor((float *)&g_acor1[AdcBuffIndex], (float *)&g_acor2[AdcBuffIndex], (float *)&g_acor3[AdcBuffIndex], (float *)&g_acor4[AdcBuffIndex], 30, acorIndex);

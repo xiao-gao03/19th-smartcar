@@ -589,4 +589,6 @@ add_executable(963ra_
         project/user/cm7_1_isr.c
         project/user/main_cm0plus.c
         project/user/main_cm7_0.c
-        project/user/main_cm7_1.c)
+        project/user/main_cm7_1.c
+        project/code/pid.c
+        project/code/pid.h)

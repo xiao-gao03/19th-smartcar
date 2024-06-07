@@ -3,7 +3,7 @@
 int16 Target_speed=0;
 int16 Current_speed=0;
 int16 Gap=0;
-int32 OUT=0;
+double OUT=0;
 int16 encoder=0;  //转速
 int16 stand=0;
 int16 Dir ;
@@ -33,7 +33,7 @@ void motor_run(int16 dir,int32 speed)
     }
     else if(dir == 0)                                                   //反转
     {
-        pwm_set_duty(PWM_CH1, -speed);
+        pwm_set_duty(PWM_CH1, speed);
         gpio_set_level(DIR_CH1, 0);
     }
     else
@@ -48,19 +48,11 @@ void motor_run(int16 dir,int32 speed)
  * @param dir   电机方向
  * @param SPEED 电机速度  max==10000；
  */
-void BLDC_Cloop_ctrl(int16 dir,int32 SPEED) //BLDC闭环控制
+void BLDC_Cloop_ctrl(int16 dir,double SPEED) //BLDC闭环控制
 {
-    Dir = dir;
-    Target_speed=SPEED;      //目标速度
-    Current_speed= encoder;   //当前速度
-    Gap=Target_speed-Current_speed;       //速度差距
-
-
-    OUT=PidIncCtrl(&PID_MOTOR,(float)Gap);
-    if(OUT> 10000) {OUT=10000;}
-    if(OUT<-10000) {OUT=-10000;}
-
-    motor_run(Dir,OUT);
+   OUT = user_pid_control(SPEED);
+   printf("%f\n",OUT);
+   motor_run(dir,OUT);
 }
 
 

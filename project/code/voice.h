@@ -34,6 +34,7 @@
  */
 extern float g_Angle;
 extern int lf,lb,rf,rb;
+extern float a,b,c,d;
 void VoiceInit(void);
 
 void VoiceProcess(void);

@@ -62,7 +62,8 @@
     "limits": "c",
     "*.tcc": "c",
     "cmath": "c",
-    "typeinfo": "c"
+    "typeinfo": "c",
+    "math.h": "c"
   },
   "files.encoding": "gbk"
 }

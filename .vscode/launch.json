@@ -2,6 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "cwd": "${workspaceFolder}",
+      "executable": "E:\\project\\smart car\\ok\\963ra-\\project\\iar\\Debug_m7_0\\Exe\\cyt4bb7_cm_7_0.hex",
+      "name": "Debug with PyOCD",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none",
+      "servertype": "pyocd"
+    },
+    
+    
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

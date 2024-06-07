@@ -20,14 +20,10 @@ void gps_getpoint()
         points_wei[i] = gnss.latitude;
         points_jing[i] = gnss.longitude;
         i++;
-        j++;
         if(i >= 8)
         {
             i = 0;
         }
-        if(j>8)
-        {
-            j = 0;
-        }
+       
     }
 }

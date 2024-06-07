@@ -50,37 +50,56 @@ int main(void)
     clock_init(SYSTEM_CLOCK_250M); 	// 时钟配置及系统初始化<务必保留>
     debug_info_init();                  // 调试串口信息初始化
 
+
     //Buzzer_init();      //蜂鸣器初始化
 
     TJC_init();         //串口屏初始化
 
     Key_init();         //按键初始化
   
-    //Steer_init();       //舵机初始化
+    Steer_init();       //舵机初始化
 
     GPS_Init();         //gps初始化
 
-    IMU_init();         //陀螺仪初始化
- 
     lora_init();        //无线串口初始化
+
+    PID_Init(&pid, 0.1, 0.00, 0.01);  // 设置比例、积分、微分系数和目标值//0.2/0.00/0.01/
 
     motor_init();       //电机初始化
 
     VoiceInit();        //硅麦初始化
+    
+    //adc1_init();
+
+    //initLowPassFilter(&mese_filter,0.65);
+    
 
     pit_ms_init(PIT_CH0,5);
-    pit_ms_init(PIT_CH1,5);//100us进入一次中断  中断中采集adc数据
-    pit_us_init(PIT_CH2,100 );  
+    pit_ms_init(PIT_CH1,5);
+    pit_us_init(PIT_CH2,100);  //100us进入一次中断  中断中采集adc数据
     
   // 此处编写用户代码 例如外设初始化代码等
   while (1)
   {
       key_scan();  //按键扫描
-      gps_getpoint();  //采
-      
+      gps_getpoint();  //采点
+      key1_flag = 0;
+      if(key2_flag == 1)
+      {
+        IMU_init();         //陀螺仪初始化
+      }
+      key2_flag = 0;
       HALL_gather();
       car_move();
-      TJC_messageSend();
+      
+      //printf("%.0f\n",g_Angle);
+
+      if(switch2_flag == 0)
+      {
+          TJC_messageSend();
+      }
+
+
 
   }
   // 此处编写用户代码 例如外设初始化代码等

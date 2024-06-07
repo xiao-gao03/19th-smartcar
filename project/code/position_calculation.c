@@ -68,6 +68,6 @@ void turn_angle(float angle)
     }
     else if(angle > -15 && angle <15)
     {
-        Steer_set(SERVO_MOTOR_MID + angle);
+        Steer_set(SERVO_MOTOR_MID + (int)angle);
     }
 }

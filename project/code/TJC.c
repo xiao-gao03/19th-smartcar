@@ -43,7 +43,7 @@ void TJC_messageSend()
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"main.t1.txt=\"GPS? %d\"",gnss.state);
+    sprintf(tjcstr,"main.t1.txt=\"%.0f\"",g_Angle);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
@@ -51,27 +51,19 @@ void TJC_messageSend()
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"main.t3.txt=\"采点数:%d\"",j);
+    sprintf(tjcstr,"main.t3.txt=\"采点数:%d\"",i);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
     sprintf(tjcstr,"main.t4.txt=\"距离:%f\"",car_target_dis);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"main.t5.txt=\"左前:%d\"",lf);
+    
+    sprintf(tjcstr,"main.t5.txt=\"经:%f\"",gnss.longitude);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"main.t6.txt=\"左后:%d\"",lb);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"main.t7.txt=\"右前:%d\"",rf);
-    TJC_Send(tjcstr);
-    TJC_Sendbit(0xff);
-
-    sprintf(tjcstr,"main.t8.txt=\"右后:%d\"",rb);
+    
+    sprintf(tjcstr,"main.t6.txt=\"纬:%f\"",gnss.latitude);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 

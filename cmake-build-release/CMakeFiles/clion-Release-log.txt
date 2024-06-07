@@ -13,13 +13,13 @@ CMake Error at E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMak
 
   It fails with the following output:
 
-    Change Dir: 'E:/project/smart car/ok/963ra-/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ifxkiw'
+    Change Dir: 'E:/project/smart car/ok/963ra-/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-70hr8t'
     
-    Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_75f80
-    [1/2] E:\software\gun\bin\arm-none-eabi-gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_75f80.dir/testCCompiler.c.obj -c "E:/project/smart car/ok/963ra-/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-ifxkiw/testCCompiler.c"
-    [2/2] cmd.exe /C "cd . && E:\software\gun\bin\arm-none-eabi-gcc.exe   CMakeFiles/cmTC_75f80.dir/testCCompiler.c.obj -o cmTC_75f80.exe -Wl,--out-implib,libcmTC_75f80.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-    FAILED: cmTC_75f80.exe 
-    cmd.exe /C "cd . && E:\software\gun\bin\arm-none-eabi-gcc.exe   CMakeFiles/cmTC_75f80.dir/testCCompiler.c.obj -o cmTC_75f80.exe -Wl,--out-implib,libcmTC_75f80.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_9fc9d
+    [1/2] E:\software\gun\bin\arm-none-eabi-gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_9fc9d.dir/testCCompiler.c.obj -c "E:/project/smart car/ok/963ra-/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-70hr8t/testCCompiler.c"
+    [2/2] cmd.exe /C "cd . && E:\software\gun\bin\arm-none-eabi-gcc.exe   CMakeFiles/cmTC_9fc9d.dir/testCCompiler.c.obj -o cmTC_9fc9d.exe -Wl,--out-implib,libcmTC_9fc9d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    FAILED: cmTC_9fc9d.exe 
+    cmd.exe /C "cd . && E:\software\gun\bin\arm-none-eabi-gcc.exe   CMakeFiles/cmTC_9fc9d.dir/testCCompiler.c.obj -o cmTC_9fc9d.exe -Wl,--out-implib,libcmTC_9fc9d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
     e:/software/gun/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
     e:/software/gun/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
     collect2.exe: error: ld returned 1 exit status

@@ -40,9 +40,16 @@ double gps_direction_sum;//gps偏航角累加值
  */
 float IMU_gyro_Offset_Init()
 {
+    gyro_Offset_flag=0;
+
     Gyro_Offset.Xdata = 0;
     Gyro_Offset.Ydata = 0;
     Gyro_Offset.Zdata = 0;
+
+    IMU_Data.gyro_x = 0;
+    IMU_Data.gyro_y = 0;
+    IMU_Data.gyro_z = 0;
+
     for (uint16_t i = 0; i < 1000; i++)
     {
 //        Gyro_Offset.Xdata += imu660ra_gyro_x;
@@ -94,10 +101,10 @@ void IMU_YAW_integral()//对角速度进行积分
     //    Daty_X+=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);
     //    Daty_Y+=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);
     //    if(IMU_Data.gyro_z<0.0045&&IMU_Data.gyro_z>-0.0045)
-        if(IMU_Data.gyro_z<0.08&&IMU_Data.gyro_z>-0.08)//滤波
+        if(IMU_Data.gyro_z<0.1&&IMU_Data.gyro_z>-0.1)//滤波
         {
             Daty_Z-=0;
-
+            T_M-=0;
         }
         else
         {

@@ -1,0 +1,1172 @@
+[
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/adc/cy_adc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/adc/cy_adc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/adc/cy_adc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/adc/cy_adc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/canfd/cy_canfd.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/canfd/cy_canfd.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/canfd/cy_canfd.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/canfd/cy_canfd.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/crypto/cy_crypto_config.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/crypto/cy_crypto_config.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/crypto/cy_crypto_config.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/crypto/cy_crypto_config.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/cxpi/cy_cxpi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/cxpi/cy_cxpi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/cxpi/cy_cxpi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/cxpi/cy_cxpi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/dma/cy_mdma.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/dma/cy_mdma.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/dma/cy_mdma.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/dma/cy_mdma.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/dma/cy_pdma.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/dma/cy_pdma.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/dma/cy_pdma.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/dma/cy_pdma.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/evtgen/cy_evtgen.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/evtgen/cy_evtgen.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/evtgen/cy_evtgen.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/evtgen/cy_evtgen.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/flash/cy_flash.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/flash/cy_flash.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/flash/cy_flash.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/flash/cy_flash.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/gpio/cy_gpio.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/gpio/cy_gpio.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/gpio/cy_gpio.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/gpio/cy_gpio.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_drv.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_pipe.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/ipc/cy_ipc_sema.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/lin/cy_lin.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/lin/cy_lin.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/lin/cy_lin.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/lin/cy_lin.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/lvd/cy_lvd.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/lvd/cy_lvd.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/lvd/cy_lvd.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/lvd/cy_lvd.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/mcwdt/cy_mcwdt.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/mpu/cy_mpu.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/mpu/cy_mpu.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/mpu/cy_mpu.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/mpu/cy_mpu.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/prot/cy_prot.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/prot/cy_prot.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/prot/cy_prot.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/prot/cy_prot.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_common.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_common.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_common.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_common.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_ezi2c.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_i2c.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_i2c.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_i2c.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_i2c.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_spi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_spi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_spi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_spi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_uart.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_uart.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/scb/cy_scb_uart.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/scb/cy_scb_uart.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smartio/cy_smartio.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smartio/cy_smartio.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smartio/cy_smartio.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smartio/cy_smartio.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/common/cy_smif.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/common/cy_smif.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/common/cy_smif.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/common/cy_smif.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/common/cy_smif_memslot.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver2/cy_smif_ver_specific.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver3_1/cy_smif_ver_specific.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/smif/ver4/cy_smif_ver_specific.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/srom/cy_srom.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/srom/cy_srom.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/srom/cy_srom.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/srom/cy_srom.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysflt/cy_sysflt.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysflt/cy_sysflt.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysflt/cy_sysflt.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysflt/cy_sysflt.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysint/cy_sysint.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysint/cy_sysint.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysint/cy_sysint.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysint/cy_sysint.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syslib/gcc/cy_syslib_newlib_systemcalls.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syslib/gcc/cy_syslib_newlib_systemcalls.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syslib/gcc/cy_syslib_newlib_systemcalls.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syslib/gcc/cy_syslib_newlib_systemcalls.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syslib/cy_syslib.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syslib/cy_syslib.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syslib/cy_syslib.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syslib/cy_syslib.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syspm/cy_syspm.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syspm/cy_syspm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syspm/cy_syspm.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syspm/cy_syspm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysreset/cy_sysreset.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysreset/cy_sysreset.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysreset/cy_sysreset.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysreset/cy_sysreset.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/sysrtc/cy_sysrtc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/systick/cy_systick.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/systick/cy_systick.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/systick/cy_systick.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/systick/cy_systick.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syswdt/cy_syswdt.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syswdt/cy_syswdt.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/syswdt/cy_syswdt.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/syswdt/cy_syswdt.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_counter.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_pwm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_quaddec.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/tcpwm/cy_tcpwm_sr.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/trigmux/cy_trigmux.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/trigmux/cy_trigmux.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/drivers/trigmux/cy_trigmux.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/drivers/trigmux/cy_trigmux.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_1.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_1.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_1.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_1.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_2.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_2.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_2.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/BufferManagement/BufferAllocation_2.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Common/phyHandling.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Common/phyHandling.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Common/phyHandling.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Common/phyHandling.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Traveo_T2G/NetworkInterface.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Traveo_T2G/NetworkInterface.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Traveo_T2G/NetworkInterface.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/portable/NetworkInterface/Traveo_T2G/NetworkInterface.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_ARP.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_ARP.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_ARP.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_ARP.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_DHCP.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_DHCP.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_DHCP.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_DHCP.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_DNS.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_DNS.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_DNS.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_DNS.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_IP.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_IP.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_IP.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_IP.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_Sockets.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_Sockets.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_Sockets.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_Sockets.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_Stream_Buffer.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_Stream_Buffer.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_Stream_Buffer.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_Stream_Buffer.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_IP.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_IP.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_IP.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_IP.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_WIN.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_WIN.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_WIN.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_TCP_WIN.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_UDP_IP.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_UDP_IP.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/ethstack/FreeRTOS_UDP_IP.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/ethstack/FreeRTOS_UDP_IP.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/CanIf_Cbk.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/CanIf_Cbk.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/CanIf_Cbk.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/CanIf_Cbk.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Dem_ReportErrorStatus.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Dem_ReportErrorStatus.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Dem_ReportErrorStatus.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Dem_ReportErrorStatus.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Det_ReportError.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Det_ReportError.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Det_ReportError.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Det_ReportError.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Det_ReportRuntimeError.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Det_ReportRuntimeError.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Det_ReportRuntimeError.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Det_ReportRuntimeError.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/EcuM_Cbk.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/EcuM_Cbk.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/EcuM_Cbk.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/EcuM_Cbk.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/ErrorCalloutHandler.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/LinIf_Cbk.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/LinIf_Cbk.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/LinIf_Cbk.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/LinIf_Cbk.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Os.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Os.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/Os.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/Os.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Adc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Adc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Adc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Adc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Can.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Can.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Can.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Can.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_CorTst.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_CorTst.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_CorTst.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_CorTst.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Dio.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Dio.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Dio.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Dio.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Fee.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Fee.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Fee.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Fee.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Fls.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Fls.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Fls.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Fls.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_FlsTst.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_FlsTst.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_FlsTst.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_FlsTst.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Gpt.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Gpt.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Gpt.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Gpt.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Icu.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Icu.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Icu.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Icu.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Lin.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Lin.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Lin.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Lin.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Mcu.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Mcu.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Mcu.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Mcu.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Ocu.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Ocu.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Ocu.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Ocu.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Pwm.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Pwm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Pwm.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Pwm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_RamTst.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_RamTst.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_RamTst.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_RamTst.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Spi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Spi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Spi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Spi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mcalstubs/SchM_Wdg_66_IA.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/aic261/cy_aic261.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/aic261/cy_aic261.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/aic261/cy_aic261.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/aic261/cy_aic261.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/button/cy_button.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/button/cy_button.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/button/cy_button.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/button/cy_button.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/flash/cy_mw_flash.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/flash/cy_mw_flash.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/flash/cy_mw_flash.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/flash/cy_mw_flash.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/semihosting/cy_semihosting.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/semihosting/cy_semihosting.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/semihosting/cy_semihosting.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/semihosting/cy_semihosting.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/mw/sw_timer/cy_sw_tmr.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/Common/mpu_wrappers.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/Common/mpu_wrappers.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/Common/mpu_wrappers.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/Common/mpu_wrappers.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM4F/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/DIAB/ARM_CM7/r0p1/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM4F/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GCC/ARM_CM7/r0p1/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM4F/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/GHS/ARM_CM7/r0p1/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM4F/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/port.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/port.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/port.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/IAR/ARM_CM7/r0p1/port.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_1.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_1.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_1.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_1.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_2.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_2.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_2.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_2.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_3.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_3.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_3.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_3.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_4.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_4.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_4.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_4.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_5.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_5.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/portable/MemMang/heap_5.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/portable/MemMang/heap_5.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/croutine.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/croutine.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/croutine.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/croutine.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/event_groups.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/event_groups.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/event_groups.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/event_groups.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/list.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/list.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/list.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/list.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/queue.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/queue.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/queue.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/queue.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/stream_buffer.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/stream_buffer.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/stream_buffer.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/stream_buffer.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/tasks.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/tasks.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/tasks.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/tasks.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/timers.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/timers.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/rtos/timers.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/rtos/timers.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/common/src/startup/startup.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/common/src/startup/startup.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/common/src/startup/startup.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/common/src/startup/startup.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/audioss/cy_i2s.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/cpu/cy_cpu.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/cy_ethif.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_rx.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_rx.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_rx.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_rx.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_tx.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_tx.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_tx.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/ethernet/edd_tx.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sd_host/cy_sd_host.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sysclk/cy_sysclk.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/drivers/sysreghc/cy_sysreghc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/interrupts/cy_interrupt_map.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/eth_phy/cy_dp83867.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/power/cy_power.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/power/cy_power.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/power/cy_power.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/power/cy_power.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_device_common.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_hb_flash.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fl.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_s25fs.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/mw/smif_mem/cy_smif_semp.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm0plus.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm0plus.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm0plus.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm0plus.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm7.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm7.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm7.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/system/system_tviibh4m_cm7.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm0plus.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm0plus.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm0plus.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm0plus.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm7_0.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm7_0.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm7_0.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm7_0.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm7_1.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm7_1.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/sdk/tviibh4m/src/main_cm7_1.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/sdk/tviibh4m/src/main_cm7_1.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_clock.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_clock.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_clock.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_clock.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_debug.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_debug.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_debug.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_debug.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_fifo.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_fifo.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_fifo.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_fifo.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_font.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_font.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_font.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_font.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_function.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_function.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_function.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_function.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_interrupt.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_interrupt.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_common/zf_common_interrupt.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_common/zf_common_interrupt.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_components/seekfree_assistant.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_components/seekfree_assistant.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_components/seekfree_assistant.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_components/seekfree_assistant.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_components/seekfree_assistant_interface.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_components/seekfree_assistant_interface.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_components/seekfree_assistant_interface.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_components/seekfree_assistant_interface.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_absolute_encoder.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_absolute_encoder.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_absolute_encoder.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_absolute_encoder.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_bluetooth_ch9141.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_bluetooth_ch9141.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_bluetooth_ch9141.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_bluetooth_ch9141.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_dl1a.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_dl1a.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_dl1a.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_dl1a.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_dl1b.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_dl1b.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_dl1b.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_dl1b.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_gnss.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_gnss.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_gnss.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_gnss.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_icm20602.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_icm20602.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_icm20602.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_icm20602.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_imu660ra.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_imu660ra.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_imu660ra.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_imu660ra.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_imu963ra.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_imu963ra.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_imu963ra.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_imu963ra.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_ips114.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_ips114.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_ips114.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_ips114.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_ips200.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_ips200.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_ips200.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_ips200.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_key.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_key.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_key.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_key.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_mpu6050.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_mpu6050.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_mpu6050.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_mpu6050.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_oled.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_oled.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_oled.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_oled.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_tft180.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_tft180.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_tft180.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_tft180.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_tsl1401.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_tsl1401.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_tsl1401.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_tsl1401.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_type.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_type.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_type.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_type.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_uart_receiver.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_uart_receiver.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_uart_receiver.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_uart_receiver.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_virtual_oscilloscope.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_virtual_oscilloscope.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_virtual_oscilloscope.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_virtual_oscilloscope.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wifi_spi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wifi_spi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wifi_spi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wifi_spi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wifi_uart.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wifi_uart.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wifi_uart.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wifi_uart.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wireless_uart.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wireless_uart.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_device/zf_device_wireless_uart.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_device/zf_device_wireless_uart.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_adc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_adc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_adc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_adc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_delay.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_delay.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_delay.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_delay.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_dma.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_dma.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_dma.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_dma.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_encoder.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_encoder.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_encoder.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_encoder.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_exti.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_exti.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_exti.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_exti.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_flash.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_flash.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_flash.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_flash.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_gpio.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_gpio.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_gpio.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_gpio.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_ipc.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_ipc.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_ipc.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_ipc.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_pit.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_pit.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_pit.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_pit.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_pwm.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_pwm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_pwm.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_pwm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_soft_iic.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_soft_iic.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_soft_iic.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_soft_iic.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_soft_spi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_soft_spi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_soft_spi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_soft_spi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_spi.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_spi.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_spi.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_spi.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_timer.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_timer.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_timer.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_timer.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_uart.c.obj -c \"E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_uart.c\"",
+  "file": "E:/project/smart car/ok/963ra-/libraries/zf_driver/zf_driver_uart.c",
+  "output": "CMakeFiles/963ra_.dir/libraries/zf_driver/zf_driver_uart.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/Algorithm.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/Algorithm.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/Algorithm.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/Algorithm.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/Common_Peripherals.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/Common_Peripherals.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/Common_Peripherals.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/Common_Peripherals.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/GL_CRC.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/GL_CRC.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/GL_CRC.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/GL_CRC.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/GPS.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/GPS.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/GPS.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/GPS.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/IMU.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/IMU.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/IMU.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/IMU.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/lora.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/lora.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/lora.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/lora.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/Math_self.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/Math_self.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/Math_self.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/Math_self.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/motor.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/motor.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/motor.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/motor.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/move.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/move.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/move.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/move.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/position_calculation.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/position_calculation.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/position_calculation.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/position_calculation.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/TJC.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/TJC.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/TJC.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/TJC.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/turn.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/turn.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/turn.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/turn.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/voice.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/voice.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/voice.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/voice.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/cm0plus_isr.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/cm0plus_isr.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/cm0plus_isr.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/cm0plus_isr.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/cm7_0_isr.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/cm7_0_isr.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/cm7_0_isr.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/cm7_0_isr.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/cm7_1_isr.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/cm7_1_isr.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/cm7_1_isr.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/cm7_1_isr.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/main_cm0plus.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/main_cm0plus.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/main_cm0plus.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/main_cm0plus.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/main_cm7_0.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/main_cm7_0.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/main_cm7_0.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/main_cm7_0.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/user/main_cm7_1.c.obj -c \"E:/project/smart car/ok/963ra-/project/user/main_cm7_1.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/user/main_cm7_1.c",
+  "output": "CMakeFiles/963ra_.dir/project/user/main_cm7_1.c.obj"
+},
+{
+  "directory": "E:/project/smart car/ok/963ra-/build",
+  "command": "C:/mingw64/bin/gcc.exe  @CMakeFiles/963ra_.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles/963ra_.dir/project/code/pid.c.obj -c \"E:/project/smart car/ok/963ra-/project/code/pid.c\"",
+  "file": "E:/project/smart car/ok/963ra-/project/code/pid.c",
+  "output": "CMakeFiles/963ra_.dir/project/code/pid.c.obj"
+}
+]
