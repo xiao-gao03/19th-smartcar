@@ -51,8 +51,8 @@ void motor_run(int16 dir,int32 speed)
 void BLDC_Cloop_ctrl(int16 dir,double SPEED) //BLDC±Õ»·¿ØÖÆ
 {
    OUT = user_pid_control(SPEED);
-   printf("%f\n",OUT);
-   motor_run(dir,OUT);
+   //printf("%f\n",OUT);
+   motor_run(dir,(int32)OUT);
 }
 
 

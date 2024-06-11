@@ -15,6 +15,8 @@ typedef struct {
 
 extern LowPassFilter mese_filter;
 
+extern double steer_dt;
+
 void initLowPassFilter(LowPassFilter* filter, float alpha);
 float updateLowPassFilter(LowPassFilter* filter, float input);
 
@@ -48,6 +50,6 @@ double user_pid_control(double speed);
 
 void steer_PID_Init(steer_PID *pid, double kp, double ki, double kd);
 double steer_PID_Compute(steer_PID *pid, double measured_value, double dt, double setpoint);
-double user_steer_pid_control(double speed);
+double user_steer_pid_control(double angle);
 
 #endif /* CODE_ALGORITHM_H_ */

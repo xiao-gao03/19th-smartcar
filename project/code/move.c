@@ -65,9 +65,9 @@ void car_move()
     {
         turn();
     }
-    else if(car_target_dis <= 5)
+    else if(car_target_dis <= 2)
     {
-        turn_angle(-g_Angle);
+        turn_angle(-mic_angle);
     }
 
     if(witch_one != 0)
@@ -75,15 +75,23 @@ void car_move()
       //TODO：速度后期可调
       if(car_target_dis >= 50)            //距离目标50米开外，占空比50
       {
+        steer_dt = 0.5;
           BLDC_Cloop_ctrl(1,5000);
       }
       else if(car_target_dis >=20 && car_target_dis <50)      //距离目标20-50米，占空比30
       {
+        steer_dt = 0.8;
           BLDC_Cloop_ctrl(1,3000);
       }
-      else if(car_target_dis < 20)            //距离目标小于20米，占空比10
+      else if(car_target_dis < 20 && car_target_dis > 5)            //距离目标小于20米，占空比10
       {
-          BLDC_Cloop_ctrl(1,1000);
+        steer_dt = 1.0;
+          BLDC_Cloop_ctrl(1,1500);
+      }
+      else  if(car_target_dis <= 5)
+      {
+        steer_dt = 2.0;
+        BLDC_Cloop_ctrl(1,300);
       }
     }
     else if(witch_one == 0)

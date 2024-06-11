@@ -101,7 +101,7 @@ void IMU_YAW_integral()//对角速度进行积分
     //    Daty_X+=RAD_TO_ANGLE(IMU_Data.gyro_x*0.005);
     //    Daty_Y+=RAD_TO_ANGLE(IMU_Data.gyro_y*0.005);
     //    if(IMU_Data.gyro_z<0.0045&&IMU_Data.gyro_z>-0.0045)
-        if(IMU_Data.gyro_z<0.1&&IMU_Data.gyro_z>-0.1)//滤波
+        if(IMU_Data.gyro_z<0.08&&IMU_Data.gyro_z>-0.08)//滤波
         {
             Daty_Z-=0;
             T_M-=0;
@@ -123,7 +123,7 @@ void IMU_init()//IMU初始化
 
     //imu660ra_init();   //IMU660惯导初始化
     imu963ra_init();   //IMU660惯导初始化
-
+   T_M = 0;
     IMU_gyro_Offset_Init();// 陀螺仪零漂初始化
 
 }

@@ -112,13 +112,15 @@
 #include "IMU.h"
 #include "GPS.h"
 #include "Common_Peripherals.h"
+#include "position_calculation.h"
 #include "Algorithm.h"
 #include "motor.h"
-#include "voice.h"
+#include "voice_deal.h"
 #include "lora.h"
 #include "move.h"
 #include "turn.h"
 #include "TJC.h"
+
 //=====================================================”¶”√≤„=========================================================
 
 #endif

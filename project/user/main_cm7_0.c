@@ -64,10 +64,11 @@ int main(void)
     lora_init();        //无线串口初始化
 
     PID_Init(&pid, 0.1, 0.00, 0.01);  // 设置比例、积分、微分系数和目标值//0.2/0.00/0.01/
+    steer_PID_Init(&steer_pid,0.1,0.00,0.01);
 
     motor_init();       //电机初始化
 
-    VoiceInit();        //硅麦初始化
+    Mic_init();
     
     //adc1_init();
 
@@ -81,8 +82,16 @@ int main(void)
   // 此处编写用户代码 例如外设初始化代码等
   while (1)
   {
+
+//    if(adc_flag == 1)
+//    {
+//        FFT_comp();
+//        
+//    }
+
       key_scan();  //按键扫描
       gps_getpoint();  //采点
+      Mic_Process();
       key1_flag = 0;
       if(key2_flag == 1)
       {
@@ -92,14 +101,12 @@ int main(void)
       HALL_gather();
       car_move();
       
-      //printf("%.0f\n",g_Angle);
+      printf("%f\n",mic_angle);
 
       if(switch2_flag == 0)
       {
           TJC_messageSend();
       }
-
-
 
   }
   // 此处编写用户代码 例如外设初始化代码等

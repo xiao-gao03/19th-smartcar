@@ -15,7 +15,7 @@ void gps_getpoint()
 {
         
 
-    if(key1_flag == 1 && switch1_flag == 0 && switch2_flag == 0)
+    if(key1_flag == 1 && switch1_flag == 0)
     {
         points_wei[i] = gnss.latitude;
         points_jing[i] = gnss.longitude;
@@ -24,6 +24,5 @@ void gps_getpoint()
         {
             i = 0;
         }
-       
     }
 }

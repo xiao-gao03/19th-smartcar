@@ -130,7 +130,7 @@ void Steer_init()//舵机初始化
     //PidInit(&PID_Init);
 }
 
-void Steer_set(int angle)//舵机驱动
+void Steer_set(float angle)//舵机驱动
 {
 //    if(angle<SERVO_MOTOR_LMAX){angle=SERVO_MOTOR_LMAX;}
 //    if(angle>SERVO_MOTOR_RMAX){angle=SERVO_MOTOR_RMAX;}

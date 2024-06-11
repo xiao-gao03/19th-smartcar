@@ -43,7 +43,7 @@ void TJC_messageSend()
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 
-    sprintf(tjcstr,"main.t1.txt=\"%.0f\"",g_Angle);
+    sprintf(tjcstr,"main.t1.txt=\"%.0f\"",mic_angle);
     TJC_Send(tjcstr);
     TJC_Sendbit(0xff);
 

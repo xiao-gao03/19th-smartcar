@@ -24,13 +24,13 @@ PID pid;
 steer_PID steer_pid;
 
 double measured_value = 0;//当前值
-double steer_measured_value = 0;//当前值
+double steer_measured_value = 80;//当前值
 
 double control_signal;
 double steer_control_signal;
 
-double dt = 0.01;  // 时间间隔
-double steer_dt = 0.01;  // 时间间隔
+double dt = 1.0;  // 时间间隔
+double steer_dt = 0.5;  // 时间间隔
 
 // PID初始化函数
 void PID_Init(PID *pid, double kp, double ki, double kd) {
@@ -102,16 +102,17 @@ double steer_PID_Compute(steer_PID *steer_pid, double steer_measured_value, doub
 
 double user_steer_pid_control(double angle)
 {
-    steer_control_signal = steer_PID_Compute(&steer_pid, steer_measured_value, dt,angle);
+    steer_control_signal = steer_PID_Compute(&steer_pid, steer_measured_value, steer_dt,angle);
     // 更新过程变量（此处假设过程变量与控制信号的简单线性关系）
-    steer_measured_value += steer_control_signal * dt;
-    if(steer_measured_value > 3000)
+    steer_measured_value += steer_control_signal * steer_dt;
+    
+    if(steer_measured_value>SERVO_MOTOR_RMAX)
     {
-      steer_measured_value = 3000;
+      steer_measured_value = SERVO_MOTOR_RMAX;
     }
-    else if(steer_measured_value < 0)
+    else if(steer_measured_value < SERVO_MOTOR_LMAX)
     {
-      steer_measured_value = 0;
+      steer_measured_value = SERVO_MOTOR_LMAX;
     }
     
     return steer_measured_value;

@@ -16,7 +16,7 @@ void turn()
 
     my_beta = car_target_angle - car_direction;  //µã-³µ
     
-   // my_alpha = ComplementaryFilter(my_beta,g_Angle,0.85);
+   // my_alpha = ComplementaryFilter(my_beta,mic_angle,0.85);
     
    my_alpha = my_beta;
 

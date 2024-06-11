@@ -56,18 +56,26 @@ float ComplementaryFilter(float a, float b, float alpha) {
     return i;
 }
 
+float a;
+
 void turn_angle(float angle)
 {
     if(angle >= 15)
     {
-        Steer_set(SERVO_MOTOR_RMAX);
+        a = (float)user_steer_pid_control(SERVO_MOTOR_RMAX);
+        
+        Steer_set(a);
     }
     else if(angle <= -15)
     {
-        Steer_set(SERVO_MOTOR_LMAX);
+        a = (float)user_steer_pid_control(SERVO_MOTOR_LMAX);
+        
+        Steer_set(a);
     }
     else if(angle > -15 && angle <15)
     {
-        Steer_set(SERVO_MOTOR_MID + (int)angle);
+        a = (float)user_steer_pid_control(SERVO_MOTOR_MID + (int)angle);
+        
+        Steer_set(a);
     }
 }

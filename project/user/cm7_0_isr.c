@@ -69,10 +69,11 @@ void pit0_ch1_isr()                     // 定时器通道 1 周期中断服务函数
 void pit0_ch2_isr()                     // 定时器通道 2 周期中断服务函数      
 {
     pit_isr_flag_clear(PIT_CH2);
-
-     VoiceGetSample();       //硅麦adc采集信息
-     VoiceProcess();         //硅麦处理信息获取角度g——angle
-
+    
+    
+   // FFT_capture();      //FFT采集信息
+    
+    mic_data_get();      //麦克风采集信息
 //    voice_collect();
 //    toda1();
     
