@@ -123,8 +123,10 @@ void IMU_init()//IMU初始化
 
     //imu660ra_init();   //IMU660惯导初始化
     imu963ra_init();   //IMU660惯导初始化
-   T_M = 0;
+    T_M = 0;
     IMU_gyro_Offset_Init();// 陀螺仪零漂初始化
+
+    // IMU_offset();
 
 }
 
@@ -213,5 +215,92 @@ void IMU_Handle_0()
     T_N-=RAD_TO_ANGLE(IMU_Data.gyro_z*0.005);//(积分过程)本来是逆时针为正,现在改为顺时针为正
 
 }
+
+
+
+
+
+// #define Ka 0.90  //加速度解算权重
+// #define dt 0.005 //采样间隔（单位：秒）
+
+// #define ANGLE_APPROX_COEFF 0 //航向角逼近系数
+
+// #define OFFSET_COUNT 200 //零漂测定数据量
+
+// IMU IMU_Data_two;
+// float FOCF(float acc_m,float gyro_m,float* last_angle){
+//     float temp_angle;
+//     temp_angle=Ka*acc_m+(1-Ka)*(*last_angle+gyro_m*dt);//角速度对采样间隔积分加上上次解算角度即为从陀螺仪中推出的角度
+//     *last_angle=temp_angle;
+//     return temp_angle;
+// }
+
+// /* @fn IMU_update
+//  * @brief 在定时器中姿态解算
+//  * @param void
+//  * @return void
+//  */
+// void IMU_update(){
+//     //数据处理
+//     IMU_Data_two.Roll_a=atan2(imu963ra_acc_x,imu963ra_acc_z)/(PI/180);//ax除以az再求反正切函数即为从加速度计中推出的角度
+//     IMU_Data_two.Pitch_a=atan2(imu963ra_acc_y,imu963ra_acc_z)/(PI/180);
+//     IMU_Data_two.Roll_g=-(imu963ra_gyro_y)/14.3;//从陀螺仪中推出的角速度，14.3根据陀螺仪量程所得
+//     IMU_Data_two.Pitch_g=-(imu963ra_gyro_x)/14.3;
+    
+//     //一阶互补滤波
+//     IMU_Data_two.Roll=FOCF(IMU_Data_two.Roll_a,IMU_Data_two.Roll_g,&IMU_Data_two.lastRoll);
+//     IMU_Data_two.Pitch=FOCF(IMU_Data_two.Pitch_a,IMU_Data_two.Pitch_g,&IMU_Data_two.lastPitch);
+
+//     IMU_Data_two.Yaw+=-(imu963ra_gyro_z)/14.3*dt;
+//     //Yaw角修正
+//     if(IMU_Data_two.Yaw<gnss.direction){
+//         IMU_Data_two.Yaw+=ANGLE_APPROX_COEFF;
+//     }
+//     else if(IMU_Data_two.Yaw>gnss.direction){
+//         IMU_Data_two.Yaw-=ANGLE_APPROX_COEFF;
+//     }
+// }
+
+// //陀螺仪去零漂
+// void IMU_offset(){
+    
+//     IMU_Data_two.Yaw = 0;
+
+//     IMU_Data_two.offset_gx = 0;
+//     IMU_Data_two.offset_gy = 0;
+//     IMU_Data_two.offset_gz = 0;
+
+//     for(int i=0;i<OFFSET_COUNT;i++){
+//         system_delay_ms(5);
+//         if(imu963ra_gyro_x==imu963ra_gyro_y){
+//             i--;
+//         }
+//         else{
+//             IMU_Data_two.offset_gx+=imu963ra_gyro_x;
+//             IMU_Data_two.offset_gy+=imu963ra_gyro_y;
+//             IMU_Data_two.offset_gz+=imu963ra_gyro_z;
+//         }
+//     }
+//     IMU_Data_two.offset_gx/=OFFSET_COUNT;
+//     IMU_Data_two.offset_gy/=OFFSET_COUNT;
+//     IMU_Data_two.offset_gz/=OFFSET_COUNT;
+// }
+
+
+// float temp ;
+// void IMU_get_data(){
+//     imu963ra_get_acc();// 获取 IMU963RA 的加速度测量值
+//     imu963ra_get_gyro();// 获取 IMU963RA 的角速度测量值
+
+//     temp = ((float) imu963ra_gyro_z - Gyro_Offset.Zdata) * PI / 180 / 14.3f;
+
+//      if(temp<0.08&&temp>-0.08)//滤波
+//         {
+//             imu963ra_gyro_x-=IMU_Data_two.offset_gx;
+//             imu963ra_gyro_y-=IMU_Data_two.offset_gy;
+//             imu963ra_gyro_z-=IMU_Data_two.offset_gz;
+//         }
+    
+// }
 
 

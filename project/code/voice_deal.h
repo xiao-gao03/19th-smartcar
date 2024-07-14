@@ -2,10 +2,10 @@
 #ifndef _voice_deal_H_
 #define _voice_deal_H_
 
-#define MIC_PIN1  (ADC0_CH03_P06_3)
-#define MIC_PIN2  (ADC0_CH01_P06_1)
-#define MIC_PIN3  (ADC0_CH00_P06_0)
-#define MIC_PIN4  (ADC0_CH02_P06_2)
+#define MIC_PIN1  (ADC0_CH00_P06_0)
+#define MIC_PIN2  (ADC0_CH02_P06_2)
+#define MIC_PIN3  (ADC0_CH03_P06_3)
+#define MIC_PIN4  (ADC0_CH01_P06_1)
 #define sample_point 2048
 
 extern int32 ADC[4];

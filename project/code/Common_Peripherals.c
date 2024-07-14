@@ -28,10 +28,10 @@ uint8 key4_state_last = 0;                                                      
 uint8 switch1_state_last = 0;                                                       // 上一次拨码开关动作状态
 uint8 switch2_state_last = 0;                                                       // 上一次拨码开关动作状态
 
-uint8 key1_flag;
-uint8 key2_flag;
-uint8 key3_flag;
-uint8 key4_flag;
+uint8 key1_flag = 0;
+uint8 key2_flag = 0;
+uint8 key3_flag = 0;
+uint8 key4_flag = 0;
 
 uint8 key_val;
 
@@ -48,6 +48,9 @@ uint16 switch2_count=-1;
 
 uint16_t key1_f = 1;
 uint16_t key2_f = 1;
+uint16_t key3_f = 1;
+uint16_t key4_f = 1;
+
 void Key_init()//按键与LED初始化
 {
        gpio_init(LED1, GPO, GPIO_HIGH, GPO_PUSH_PULL);         // 初始化 LED1 输出 默认高电平 推挽输出模式
@@ -66,6 +69,8 @@ void Key_init()//按键与LED初始化
 }
 int count = 0;
 int count2 = 0;
+int count3 = 0;
+int count4 = 0;
 void key_scan()//按键扫描
 {
     //使用此方法优点在于，不需要使用while(1) 等待，避免处理器资源浪费
@@ -115,6 +120,45 @@ void key_scan()//按键扫描
         key2_flag = 0;
         gpio_set_level(LED2,1);
     }
+
+    if(key3_state != 1 && key3_f == 1)
+    {
+        count3++;
+        if(count3 >10)
+        {
+            count3 = 0;
+            key3_flag = 1;
+            gpio_set_level(LED3,0);
+            key3_f = 0;
+        }
+    }
+    if(key3_state == 1)
+    {
+        count3 = 0;
+        key3_f = 1;
+        key3_flag = 0;
+        gpio_set_level(LED3,1);
+    }
+
+    if(key4_state != 1 && key4_f == 1)
+    {
+        count4++;
+        if(count4 >10)
+        {
+            count4 = 0;
+            key4_flag = 1;
+            gpio_set_level(LED4,0);
+            key4_f = 0;
+        }
+    }
+    if(key4_state == 1)
+    {
+        count4 = 0;
+        key4_f = 1;
+        key4_flag = 0;
+        gpio_set_level(LED4,1);
+    }
+
 
 }
 

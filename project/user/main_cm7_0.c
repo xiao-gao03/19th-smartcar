@@ -59,55 +59,65 @@ int main(void)
   
     Steer_init();       //舵机初始化
 
-    GPS_Init();         //gps初始化
+   
 
     lora_init();        //无线串口初始化
 
     PID_Init(&pid, 0.1, 0.00, 0.01);  // 设置比例、积分、微分系数和目标值//0.2/0.00/0.01/
     steer_PID_Init(&steer_pid,0.1,0.00,0.01);
 
+    flash_init();
+
     motor_init();       //电机初始化
 
     Mic_init();
     
-    //adc1_init();
-
+float a,b,c,d;
     //initLowPassFilter(&mese_filter,0.65);
     
-
+ 
     pit_ms_init(PIT_CH0,5);
-    pit_ms_init(PIT_CH1,5);
+    pit_ms_init(PIT_CH1,100);
     pit_us_init(PIT_CH2,100);  //100us进入一次中断  中断中采集adc数据
+    pit_ms_init(PIT_CH10,5);
+    
+    
     
   // 此处编写用户代码 例如外设初始化代码等
   while (1)
   {
-
-//    if(adc_flag == 1)
-//    {
-//        FFT_comp();
-//        
-//    }
-
-      key_scan();  //按键扫描
+        key_scan();  //按键扫描  
       gps_getpoint();  //采点
       Mic_Process();
-      key1_flag = 0;
+      if(key1_flag == 1)
+      {
+        key1_flag = 0;
+      }
+      
+      key3_flag = 0;
+      key4_flag = 0;
       if(key2_flag == 1)
       {
         IMU_init();         //陀螺仪初始化
+        GPS_Init();         //gps初始化
       }
       key2_flag = 0;
       HALL_gather();
       car_move();
       
-      printf("%f\n",mic_angle);
+      //printf("%f\n",mic_angle);
 
       if(switch2_flag == 0)
       {
           TJC_messageSend();
       }
 
+      a=adc_convert(ADC0_CH03_P06_3);
+      b=adc_convert(ADC0_CH01_P06_1);
+      c=adc_convert(ADC0_CH00_P06_0);
+      d=adc_convert(ADC0_CH02_P06_2);
+      printf("%.0f\n",T_M);
+      
   }
   // 此处编写用户代码 例如外设初始化代码等
 }

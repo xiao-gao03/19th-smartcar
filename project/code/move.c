@@ -61,13 +61,14 @@ void car_move()
     car_target_dis = get_two_points_distance(gnss.latitude,gnss.longitude,target_wei,target_jing);
 
     //距离目标大于一米用gps方位角转向，小于一米用硅麦转向//舵机转向
-    if(car_target_dis > 5)
+    if(car_target_dis > 2)
     {
         turn();
     }
     else if(car_target_dis <= 2)
     {
-        turn_angle(-mic_angle);
+      turn_angle(-mic_angle);
+        //turn_angle(-mic_angle);
     }
 
     if(witch_one != 0)
@@ -76,22 +77,26 @@ void car_move()
       if(car_target_dis >= 50)            //距离目标50米开外，占空比50
       {
         steer_dt = 0.5;
-          BLDC_Cloop_ctrl(1,5000);
+//          BLDC_Cloop_ctrl(1,700);
+        motor_run(1,5000);
       }
       else if(car_target_dis >=20 && car_target_dis <50)      //距离目标20-50米，占空比30
       {
         steer_dt = 0.8;
-          BLDC_Cloop_ctrl(1,3000);
+//          BLDC_Cloop_ctrl(1,700);
+        motor_run(1,3000);
       }
       else if(car_target_dis < 20 && car_target_dis > 5)            //距离目标小于20米，占空比10
       {
         steer_dt = 1.0;
-          BLDC_Cloop_ctrl(1,1500);
+//          BLDC_Cloop_ctrl(1,2000);
+        motor_run(1,2000);
       }
       else  if(car_target_dis <= 5)
       {
-        steer_dt = 2.0;
-        BLDC_Cloop_ctrl(1,300);
+        //steer_dt = 2.0;
+        //BLDC_Cloop_ctrl(1,500); //TODO:注释掉
+        motor_run(1,500);
       }
     }
     else if(witch_one == 0)
