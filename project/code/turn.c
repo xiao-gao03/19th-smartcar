@@ -11,16 +11,15 @@ double my_abs(double x)
 float my_alpha;
 float my_beta;
 
-void turn()
+void turn_f()
 {
-
-    my_beta = car_target_angle - car_direction;  //点-车
+    my_beta = car_target_angle - car_direction;  //μ?-3μ
     
    // my_alpha = ComplementaryFilter(my_beta,mic_angle,0.85);
     
    my_alpha = my_beta;
 
-    if((my_alpha >= 0 && my_alpha <= 180) || (my_alpha <= -180 && my_alpha >= -360))  //右拐
+    if((my_alpha >= 0 && my_alpha <= 180) || (my_alpha <= -180 && my_alpha >= -360))  //óò1?
     {
         if (my_alpha >= 0) {
             turn_angle(-my_alpha);
@@ -28,7 +27,7 @@ void turn()
             my_alpha = 360 - my_abs(my_alpha);
             turn_angle(my_alpha);
         }
-    } else if ((my_alpha >= 180 && my_alpha <= 360) || (my_alpha <= 0 && my_alpha >= -180))  //左转
+    } else if ((my_alpha >= 180 && my_alpha <= 360) || (my_alpha <= 0 && my_alpha >= -180))  //×ó×a
     {
         if(my_alpha >= 0) {
             my_alpha = 360 - my_abs(my_alpha);
@@ -38,3 +37,31 @@ void turn()
         }
     }
 }
+
+// void turn_b()
+// {
+
+//     my_beta = car_target_angle - car_direction;  //点-车
+    
+//    // my_alpha = ComplementaryFilter(my_beta,mic_angle,0.85);
+    
+//    my_alpha = my_beta;
+
+//     if((my_alpha >= 0 && my_alpha <= 180) || (my_alpha <= -180 && my_alpha >= -360))  //右拐
+//     {
+//         if (my_alpha >= 0) {
+//             turn_angle(-my_alpha);
+//         } else if (my_alpha < 0) {
+//             my_alpha = 360 - my_abs(my_alpha);
+//             turn_angle(my_alpha);
+//         }
+//     } else if ((my_alpha >= 180 && my_alpha <= 360) || (my_alpha <= 0 && my_alpha >= -180))  //左转
+//     {
+//         if(my_alpha >= 0) {
+//             my_alpha = 360 - my_abs(my_alpha);
+//             turn_angle(my_alpha);
+//         }else if (my_alpha < 0) {
+//             turn_angle(-my_alpha);
+//         }
+//     }
+// }

@@ -54,18 +54,19 @@ void pit0_ch0_isr()                     // 定时器通道 0 周期中断服务函数
     
 }
 
+
 void pit0_ch1_isr()                     // 定时器通道 1 周期中断服务函数      
 {
-    pit_isr_flag_clear(PIT_CH1);
+    pit_isr_flag_clear(PIT_CH1); 
 
-    if(witch_one != 0)//TODO:结局静态漂移？
-    {
-         if(gnss_flag)
+        if(gnss_flag)
 	    {
-		    gnss_flag = 0;
-		    gnss_data_parse();
+            gnss_flag = 0;
+                gnss_data_parse();
+            
+        
+		    //car_average(&car_local_jing, &car_local_wei);
 	    }
-    }
    
     
 }
@@ -88,7 +89,7 @@ void pit0_ch10_isr()                    // 定时器通道 10 周期中断服务函数
     
     lora_receive();
     LQ_lora();        //接收裁判系统的信息，得出是第几个信标在工作
-
+    
 }
 
 void pit0_ch11_isr()                    // 定时器通道 11 周期中断服务函数      

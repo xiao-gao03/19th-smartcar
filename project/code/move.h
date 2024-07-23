@@ -12,7 +12,10 @@ extern float cor_car_target_angle;//修正后小车和目标点之间的方位角
 extern double car_target_dis;      //小车和目标点之间的距离
 extern float car_direction;
 extern float cor_self_a;
+extern int room;
 
 void car_move();
+void run_f();
+void run_b();
 
 #endif

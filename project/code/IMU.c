@@ -118,17 +118,19 @@ void IMU_YAW_integral()//对角速度进行积分
 }
 
 
-void IMU_init()//IMU初始化
+void IMU_init() // IMU初始化
 {
+    if (imu963ra_init() != 0) // 检查IMU初始化是否成功
+    {
+        // 错误处理，例如打印错误信息或进入错误处理函数
+        printf("IMU initialization failed!\n");
+        return;
+    }
 
-    //imu660ra_init();   //IMU660惯导初始化
-    imu963ra_init();   //IMU660惯导初始化
     T_M = 0;
-    IMU_gyro_Offset_Init();// 陀螺仪零漂初始化
-
-    // IMU_offset();
-
+    IMU_gyro_Offset_Init(); // 陀螺仪零漂初始化
 }
+
 
 
 void GPS_direction_average()//计算GPS偏航角平均值

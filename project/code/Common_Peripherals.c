@@ -98,7 +98,7 @@ void key_scan()//°´¼üÉ¨Ãè
     {
         count = 0;
         key1_f = 1;
-        key1_flag = 0;
+        
         gpio_set_level(LED1,1);
     }
     

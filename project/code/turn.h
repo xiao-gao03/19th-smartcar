@@ -6,7 +6,8 @@
 #define INC_963RA__TURN_H
 
 extern float my_beta;
+extern float my_alpha;
 
-void turn();
+void turn_f();
 
 #endif //INC_963RA__TURN_H

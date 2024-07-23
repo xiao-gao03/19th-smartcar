@@ -20,9 +20,9 @@
 
 #define SERVO_MOTOR_PWM             (TCPWM_CH61_P17_0)                           // 定义主板上舵机对应引脚
 #define SERVO_MOTOR_FREQ            (50)                                       // 定义主板上舵机频率  请务必注意范围
-#define SERVO_MOTOR_MID             (80)                                        //中值75//可以通过修改中值的方式弥补机械误差79
-#define SERVO_MOTOR_LMAX            (65)                                        //左打死60
-#define SERVO_MOTOR_RMAX            (95)                                       //右打死100
+#define SERVO_MOTOR_MID             (90)                                        //中值75//可以通过修改中值的方式弥补机械误差79  90 72 108
+#define SERVO_MOTOR_LMAX            (72)                                        //左打死60
+#define SERVO_MOTOR_RMAX            (108)                                       //右打死100 80 65 95
 
 #define SERVO_MOTOR_DUTY(x)         ((float)PWM_DUTY_MAX/(1000.0/(float)SERVO_MOTOR_FREQ)*(0.5+(float)(x)/90.0))// ------------------ 舵机占空比计算方式 ------------------
 
